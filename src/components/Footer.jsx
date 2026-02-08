@@ -31,7 +31,7 @@ const Footer = () => {
                             <li><a href="#hero" style={{ color: '#ccc', textDecoration: 'none', transition: 'color 0.3s' }} className="footer-link">サービス紹介</a></li>
                             <li><a href="#solution" style={{ color: '#ccc', textDecoration: 'none', transition: 'color 0.3s' }} className="footer-link">メリット</a></li>
                             <li><a href="#flow" style={{ color: '#ccc', textDecoration: 'none', transition: 'color 0.3s' }} className="footer-link">制作の流れ</a></li>
-                            <li><a href="#cta" style={{ color: '#ccc', textDecoration: 'none', transition: 'color 0.3s' }} className="footer-link">よくある質問</a></li>
+                            <li><a href="https://forms.gle/BBb3FbiVkBH4qbFr6" target="_blank" rel="noopener noreferrer" style={{ color: '#ccc', textDecoration: 'none', transition: 'color 0.3s' }} className="footer-link">よくある質問</a></li>
                         </ul>
                     </div>
 

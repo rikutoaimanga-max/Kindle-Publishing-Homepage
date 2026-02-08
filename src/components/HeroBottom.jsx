@@ -10,7 +10,7 @@ const HeroBottom = () => {
             textAlign: 'center'
         }}>
             <div className="container">
-                <a href="#cta" style={{ display: 'inline-block', width: '100%', maxWidth: '800px', transition: 'transform 0.3s' }} className="hover-scale">
+                <a href="https://forms.gle/BBb3FbiVkBH4qbFr6" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', width: '100%', maxWidth: '800px', transition: 'transform 0.3s' }} className="hover-scale">
                     <img src={ctaImage} alt="無料カウンセリング" style={{ width: '100%', height: 'auto', mixBlendMode: 'multiply' }} />
                 </a>
             </div>

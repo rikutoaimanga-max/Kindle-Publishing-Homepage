@@ -112,7 +112,7 @@ const FAQ = () => {
                         「限定月3社まで」。<br />
                         まずは「診断」で、あなたの発信の資産価値を確かめてください。
                     </p>
-                    <a href="#cta" style={{ display: 'inline-block', width: '100%', maxWidth: '800px', transition: 'transform 0.3s' }} className="hover-scale">
+                    <a href="https://forms.gle/BBb3FbiVkBH4qbFr6" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', width: '100%', maxWidth: '800px', transition: 'transform 0.3s' }} className="hover-scale">
                         <img src={ctaImage} alt="無料カウンセリング" style={{ width: '100%', height: 'auto', mixBlendMode: 'multiply' }} />
                     </a>
                 </div>

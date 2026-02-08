@@ -14,10 +14,10 @@ const Header = () => {
     }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--color-secondary)' }}>
-          KINDLE PUBLISHER {/* Placeholder Logo */}
+          Kindle出版代行サービス {/* Placeholder Logo */}
         </div>
         <nav>
-          <a href="#cta" className="btn btn-primary" style={{ fontSize: '0.9rem', padding: '0.5rem 1rem' }}>
+          <a href="https://forms.gle/BBb3FbiVkBH4qbFr6" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ fontSize: '0.9rem', padding: '0.5rem 1rem' }}>
             無料カウンセリング
           </a>
         </nav>
