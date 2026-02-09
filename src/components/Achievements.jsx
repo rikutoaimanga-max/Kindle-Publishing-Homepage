@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/global.css';
-import ctaImage from '../assets/cta_banner.png';
+import '../styles/global.css';
+import CTA from './CTA';
 
 const Achievements = () => {
     const clients = [
@@ -67,9 +68,9 @@ const Achievements = () => {
                 </div>
 
                 <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-                    <a href="https://forms.gle/BBb3FbiVkBH4qbFr6" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', width: '100%', maxWidth: '800px', transition: 'transform 0.3s' }} className="hover-scale">
-                        <img src={ctaImage} alt="無料カウンセリング" style={{ width: '100%', height: 'auto', mixBlendMode: 'multiply' }} />
-                    </a>
+                    <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+                        <CTA />
+                    </div>
                 </div>
             </div>
         </section>
