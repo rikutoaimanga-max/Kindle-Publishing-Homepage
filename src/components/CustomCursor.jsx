@@ -26,8 +26,9 @@ const CustomCursor = () => {
 
         const animate = () => {
             // Lerp for the trailer (0.1 is the speed/smoothness factor)
-            trailerX += (mouseX - trailerX) * 0.1;
-            trailerY += (mouseY - trailerY) * 0.1;
+            // Decreased to 0.05 for more "slippery/heavy" feel
+            trailerX += (mouseX - trailerX) * 0.05;
+            trailerY += (mouseY - trailerY) * 0.05;
 
             trailer.style.transform = `translate3d(${trailerX}px, ${trailerY}px, 0) scale(${isHovering ? 1.5 : 1})`;
 
