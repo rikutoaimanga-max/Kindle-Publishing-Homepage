@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-primary: #ffffff;
+  /* White background */
+  --color-secondary: #00A0E9;
+  /* Cyan/Blue accent */
+  --color-accent: #f5a623;
+  /* Gold/Orange for CTA */
+  --color-text-body: #333333;
+  /* Dark gray text */
+  --color-text-light: #ffffff;
+  /* White text for dark backgrounds */
+  --color-bg-light: #f0f8ff;
+  /* Very light blue for alternating sections */
+
+  /* Typography */
+  --font-family-base: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  --font-family-serif: "Noto Serif JP", "Hiragino Mincho ProN", serif;
+
+  --spacing-base: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-primary);
+  color: var(--color-text-body);
+  line-height: 1.6;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-base);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: var(--font-family-serif);
+  /* Elegant Serif for titles */
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-secondary);
+  /* Blue title */
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-bottom: 2px solid var(--color-secondary);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50px;
+  /* Rounded pill shape */
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #f5a623, #f7b731);
+  /* Orange/Gold gradient */
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #ffbf45, #ffcd5e);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Utility classes for visibility */
+  .desktop-only {
+    display: block;
+  }
+
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  .mobile-only {
+    display: flex !important;
+  }
+}
