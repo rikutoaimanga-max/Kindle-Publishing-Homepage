@@ -17,7 +17,7 @@ const Header = () => {
           集客・ブランディング特化型 Kindle出版代行サービス {/* Placeholder Logo */}
         </div>
         <nav>
-          <a href="https://forms.gle/BBb3FbiVkBH4qbFr6" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ fontSize: '0.9rem', padding: '0.5rem 1rem' }}>
+          <a href="https://forms.gle/BBb3FbiVkBH4qbFr6" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ fontSize: '0.9rem', padding: '0.5rem 1rem', color: '#000' }}>
             0円出版カウンセリングはこちらから
           </a>
         </nav>
