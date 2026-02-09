@@ -15,6 +15,7 @@ import SmoothScrollWrapper from './components/SmoothScrollWrapper';
 import CustomCursor from './components/CustomCursor';
 import './index.css';
 
+// App Version: CustomCursor Fix 1.1
 function App() {
   return (
     <>
