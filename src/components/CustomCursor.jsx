@@ -5,6 +5,12 @@ const CustomCursor = () => {
     const trailerRef = useRef(null);
     const [isHovering, setIsHovering] = useState(false);
 
+    // Use refs to store coordinates to persist them across re-renders (when state changes)
+    const mouseX = useRef(0);
+    const mouseY = useRef(0);
+    const trailerX = useRef(0);
+    const trailerY = useRef(0);
+
     useEffect(() => {
         const cursor = cursorRef.current;
         const trailer = trailerRef.current;
@@ -17,20 +23,19 @@ const CustomCursor = () => {
         let trailerY = 0;
 
         const onMouseMove = (e) => {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
+            mouseX.current = e.clientX;
+            mouseY.current = e.clientY;
 
             // Immediate update for the dot
-            cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+            cursor.style.transform = `translate3d(${mouseX.current}px, ${mouseY.current}px, 0)`;
         };
 
         const animate = () => {
             // Lerp for the trailer (0.1 is the speed/smoothness factor)
-            // Decreased to 0.05 for more "slippery/heavy" feel
-            trailerX += (mouseX - trailerX) * 0.05;
-            trailerY += (mouseY - trailerY) * 0.05;
+            trailerX.current += (mouseX.current - trailerX.current) * 0.1;
+            trailerY.current += (mouseY.current - trailerY.current) * 0.1;
 
-            trailer.style.transform = `translate3d(${trailerX}px, ${trailerY}px, 0) scale(${isHovering ? 1.5 : 1})`;
+            trailer.style.transform = `translate3d(${trailerX.current}px, ${trailerY.current}px, 0) scale(${isHovering ? 1.5 : 1})`;
 
             requestAnimationFrame(animate);
         };
@@ -64,7 +69,7 @@ const CustomCursor = () => {
                     left: 0,
                     width: '8px',
                     height: '8px',
-                    backgroundColor: '#333', // Dark dot
+                    backgroundColor: '#ffffff', // White dot for difference mode
                     borderRadius: '50%',
                     pointerEvents: 'none',
                     zIndex: 9999,
@@ -72,7 +77,6 @@ const CustomCursor = () => {
                     marginTop: '-4px', // Center offset
                     marginLeft: '-4px', // Center offset
                     mixBlendMode: 'difference',
-                    color: 'white' // For mix-blend-mode to work against dark backgrounds if needed
                 }}
             />
             <div
@@ -83,7 +87,7 @@ const CustomCursor = () => {
                     left: 0,
                     width: '40px',
                     height: '40px',
-                    border: '1px solid #333', // Dark outline
+                    border: '1px solid #ffffff', // White outline for difference mode
                     borderRadius: '50%',
                     pointerEvents: 'none',
                     zIndex: 9998,
