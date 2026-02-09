@@ -4,7 +4,6 @@ import '../styles/global.css';
 const CTA = () => {
     return (
         <div style={{
-            fontFamily: '"Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif',
             maxWidth: '800px',
             margin: '0 auto',
             boxShadow: '0 10px 25px rgba(0,0,0,0.15)',

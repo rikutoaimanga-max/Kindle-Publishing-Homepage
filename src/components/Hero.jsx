@@ -97,7 +97,8 @@ const Hero = () => {
                             fontSize: '1.1rem', // Larger font
                             color: 'var(--color-secondary)',
                             boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
-                            fontWeight: 'bold'
+                            fontWeight: 'bold',
+                            fontFamily: 'var(--font-family-base)' // Ensure consistent font
                         }}>
                             {badge}
                         </div>
