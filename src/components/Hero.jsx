@@ -108,16 +108,11 @@ const Hero = () => {
 
                 <p style={{
                     textAlign: 'center',
-                    fontSize: '1.2rem',
-                    fontWeight: 'bold',
-                    color: '#e60000', // Red for emphasis
-                    marginTop: '1rem',
-                    background: 'rgba(255, 255, 255, 0.8)',
-                    display: 'inline-block',
-                    padding: '0.5rem 1rem',
-                    borderRadius: '8px'
+                    fontSize: '0.9rem',
+                    color: '#333',
+                    marginTop: '0.5rem',
                 }}>
-                    現在、実績作り中のため、お得にご案内できます！
+                    ※現在、実績作り中のため、お得にご案内できます！
                 </p>
 
 
