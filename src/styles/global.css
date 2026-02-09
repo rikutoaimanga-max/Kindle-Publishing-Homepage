@@ -130,6 +130,10 @@ ul {
   .mobile-only {
     display: none !important;
   }
+
+  .mobile-br {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -139,6 +143,10 @@ ul {
 
   .mobile-only {
     display: flex !important;
+  }
+
+  .mobile-br {
+    display: block;
   }
 
   /* Mobile Typography & Spacing Overrides */
