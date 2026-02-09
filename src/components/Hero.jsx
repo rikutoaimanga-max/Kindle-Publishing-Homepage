@@ -68,8 +68,8 @@ const Hero = () => {
                     </span>
                 </h1>
 
-                <p style={{
-                    fontSize: '1.3rem',
+                <p className="hero-description" style={{
+                    fontSize: '1.1rem', // Reduced from 1.3rem
                     marginBottom: '3.5rem',
                     maxWidth: '900px',
                     marginLeft: 'auto',

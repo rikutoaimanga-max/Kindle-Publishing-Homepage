@@ -193,6 +193,13 @@ ul {
     font-size: 0.9rem !important;
   }
 
+  .hero-description {
+    font-size: 0.85rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 2rem !important;
+    padding: 0 10px;
+  }
+
   /* Header Mobile Adjustments */
   .header-container {
     flex-direction: column;
