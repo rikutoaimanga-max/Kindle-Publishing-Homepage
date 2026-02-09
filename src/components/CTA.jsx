@@ -6,36 +6,38 @@ const CTA = () => {
         <div style={{
             maxWidth: '800px',
             margin: '0 auto',
-            boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
+            boxShadow: '0 10px 30px rgba(0, 160, 233, 0.15)', // Blue shadow
             borderRadius: '20px',
             overflow: 'hidden',
-            backgroundColor: '#fff'
+            backgroundColor: '#fff',
+            border: '1px solid #e0f2ff' // Subtle blue border
         }}>
             {/* Header Section */}
             <div style={{
-                background: '#333', // Dark background like the image
-                color: '#fff',
-                padding: '20px',
+                background: 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%)', // Light blue gradient
+                padding: '30px 20px',
                 textAlign: 'center',
-                position: 'relative'
+                position: 'relative',
+                borderBottom: '1px solid #e0f2ff'
             }}>
                 <div style={{
                     fontSize: '1rem',
                     fontWeight: 'bold',
-                    marginBottom: '5px',
-                    color: '#e0e0e0',
-                    borderBottom: '1px solid #777',
+                    marginBottom: '10px',
+                    color: '#555',
                     display: 'inline-block',
-                    paddingBottom: '5px'
+                    paddingBottom: '5px',
+                    letterSpacing: '0.05em'
                 }}>
                     あなたの知識・経験を資産に変える60分
                 </div>
                 <div style={{
                     fontSize: '2.5rem',
                     fontWeight: '900',
-                    color: '#c5a059', // Gold color
-                    textShadow: '0 2px 4px rgba(0,0,0,0.5)',
-                    lineHeight: '1.2'
+                    color: 'var(--color-secondary)', // #00A0E9 Blue
+                    textShadow: '0 2px 4px rgba(0,0,0,0.05)',
+                    lineHeight: '1.2',
+                    fontFamily: 'var(--font-family-serif)' // Consistent serif for headings
                 }}>
                     0円カウンセリング
                 </div>
@@ -43,17 +45,17 @@ const CTA = () => {
 
             {/* Body Section */}
             <div style={{
-                padding: '30px',
+                padding: '40px 30px',
                 backgroundColor: '#fff'
             }}>
                 {/* Checklist */}
                 <div style={{
                     display: 'flex',
                     flexDirection: 'column',
-                    gap: '15px',
-                    marginBottom: '30px',
-                    maxWidth: '500px',
-                    margin: '0 auto 30px'
+                    gap: '20px',
+                    marginBottom: '40px',
+                    maxWidth: '550px',
+                    margin: '0 auto 40px'
                 }}>
                     {[
                         '今のあなたの出版ポテンシャルを診断',
@@ -66,22 +68,22 @@ const CTA = () => {
                             fontSize: '1.1rem',
                             fontWeight: 'bold',
                             color: '#333',
-                            borderBottom: '2px dotted #ddd', // The dotted line in the image
-                            paddingBottom: '10px'
+                            borderBottom: '1px dashed #cceeff', // Subtle blue dashed line
+                            paddingBottom: '15px'
                         }}>
                             <span style={{
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
-                                width: '24px',
-                                height: '24px',
-                                backgroundColor: '#333',
+                                width: '28px',
+                                height: '28px',
+                                backgroundColor: 'var(--color-secondary)', // Blue check bg
                                 color: '#fff',
                                 marginRight: '15px',
-                                fontSize: '14px',
+                                fontSize: '16px',
                                 fontWeight: 'bold',
                                 flexShrink: 0,
-                                borderRadius: '3px' // Slight rounded checklist box
+                                borderRadius: '50%' // Circle check
                             }}>
                                 ✓
                             </span>
@@ -96,22 +98,22 @@ const CTA = () => {
                         href="https://forms.gle/BBb3FbiVkBH4qbFr6"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="cta-button-hover" // We will add hover effect in global CSS or inline if simple
+                        className="cta-button-hover"
                         style={{
                             display: 'inline-flex',
                             alignItems: 'center',
                             justifyContent: 'space-between',
-                            backgroundColor: '#0055ff', // Bright blue
+                            background: 'linear-gradient(to right, #f5a623, #f7b731)', // Orange gradient (btn-primary)
                             color: '#fff',
                             textDecoration: 'none',
-                            padding: '15px 30px 15px 80px', // Left padding for the bubble
+                            padding: '20px 40px 20px 90px', // Left padding for the bubble
                             borderRadius: '50px',
                             fontWeight: 'bold',
                             fontSize: '1.5rem',
                             position: 'relative',
                             width: '100%',
-                            maxWidth: '550px',
-                            boxShadow: '0 4px 15px rgba(0, 85, 255, 0.4)',
+                            maxWidth: '600px',
+                            boxShadow: '0 10px 20px rgba(245, 166, 35, 0.4)', // Orange shadow
                             transition: 'transform 0.2s, box-shadow 0.2s',
                             boxSizing: 'border-box'
                         }}
@@ -120,24 +122,24 @@ const CTA = () => {
                         <div style={{
                             position: 'absolute',
                             top: '50%',
-                            left: '10px',
+                            left: '15px',
                             transform: 'translateY(-50%)',
-                            width: '60px',
-                            height: '60px',
-                            backgroundColor: '#fff', // White bubble? Or blue with white border? Image looks like circle.
-                            border: '2px solid #fff',
+                            width: '65px',
+                            height: '65px',
+                            backgroundColor: '#fff',
+                            border: '2px solid #f5a623', // Orange border
                             borderRadius: '50%',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            color: '#0055ff',
-                            fontSize: '0.9rem',
+                            color: '#f5a623', // Orange text
+                            fontSize: '1rem',
                             fontWeight: '900',
                             lineHeight: '1.1',
                             textAlign: 'center',
                             zIndex: 1,
                             transform: 'translateY(-50%) rotate(-10deg)',
-                            boxShadow: '0 2px 5px rgba(0,0,0,0.2)'
+                            boxShadow: '0 2px 5px rgba(0,0,0,0.1)'
                         }}>
                             今すぐ
                         </div>
@@ -146,23 +148,23 @@ const CTA = () => {
                         <div style={{ flex: 1, textAlign: 'center' }}>
                             <div style={{
                                 fontSize: '0.9rem',
-                                backgroundColor: '#fff',
-                                color: '#0055ff',
+                                backgroundColor: 'rgba(255,255,255,0.2)', // Semi-transparent white
+                                color: '#fff',
                                 display: 'inline-block',
-                                padding: '2px 10px',
-                                borderRadius: '10px',
+                                padding: '4px 12px',
+                                borderRadius: '20px',
                                 marginBottom: '5px',
                                 fontWeight: 'bold'
                             }}>
                                 30秒でカンタン入力!
                             </div>
-                            <div style={{ fontSize: '1.4rem' }}>
+                            <div style={{ fontSize: '1.6rem', textShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>
                                 カウンセリングを予約する
                             </div>
                         </div>
 
                         {/* Arrow */}
-                        <span style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>&gt;</span>
+                        <span style={{ fontSize: '1.5rem', fontWeight: 'bold', paddingLeft: '10px' }}>&gt;</span>
                     </a>
                 </div>
             </div>
