@@ -18,7 +18,7 @@ const Header = () => {
         </div>
         <nav>
           <a href="https://forms.gle/BBb3FbiVkBH4qbFr6" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ fontSize: '0.9rem', padding: '0.5rem 1rem' }}>
-            無料カウンセリング
+            0円出版カウンセリングはこちらから
           </a>
         </nav>
       </div>
