@@ -83,10 +83,11 @@ const Hero = () => {
 
                 <div style={{
                     display: 'flex',
+                    flexDirection: 'column', // Stack vertically
+                    alignItems: 'center', // Center align items
                     justifyContent: 'center',
-                    gap: '1.5rem',
-                    marginBottom: '0',
-                    flexWrap: 'wrap'
+                    gap: '1rem', // Slightly reduced gap for vertical stacking
+                    marginBottom: '0'
                 }}>
                     {['Xフォロワー15万人、8万人のインフルエンサーの書籍を制作中', 'Amazonレビュー500件超えの大ヒット作の漫画家実績あり'].map((badge, index) => (
                         <div key={index} style={{
