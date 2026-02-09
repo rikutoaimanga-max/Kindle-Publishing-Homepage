@@ -41,10 +41,13 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  display: block;
+  /* Changed from flex/place-items center to block for normal flow */
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
+  width: 100%;
 }
 
 h1 {
