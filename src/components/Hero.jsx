@@ -47,7 +47,7 @@ const Hero = () => {
             {/* Main Content Container */}
             <div className="container" style={{ position: 'relative', zIndex: 10 }}>
 
-                <h1 style={{
+                <h1 className="hero-title" style={{
                     fontSize: 'clamp(3rem, 7vw, 6rem)',
                     fontWeight: '900',
                     lineHeight: '1.3',
@@ -81,7 +81,7 @@ const Hero = () => {
                     全て『丸投げ』で集客とブランディングを同時に達成しませんか？
                 </p>
 
-                <div style={{
+                <div className="hero-badges-container" style={{
                     display: 'flex',
                     flexDirection: 'column', // Stack vertically
                     alignItems: 'center', // Center align items
@@ -90,7 +90,7 @@ const Hero = () => {
                     marginBottom: '0'
                 }}>
                     {['Amazonレビュー500件を超える大ヒット作の漫画化実績あり', 'Xフォロワー8万人、15万人のインフルエンサーの作品を制作中'].map((badge, index) => (
-                        <div key={index} style={{
+                        <div key={index} className="hero-badge" style={{
                             background: '#ffffff',
                             border: '2px solid var(--color-secondary)',
                             padding: '0.8rem 1.6rem',

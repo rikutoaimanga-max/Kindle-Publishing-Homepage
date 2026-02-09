@@ -44,7 +44,7 @@ const CTA = () => {
             </div>
 
             {/* Body Section */}
-            <div style={{
+            <div className="cta-container" style={{
                 padding: '40px 30px',
                 backgroundColor: '#fff'
             }}>
@@ -98,7 +98,7 @@ const CTA = () => {
                         href="https://forms.gle/BBb3FbiVkBH4qbFr6"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="cta-button-hover"
+                        className="cta-button-hover cta-button"
                         style={{
                             display: 'inline-flex',
                             alignItems: 'center',
@@ -106,7 +106,7 @@ const CTA = () => {
                             background: 'linear-gradient(to right, #f5a623, #f7b731)', // Orange gradient (btn-primary)
                             color: '#fff',
                             textDecoration: 'none',
-                            padding: '20px 40px 20px 90px', // Left padding for the bubble
+                            padding: '20px 40px 20px 90px', // Default desktop padding
                             borderRadius: '50px',
                             fontWeight: 'bold',
                             fontSize: '1.5rem',
@@ -119,7 +119,7 @@ const CTA = () => {
                         }}
                     >
                         {/* Bubble "Imasugu" */}
-                        <div style={{
+                        <div className="cta-bubble" style={{
                             position: 'absolute',
                             top: '50%',
                             left: '15px',
@@ -138,7 +138,6 @@ const CTA = () => {
                             lineHeight: '1.1',
                             textAlign: 'center',
                             zIndex: 1,
-                            transform: 'translateY(-50%) rotate(-10deg)',
                             boxShadow: '0 2px 5px rgba(0,0,0,0.1)'
                         }}>
                             今すぐ
@@ -146,7 +145,7 @@ const CTA = () => {
 
                         {/* Button Text Container */}
                         <div style={{ flex: 1, textAlign: 'center' }}>
-                            <div style={{
+                            <div className="cta-text-sub" style={{
                                 fontSize: '0.9rem',
                                 backgroundColor: 'rgba(255,255,255,0.2)', // Semi-transparent white
                                 color: '#fff',
@@ -158,7 +157,7 @@ const CTA = () => {
                             }}>
                                 30秒でカンタン入力!
                             </div>
-                            <div style={{ fontSize: '1.6rem', textShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>
+                            <div className="cta-text-main" style={{ fontSize: '1.6rem', textShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>
                                 カウンセリングを予約する
                             </div>
                         </div>
