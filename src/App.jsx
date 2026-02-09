@@ -11,26 +11,29 @@ import Plans from './components/Plans';
 import Reasons from './components/Reasons';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import SmoothScrollWrapper from './components/SmoothScrollWrapper';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Hero />
-      <HeroBottom />
-      <Problem />
-      <Solution />
-      <Achievements />
-      <Profile />
-      <ServiceScope />
-      <Plans />
-      <Reasons />
-      <div id="cta">
-        <FAQ />
-        {/* FAQ contains the final CTA "Closing" section as per request structure */}
+    <SmoothScrollWrapper>
+      <div className="App">
+        <Header />
+        <Hero />
+        <HeroBottom />
+        <Problem />
+        <Solution />
+        <Achievements />
+        <Profile />
+        <ServiceScope />
+        <Plans />
+        <Reasons />
+        <div id="cta">
+          <FAQ />
+          {/* FAQ contains the final CTA "Closing" section as per request structure */}
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </SmoothScrollWrapper>
   );
 }
 
