@@ -88,22 +88,36 @@ const Hero = () => {
                     marginBottom: '0',
                     flexWrap: 'wrap'
                 }}>
-                    {['25冊出版', 'レビュー600件超ヒット作あり', 'Amazon総合12位', 'Xフォロワー1.7万人', 'X15万人インフルエンサーの書籍も対応'].map((badge, index) => (
+                    {['Xフォロワー15万人、8万人のインフルエンサーの書籍を制作中', 'Amazonレビュー500件超えの大ヒット作の漫画家実績あり'].map((badge, index) => (
                         <div key={index} style={{
                             background: '#ffffff',
-                            border: '2px solid var(--color-secondary)', // Thicker border
-                            padding: '0.8rem 1.6rem', // Larger padding
+                            border: '2px solid var(--color-secondary)',
+                            padding: '0.8rem 1.6rem',
                             borderRadius: '50px',
-                            fontSize: '1.1rem', // Larger font
+                            fontSize: '1.1rem',
                             color: 'var(--color-secondary)',
                             boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
                             fontWeight: 'bold',
-                            fontFamily: 'var(--font-family-base)' // Ensure consistent font
+                            fontFamily: 'var(--font-family-base)'
                         }}>
                             {badge}
                         </div>
                     ))}
                 </div>
+
+                <p style={{
+                    textAlign: 'center',
+                    fontSize: '1.2rem',
+                    fontWeight: 'bold',
+                    color: '#e60000', // Red for emphasis
+                    marginTop: '1rem',
+                    background: 'rgba(255, 255, 255, 0.8)',
+                    display: 'inline-block',
+                    padding: '0.5rem 1rem',
+                    borderRadius: '8px'
+                }}>
+                    現在、実績作り中のため、お得にご案内できます！
+                </p>
 
 
             </div>
