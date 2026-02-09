@@ -6,6 +6,7 @@ import Problem from './components/Problem';
 import Solution from './components/Solution';
 import Achievements from './components/Achievements';
 import Profile from './components/Profile';
+import ServiceScope from './components/ServiceScope';
 import Plans from './components/Plans';
 import Reasons from './components/Reasons';
 import FAQ from './components/FAQ';
@@ -21,6 +22,7 @@ function App() {
       <Solution />
       <Achievements />
       <Profile />
+      <ServiceScope />
       <Plans />
       <Reasons />
       <div id="cta">
