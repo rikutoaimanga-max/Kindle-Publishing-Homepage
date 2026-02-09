@@ -17,11 +17,6 @@ const CustomCursor = () => {
 
         if (!cursor || !trailer) return;
 
-        let mouseX = 0;
-        let mouseY = 0;
-        let trailerX = 0;
-        let trailerY = 0;
-
         const onMouseMove = (e) => {
             mouseX.current = e.clientX;
             mouseY.current = e.clientY;
