@@ -9,11 +9,11 @@ const SmoothScrollWrapper = ({ children }) => {
     useEffect(() => {
         // Initialize Lenis
         const lenis = new Lenis({
-            duration: 3.5, // Further increased for "heavy/slippery" feel
+            duration: 1.2,
             easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
             direction: 'vertical',
             gestureDirection: 'vertical',
-            smoothWheel: true,
+            smooth: true,
             mouseMultiplier: 1,
             smoothTouch: false,
             touchMultiplier: 2,
@@ -23,14 +23,6 @@ const SmoothScrollWrapper = ({ children }) => {
 
         function raf(time) {
             lenis.raf(time);
-
-            // Skew effect based on velocity
-            if (contentRef.current) {
-                // Adjust the multiplier (0.1) to control skew intensity
-                const skew = lenis.velocity * 0.15;
-                contentRef.current.style.transform = `skewY(${skew}deg)`;
-            }
-
             requestAnimationFrame(raf);
         }
 
@@ -42,7 +34,7 @@ const SmoothScrollWrapper = ({ children }) => {
     }, []);
 
     return (
-        <div ref={contentRef} style={{ width: '100%', overflow: 'hidden' }}>
+        <div ref={contentRef} style={{ width: '100%' }}>
             {children}
         </div>
     );
