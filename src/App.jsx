@@ -12,10 +12,13 @@ import Reasons from './components/Reasons';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import SmoothScrollWrapper from './components/SmoothScrollWrapper';
+import CustomCursor from './components/CustomCursor';
+import './index.css';
 
 function App() {
   return (
     <SmoothScrollWrapper>
+      <CustomCursor />
       <div className="App">
         <Header />
         <Hero />
