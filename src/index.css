@@ -90,3 +90,13 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* CTA Button Hover Effect */
+.cta-button-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-button-hover:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 85, 255, 0.5);
+}
