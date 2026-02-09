@@ -14,7 +14,7 @@ const Header = () => {
     }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--color-secondary)' }}>
-          Kindle出版代行サービス {/* Placeholder Logo */}
+          集客・ブランディング特化型 Kindle出版代行サービス {/* Placeholder Logo */}
         </div>
         <nav>
           <a href="https://forms.gle/BBb3FbiVkBH4qbFr6" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ fontSize: '0.9rem', padding: '0.5rem 1rem' }}>
