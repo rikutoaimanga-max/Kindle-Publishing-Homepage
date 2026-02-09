@@ -89,7 +89,7 @@ const Hero = () => {
                     gap: '1rem', // Slightly reduced gap for vertical stacking
                     marginBottom: '0'
                 }}>
-                    {['Xフォロワー15万人、8万人のインフルエンサーの書籍を制作中', 'Amazonレビュー500件超えの大ヒット作の漫画家実績あり'].map((badge, index) => (
+                    {['Amazonレビュー500件超えの大ヒット作の漫画家実績あり', 'Xフォロワー15万人、8万人のインフルエンサーの書籍を制作中'].map((badge, index) => (
                         <div key={index} style={{
                             background: '#ffffff',
                             border: '2px solid var(--color-secondary)',
