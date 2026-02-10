@@ -134,6 +134,10 @@ ul {
   .mobile-br {
     display: none;
   }
+
+  .hero-marker {
+    background: linear-gradient(to bottom, transparent 60%, rgba(0, 160, 233, 0.2) 60%);
+  }
 }
 
 @media (max-width: 768px) {
@@ -150,6 +154,10 @@ ul {
   }
 
   /* Mobile Typography & Spacing Overrides */
+  .hero-marker {
+    background: none !important;
+  }
+
   .container {
     padding: 0 1rem;
   }

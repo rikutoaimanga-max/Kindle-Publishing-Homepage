@@ -56,13 +56,13 @@ const Hero = () => {
                     color: '#333'
                 }}>
                     <span style={{ fontSize: '0.6em', display: 'block', marginBottom: '1.5rem', letterSpacing: '0.1em' }}>あなたの<br />知識・経験を、</span>
-                    <span style={{
+                    <span className="hero-marker" style={{
                         fontFamily: 'var(--font-family-serif)',
                         color: 'var(--color-secondary)',
                         fontSize: '0.8em',
                         display: 'block',
                         lineHeight: '1.2',
-                        background: 'linear-gradient(to bottom, transparent 60%, rgba(0, 160, 233, 0.2) 60%)' // Marker style highlight
+                        // background property moved to CSS .hero-marker for responsive control
                     }}>
                         24時間働き続ける<br />『最強の営業マン』へ。
                     </span>
