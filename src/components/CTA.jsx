@@ -36,7 +36,13 @@ const CTA = () => {
                     0
                 </div>
 
-                <div style={{ textAlign: 'left', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <div style={{
+                    textAlign: 'left',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    paddingTop: '10px' // Move text down slightly
+                }}>
                     <div style={{
                         fontSize: 'clamp(0.9rem, 2.2vw, 1.1rem)', // Slightly increased
                         fontWeight: 'bold',
