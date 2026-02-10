@@ -88,27 +88,13 @@ const Problem = () => {
                     gap: '2rem',
                     flexWrap: 'wrap'
                 }}>
-                    {/* Placeholder for Image */}
-                    <div style={{
-                        width: '200px',
-                        height: '150px',
-                        backgroundColor: '#ccc',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        borderRadius: '10px',
-                        color: '#666',
-                        fontWeight: 'bold'
-                    }}>
-                        [Person Image]
-                    </div>
-
                     <div style={{
                         fontSize: 'clamp(1.5rem, 4vw, 2.5rem)',
                         fontWeight: '900',
                         color: 'var(--color-secondary)',
                         textShadow: '2px 2px 0px #fff, -2px -2px 0px #fff, 2px -2px 0px #fff, -2px 2px 0px #fff',
-                        letterSpacing: '0.05em'
+                        letterSpacing: '0.05em',
+                        textAlign: 'center' // Ensure text is centered
                     }}>
                         私たちにお任せください！
                     </div>
