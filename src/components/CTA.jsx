@@ -12,39 +12,53 @@ const CTA = () => {
             backgroundColor: '#fff',
             border: '1px solid #e0f2ff' // Subtle blue border
         }}>
-            {/* Header Section */}
             <div style={{
                 background: 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%)', // Light blue gradient
                 padding: '30px 20px',
                 textAlign: 'center',
                 position: 'relative',
-                borderBottom: '1px solid #e0f2ff'
+                borderBottom: '1px solid #e0f2ff',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '20px'
             }}>
                 <div style={{
-                    fontSize: '1rem',
-                    fontWeight: 'bold',
-                    marginBottom: '10px',
-                    color: '#555',
-                    display: 'inline-block',
-                    paddingBottom: '5px',
-                    letterSpacing: '0.05em',
-                    borderBottom: '2px solid var(--color-secondary)' // Added blue underline
-                }}>
-                    あなたの情報資産を書籍に変える戦略をご提案
-                </div>
-                <div style={{
-                    fontSize: '2.5rem',
+                    fontSize: 'clamp(6rem, 12vw, 8rem)',
                     fontWeight: '900',
                     color: 'var(--color-secondary)', // #00A0E9 Blue
                     textShadow: '0 2px 4px rgba(0,0,0,0.05)',
                     lineHeight: '1',
                     fontFamily: 'var(--font-family-serif)', // Consistent serif for headings
-                    display: 'flex',
-                    alignItems: 'baseline',
-                    justifyContent: 'center'
+                    flexShrink: 0
                 }}>
-                    <span style={{ fontSize: '2.2em', marginRight: '5px', transform: 'translateY(5px)' }}>0</span>
-                    <span>円カウンセリング</span>
+                    0
+                </div>
+
+                <div style={{ textAlign: 'left', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                    <div style={{
+                        fontSize: 'clamp(0.9rem, 2.5vw, 1.1rem)',
+                        fontWeight: 'bold',
+                        color: '#555',
+                        display: 'inline-block',
+                        paddingBottom: '5px',
+                        letterSpacing: '0.05em',
+                        borderBottom: '2px solid var(--color-secondary)', // Added blue underline
+                        marginBottom: '5px',
+                        lineHeight: '1.4'
+                    }}>
+                        あなたの情報資産を<br className="mobile-br" />書籍に変える戦略をご提案
+                    </div>
+                    <div style={{
+                        fontSize: 'clamp(1.8rem, 4vw, 2.5rem)',
+                        fontWeight: '900',
+                        color: 'var(--color-secondary)', // #00A0E9 Blue
+                        textShadow: '0 2px 4px rgba(0,0,0,0.05)',
+                        lineHeight: '1',
+                        fontFamily: 'var(--font-family-serif)' // Consistent serif for headings
+                    }}>
+                        円カウンセリング
+                    </div>
                 </div>
             </div>
 
