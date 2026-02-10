@@ -50,7 +50,7 @@ const Hero = () => {
             <div className="container" style={{ position: 'relative', zIndex: 10 }}>
 
                 <h1 className="hero-title" style={{
-                    fontSize: 'clamp(3.2rem, 8vw, 6.5rem)', // Slightly reduced from 7rem
+                    fontSize: 'clamp(3.0rem, 7.5vw, 6.0rem)', // Reduced further to 6.0rem max
                     fontWeight: '900',
                     lineHeight: '1.3',
                     margin: '0 auto 2rem',
@@ -61,7 +61,7 @@ const Hero = () => {
                     <span className="hero-marker" style={{
                         fontFamily: 'var(--font-family-serif)',
                         color: 'var(--color-secondary)',
-                        fontSize: '0.9em', // Slightly reduced from 1.0em
+                        fontSize: '0.85em', // Reduced from 0.9em
                         display: 'block',
                         lineHeight: '1.2',
                         // background property moved to CSS .hero-marker for responsive control
@@ -71,7 +71,7 @@ const Hero = () => {
                 </h1>
 
                 <p className="hero-description" style={{
-                    fontSize: '1.25rem', // Slightly reduced from 1.4rem
+                    fontSize: '1.15rem', // Reduced from 1.25rem
                     marginBottom: '3.5rem',
                     maxWidth: '1000px',
                     marginLeft: 'auto',
@@ -88,7 +88,7 @@ const Hero = () => {
                     flexDirection: 'column', // Stack vertically
                     alignItems: 'center', // Center align items
                     justifyContent: 'center',
-                    gap: '1.2rem',
+                    gap: '1.0rem', // Reduced gap
                     marginBottom: '0'
                 }}>
                     {[
@@ -100,7 +100,7 @@ const Hero = () => {
                             border: '3px solid var(--color-secondary)',
                             padding: '1rem 2rem',
                             borderRadius: '50px',
-                            fontSize: '1.2rem', // Slightly reduced from 1.3rem
+                            fontSize: '1.15rem', // Reduced from 1.2rem
                             color: 'var(--color-secondary)',
                             boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
                             fontWeight: 'bold',
