@@ -20,7 +20,7 @@ const Solution = () => {
     return (
         <section style={{ backgroundColor: 'var(--color-primary)', padding: '80px 0', color: 'var(--color-text-light)' }}>
             <div className="container">
-                <h2 className="section-title">Amazon × 二刀流の圧倒的優位性</h2>
+                <h2 className="section-title">なぜ Amazon Kindle出版なのか？</h2>
                 <div className="grid grid-3">
                     {points.map((point, index) => (
                         <div key={index} style={{
