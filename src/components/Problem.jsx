@@ -10,7 +10,7 @@ const Problem = () => {
         { text: '出版の時間がない', icon: <FaClock /> },
         { text: 'リスト獲得の拡大', icon: <FaUserPlus /> },
         { text: 'バックエンド導線の増加', icon: <FaRoute /> },
-        { text: '独自の強みと差別化', icon: <FaPuzzlePiece /> },
+        { text: '競合との差別化', icon: <FaPuzzlePiece /> },
     ];
 
     return (
@@ -20,49 +20,105 @@ const Problem = () => {
                     <h2 className="section-title" style={{ color: '#000' }}>こんなお悩みありませんか？</h2>
                 </div>
 
-                {/* Problem Cards Row */}
+                {/* Problem Cards Container */}
                 <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
-                    gap: '1rem',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '1rem', // Gap between rows
                     marginBottom: '3rem'
                 }}>
-                    {problems.map((item, index) => (
-                        <div key={index} style={{
-                            backgroundColor: '#fff',
-                            border: '2px solid var(--color-secondary)',
-                            borderRadius: '10px',
-                            padding: '1.5rem 0.5rem',
-                            textAlign: 'center',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            alignItems: 'center',
-                            justifyContent: 'flex-start',
-                            height: '100%',
-                            boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
-                        }}>
-                            <div style={{
-                                fontSize: '2.5rem',
-                                color: '#555',
-                                marginBottom: '1rem',
-                                height: '50px',
+                    {/* Top Row (3 items) */}
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', // Wider min-width for fewer items
+                        gap: '1rem',
+                        justifyContent: 'center',
+                        maxWidth: '900px', // Limit width to keep them centered and nice
+                        margin: '0 auto',
+                        width: '100%'
+                    }}>
+                        {problems.slice(0, 3).map((item, index) => (
+                            <div key={index} style={{
+                                backgroundColor: '#fff',
+                                border: '2px solid var(--color-secondary)',
+                                borderRadius: '10px',
+                                padding: '1.5rem 0.5rem',
+                                textAlign: 'center',
                                 display: 'flex',
+                                flexDirection: 'column',
                                 alignItems: 'center',
-                                justifyContent: 'center'
+                                justifyContent: 'flex-start',
+                                height: '100%',
+                                boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
                             }}>
-                                {item.icon}
+                                <div style={{
+                                    fontSize: '2.5rem',
+                                    color: '#555',
+                                    marginBottom: '1rem',
+                                    height: '50px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center'
+                                }}>
+                                    {item.icon}
+                                </div>
+                                <p style={{
+                                    fontSize: '0.9rem',
+                                    fontWeight: 'bold',
+                                    color: '#333',
+                                    lineHeight: '1.4',
+                                    margin: 0
+                                }}>
+                                    {item.text}
+                                </p>
                             </div>
-                            <p style={{
-                                fontSize: '0.9rem',
-                                fontWeight: 'bold',
-                                color: '#333',
-                                lineHeight: '1.4',
-                                margin: 0
+                        ))}
+                    </div>
+
+                    {/* Bottom Row (4 items) */}
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+                        gap: '1rem',
+                        width: '100%'
+                    }}>
+                        {problems.slice(3).map((item, index) => (
+                            <div key={index + 3} style={{
+                                backgroundColor: '#fff',
+                                border: '2px solid var(--color-secondary)',
+                                borderRadius: '10px',
+                                padding: '1.5rem 0.5rem',
+                                textAlign: 'center',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'center',
+                                justifyContent: 'flex-start',
+                                height: '100%',
+                                boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
                             }}>
-                                {item.text}
-                            </p>
-                        </div>
-                    ))}
+                                <div style={{
+                                    fontSize: '2.5rem',
+                                    color: '#555',
+                                    marginBottom: '1rem',
+                                    height: '50px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center'
+                                }}>
+                                    {item.icon}
+                                </div>
+                                <p style={{
+                                    fontSize: '0.9rem',
+                                    fontWeight: 'bold',
+                                    color: '#333',
+                                    lineHeight: '1.4',
+                                    margin: 0
+                                }}>
+                                    {item.text}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
 
                 {/* Arrow */}
