@@ -57,7 +57,7 @@ const Hero = () => {
                     maxWidth: '1200px',
                     color: '#333'
                 }}>
-                    <span style={{ fontSize: '0.7em', display: 'block', marginBottom: '1.5rem', letterSpacing: '0.1em' }}>あなたの<br />知識・経験を、</span>
+                    <span style={{ fontSize: '0.7em', display: 'block', marginBottom: '1.5rem', letterSpacing: '0.1em' }}>あなたの<br />知識・経験を</span>
                     <span className="hero-marker" style={{
                         fontFamily: 'var(--font-family-serif)',
                         color: 'var(--color-secondary)',
