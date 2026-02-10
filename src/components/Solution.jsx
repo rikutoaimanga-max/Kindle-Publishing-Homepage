@@ -36,7 +36,7 @@ const Solution = () => {
                             <h3 style={{ color: 'var(--color-secondary)', marginBottom: '1rem', fontSize: '1.5rem' }}>
                                 Point {index + 1}<br />{point.title}
                             </h3>
-                            <p style={{ textAlign: 'left', color: '#333' }}>{point.desc}</p>
+                            <p style={{ textAlign: 'center', color: '#333' }}>{point.desc}</p>
                         </div>
                     ))}
                 </div>
