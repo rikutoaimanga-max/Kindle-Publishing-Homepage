@@ -152,7 +152,7 @@ const CTA = () => {
                                 <div style={{
                                     position: 'absolute',
                                     right: '-10px',
-                                    top: '50%',
+                                    top: '70%', // Moved down to point to main text
                                     transform: 'translateY(-50%)',
                                     width: 0,
                                     height: 0,
@@ -164,7 +164,7 @@ const CTA = () => {
                                 <div style={{
                                     position: 'absolute',
                                     right: '-7px',
-                                    top: '50%',
+                                    top: '70%', // Moved down to point to main text
                                     transform: 'translateY(-50%)',
                                     width: 0,
                                     height: 0,
