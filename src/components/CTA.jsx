@@ -103,7 +103,6 @@ const CTA = () => {
                         あなただけの 目的別 出版戦略をご提案いたします！
                     </p>
 
-                    {/* Button */}
                     <div style={{ textAlign: 'center' }}>
                         <a
                             href="https://forms.gle/BBb3FbiVkBH4qbFr6"
@@ -114,86 +113,97 @@ const CTA = () => {
                                 display: 'inline-flex',
                                 alignItems: 'center',
                                 justifyContent: 'space-between',
-                                background: 'linear-gradient(to right, #f5a623, #f7b731)', // Orange gradient (btn-primary)
+                                background: 'linear-gradient(to right, #f5a623, #f7b731)',
                                 color: '#fff',
                                 textDecoration: 'none',
-                                padding: '20px 40px', // Restored balanced padding
+                                padding: '15px 30px 15px 60px', // Left padding for bubble space
                                 borderRadius: '50px',
                                 fontWeight: 'bold',
                                 fontSize: '1.5rem',
                                 position: 'relative',
                                 width: '100%',
-                                maxWidth: '500px', // Reduced from 600px to shorten width
-                                boxShadow: '0 10px 20px rgba(245, 166, 35, 0.4)', // Orange shadow
+                                maxWidth: '500px',
+                                boxShadow: '0 10px 20px rgba(245, 166, 35, 0.4)',
                                 transition: 'transform 0.2s, box-shadow 0.2s',
-                                boxSizing: 'border-box'
+                                boxSizing: 'border-box',
+                                minHeight: '100px' // Ensure height for layout
                             }}
                         >
-                            {/* Bubble "Imasugu" */}
+                            {/* Bubble "Imasugu" - Left overlapping */}
                             <div className="cta-bubble" style={{
                                 position: 'absolute',
-                                top: '5px', // Moved down further from -5px
-                                left: '60px', // Moved right to overlap text
-                                width: '65px',
-                                height: '65px',
+                                top: '50%',
+                                left: '-25px', // Stick out from left
+                                transform: 'translateY(-50%)',
+                                width: '85px', // Larger bubble
+                                height: '85px',
                                 backgroundColor: '#fff',
-                                border: '2px solid #f5a623', // Orange border
+                                border: '3px solid #f5a623',
                                 borderRadius: '50%',
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
-                                color: '#f5a623', // Orange text
-                                fontSize: '1rem',
-                                boxShadow: '0 2px 5px rgba(0,0,0,0.1)'
+                                color: '#f5a623',
+                                fontSize: '1.2rem',
+                                boxShadow: '0 4px 10px rgba(0,0,0,0.15)',
+                                zIndex: 2
                             }}>
-                                <span style={{ display: 'inline-block', transform: 'rotate(-10deg)' }}>今すぐ</span>
-                                {/* Bubble Tail (Border) */}
+                                <span style={{ display: 'inline-block', transform: 'rotate(-15deg)', fontWeight: '900' }}>今すぐ</span>
+
+                                {/* Bubble Tail - Pointing to button content */}
                                 <div style={{
                                     position: 'absolute',
-                                    right: '-8px', // Adjusted to fit circle curve at 70% top
-                                    top: '70%',
-                                    transform: 'translateY(-50%) rotate(15deg)', // Rotated to point down
+                                    right: '-12px',
+                                    top: '60%',
+                                    transform: 'translateY(-50%)',
                                     width: 0,
                                     height: 0,
                                     borderTop: '10px solid transparent',
                                     borderBottom: '10px solid transparent',
-                                    borderLeft: '11px solid #f5a623'
+                                    borderLeft: '15px solid #f5a623'
                                 }} />
-                                {/* Bubble Tail (Inner) */}
                                 <div style={{
                                     position: 'absolute',
-                                    right: '-5px', // Adjusted offset
-                                    top: '70%',
-                                    transform: 'translateY(-50%) rotate(15deg)', // Rotated to match border
+                                    right: '-8px',
+                                    top: '60%',
+                                    transform: 'translateY(-50%)',
                                     width: 0,
                                     height: 0,
                                     borderTop: '7px solid transparent',
                                     borderBottom: '7px solid transparent',
-                                    borderLeft: '8px solid #fff'
+                                    borderLeft: '10px solid #fff'
                                 }} />
                             </div>
 
                             {/* Button Text Container */}
-                            <div style={{ flex: 1, textAlign: 'center', paddingTop: '5px' }}>
+                            <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                                {/* White Pill Badge */}
                                 <div className="cta-text-sub" style={{
-                                    fontSize: '1.1rem', // Increased from 0.9rem
-                                    backgroundColor: 'rgba(255,255,255,0.9)', // More opaque white for better contrast with black text
-                                    color: '#000', // Changed to black
+                                    fontSize: '1rem',
+                                    backgroundColor: '#fff',
+                                    color: '#000',
                                     display: 'inline-block',
-                                    padding: '4px 15px',
-                                    borderRadius: '20px',
-                                    marginBottom: '5px',
-                                    fontWeight: 'bold'
+                                    padding: '5px 20px',
+                                    borderRadius: '50px',
+                                    marginBottom: '8px',
+                                    fontWeight: 'bold',
+                                    boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+                                    whiteSpace: 'nowrap'
                                 }}>
                                     120秒でカンタン入力!
                                 </div>
-                                <div className="cta-text-main" style={{ fontSize: '1.6rem', textShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>
-                                    出版カウンセリング<span style={{ fontSize: '0.7em' }}>を依頼する</span>
+                                {/* Main Text */}
+                                <div className="cta-text-main" style={{
+                                    fontSize: '1.4rem',
+                                    textShadow: '0 1px 2px rgba(0,0,0,0.1)',
+                                    lineHeight: '1.2'
+                                }}>
+                                    出版カウンセリング<span style={{ fontSize: '0.85em' }}>を依頼する</span>
                                 </div>
                             </div>
 
                             {/* Arrow */}
-                            <span style={{ fontSize: '1.5rem', fontWeight: 'bold', paddingLeft: '10px' }}>&gt;</span>
+                            <span style={{ fontSize: '1.8rem', fontWeight: 'bold', paddingLeft: '10px' }}>&gt;</span>
                         </a>
                     </div>
                 </div>
