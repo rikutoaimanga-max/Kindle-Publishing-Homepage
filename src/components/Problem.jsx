@@ -24,11 +24,30 @@ const Problem = () => {
                     <h2 className="section-title" style={{ color: '#000' }}>こんなお悩みありませんか？</h2>
                 </div>
                 <div className="grid grid-2">
-                    <div style={{ padding: '2rem', backgroundColor: '#fff', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
+                    {/* Left Column */}
+                    <div>
                         <ul style={{ listStyle: 'none', padding: 0 }}>
                             {leftProblems.map((item, index) => (
-                                <li key={index} style={{ marginBottom: '1.5rem', paddingLeft: '2.5rem', position: 'relative', fontSize: '1.1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ position: 'absolute', left: 0, top: '50%', transform: 'translateY(-50%)', color: 'var(--color-accent)', fontSize: '1.5rem', display: 'flex' }}>
+                                <li key={index} style={{
+                                    marginBottom: '1rem',
+                                    padding: '1.5rem 1.5rem 1.5rem 4rem', // Increased left padding for icon
+                                    position: 'relative',
+                                    fontSize: '1.1rem',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    backgroundColor: '#fff', // White background for card
+                                    borderRadius: '8px', // Rounded corners
+                                    boxShadow: '0 2px 4px rgba(0,0,0,0.05)' // Subtle shadow
+                                }}>
+                                    <span style={{
+                                        position: 'absolute',
+                                        left: '1.5rem', // Adjusted icon position
+                                        top: '50%',
+                                        transform: 'translateY(-50%)',
+                                        color: 'var(--color-accent)',
+                                        fontSize: '1.5rem',
+                                        display: 'flex'
+                                    }}>
                                         {item.icon}
                                     </span>
                                     {item.text}
@@ -36,11 +55,30 @@ const Problem = () => {
                             ))}
                         </ul>
                     </div>
-                    <div style={{ padding: '2rem', backgroundColor: '#fff', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
+                    {/* Right Column */}
+                    <div>
                         <ul style={{ listStyle: 'none', padding: 0 }}>
                             {rightProblems.map((item, index) => (
-                                <li key={index} style={{ marginBottom: '1.5rem', paddingLeft: '2.5rem', position: 'relative', fontSize: '1.1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ position: 'absolute', left: 0, top: '50%', transform: 'translateY(-50%)', color: 'var(--color-accent)', fontSize: '1.5rem', display: 'flex' }}>
+                                <li key={index} style={{
+                                    marginBottom: '1rem',
+                                    padding: '1.5rem 1.5rem 1.5rem 4rem', // Increased left padding for icon
+                                    position: 'relative',
+                                    fontSize: '1.1rem',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    backgroundColor: '#fff', // White background for card
+                                    borderRadius: '8px', // Rounded corners
+                                    boxShadow: '0 2px 4px rgba(0,0,0,0.05)' // Subtle shadow
+                                }}>
+                                    <span style={{
+                                        position: 'absolute',
+                                        left: '1.5rem', // Adjusted icon position
+                                        top: '50%',
+                                        transform: 'translateY(-50%)',
+                                        color: 'var(--color-accent)',
+                                        fontSize: '1.5rem',
+                                        display: 'flex'
+                                    }}>
                                         {item.icon}
                                     </span>
                                     {item.text}
