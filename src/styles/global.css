@@ -158,6 +158,26 @@ ul {
     background: none !important;
   }
 
+  /* Reduce icon size and adjust position on mobile */
+  .hero-icon-left,
+  .hero-icon-right {
+    width: 80px !important;
+    height: 80px !important;
+    top: 15% !important;
+    /* Move higher up */
+    opacity: 0.6 !important;
+    /* Slightly more transparent */
+  }
+
+  /* Adjust horizontal position to fit screen edges */
+  .hero-icon-left {
+    left: -10px !important;
+  }
+
+  .hero-icon-right {
+    right: -10px !important;
+  }
+
   .container {
     padding: 0 1rem;
   }

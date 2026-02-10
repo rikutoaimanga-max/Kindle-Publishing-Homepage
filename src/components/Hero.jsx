@@ -15,8 +15,8 @@ const Hero = () => {
             overflow: 'hidden', // Prevent horizontal scroll from large icons
             position: 'relative'
         }}>
-            {/* Desktop Icons - Absolute Positioned */}
-            <div className="desktop-only" style={{
+            {/* Icons - Absolute Positioned */}
+            <div className="hero-icon-left" style={{
                 position: 'absolute',
                 top: '25%',
                 left: '5%',
@@ -30,7 +30,7 @@ const Hero = () => {
                 <img src={shuzoImg} alt="しゅーぞー" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%', border: '4px solid #ffffff' }} />
             </div>
 
-            <div className="desktop-only" style={{
+            <div className="hero-icon-right" style={{
                 position: 'absolute',
                 top: '25%',
                 right: '5%',
