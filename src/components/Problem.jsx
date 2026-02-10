@@ -3,7 +3,7 @@ import '../styles/global.css';
 
 const Problem = () => {
     return (
-        <section style={{ backgroundColor: '#f0f0f0', padding: '50px 0 80px', color: 'var(--color-text-dark)' }}>
+        <section style={{ backgroundColor: '#f0f0f0', padding: '50px 0 50px', color: 'var(--color-text-dark)' }}>
             <div className="container">
                 <div style={{ textAlign: 'center' }}>
                     <h2 className="section-title" style={{ color: '#000' }}>こんなお悩みありませんか？</h2>
