@@ -92,7 +92,7 @@ const Problem = () => {
                         fontSize: '2rem',
                         fontWeight: '600', // Matched with section-title
                         color: '#000',
-                        fontFamily: 'var(--font-family-serif)' // Added serif font
+                        fontFamily: 'var(--font-family-base)' // Changed to gothic
                     }}>
                         私たちにお任せください！
                     </h3>

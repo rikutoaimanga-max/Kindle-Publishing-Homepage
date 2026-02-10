@@ -29,7 +29,7 @@ const CTA = () => {
                     color: 'var(--color-secondary)', // #00A0E9 Blue
                     textShadow: '0 2px 4px rgba(0,0,0,0.05)',
                     lineHeight: '0.8', // Tighter line height for better vertical alignment visual
-                    fontFamily: 'var(--font-family-serif)', // Consistent serif for headings
+                    fontFamily: 'var(--font-family-base)', // Consistent gothic for headings
                     flexShrink: 0,
                     transform: 'translateY(-2px)' // Fine-tune vertical position
                 }}>
@@ -65,7 +65,7 @@ const CTA = () => {
                         color: 'var(--color-secondary)',
                         textShadow: '0 2px 4px rgba(0,0,0,0.05)',
                         lineHeight: '1.1',
-                        fontFamily: 'var(--font-family-serif)',
+                        fontFamily: 'var(--font-family-base)',
                         letterSpacing: '0.02em',
                         whiteSpace: 'nowrap',
                         marginTop: '0' // Removed top margin to bring closer
