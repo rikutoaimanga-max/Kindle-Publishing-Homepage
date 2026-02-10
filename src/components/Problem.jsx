@@ -24,17 +24,17 @@ const Problem = () => {
                 <div style={{
                     display: 'flex',
                     flexDirection: 'column',
+                    alignItems: 'center',
                     gap: '1rem', // Gap between rows
                     marginBottom: '3rem'
                 }}>
                     {/* Top Row (3 items) */}
                     <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', // Wider min-width for fewer items
-                        gap: '1rem',
+                        display: 'flex',
+                        flexWrap: 'wrap',
                         justifyContent: 'center',
-                        maxWidth: '900px', // Limit width to keep them centered and nice
-                        margin: '0 auto',
+                        gap: '1rem',
+                        maxWidth: '1000px',
                         width: '100%'
                     }}>
                         {problems.slice(0, 3).map((item, index) => (
@@ -49,7 +49,9 @@ const Problem = () => {
                                 alignItems: 'center',
                                 justifyContent: 'flex-start',
                                 height: '100%',
-                                boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
+                                boxShadow: '0 4px 6px rgba(0,0,0,0.05)',
+                                flex: '1 1 200px', // Flex grow, shrink, basis
+                                maxWidth: '240px' // Maximum width to keep them narrow
                             }}>
                                 <div style={{
                                     fontSize: '2.5rem',
@@ -77,12 +79,11 @@ const Problem = () => {
 
                     {/* Bottom Row (4 items) */}
                     <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
-                        gap: '1rem',
+                        display: 'flex',
+                        flexWrap: 'wrap',
                         justifyContent: 'center',
-                        maxWidth: '1000px', // Constrained width for narrower cards
-                        margin: '0 auto',
+                        gap: '1rem',
+                        maxWidth: '1000px',
                         width: '100%'
                     }}>
                         {problems.slice(3).map((item, index) => (
@@ -97,7 +98,9 @@ const Problem = () => {
                                 alignItems: 'center',
                                 justifyContent: 'flex-start',
                                 height: '100%',
-                                boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
+                                boxShadow: '0 4px 6px rgba(0,0,0,0.05)',
+                                flex: '1 1 200px', // Same flex settings
+                                maxWidth: '240px' // Same max width
                             }}>
                                 <div style={{
                                     fontSize: '2.5rem',
