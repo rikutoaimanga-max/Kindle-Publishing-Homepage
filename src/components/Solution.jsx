@@ -21,7 +21,7 @@ const Solution = () => {
         <section style={{ backgroundColor: 'var(--color-primary)', padding: '80px 0', color: 'var(--color-text-light)' }}>
             <div className="container">
                 <div style={{ textAlign: 'center' }}>
-                    <h2 className="section-title" style={{ color: '#000', fontFamily: 'var(--font-family-base)' }}>なぜ <span style={{ fontWeight: '900' }}>Amazon Kindle</span>出版なのか？</h2>
+                    <h2 className="section-title" style={{ color: '#000', fontFamily: 'var(--font-family-base)', textTransform: 'none' }}>なぜ、<span style={{ fontWeight: '900' }}>Amazon Kindle</span>出版なのか？</h2>
                 </div>
                 <div className="grid grid-3">
                     {points.map((point, index) => (
