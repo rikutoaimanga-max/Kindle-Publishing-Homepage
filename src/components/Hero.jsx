@@ -6,7 +6,7 @@ import shuzoImg from '../assets/shuzo_icon.png';
 const Hero = () => {
     return (
         <section className="hero-section" style={{
-            padding: '120px 0 40px', // Top padding for fixed header
+            padding: '180px 0 40px', // Increased top padding to push text down
             background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)', // Light clean gradient
             minHeight: '100vh',
             display: 'flex',
@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="hero-icons-wrapper">
                 <div className="hero-icon-left" style={{
                     position: 'absolute',
-                    top: '25%',
+                    top: '15%', // Raised from 25%
                     left: '10%', // Moved inward from 5%
                     transform: 'translateY(-50%)',
                     width: 'clamp(200px, 20vw, 350px)',
@@ -33,7 +33,7 @@ const Hero = () => {
 
                 <div className="hero-icon-right" style={{
                     position: 'absolute',
-                    top: '25%',
+                    top: '15%', // Raised from 25%
                     right: '10%', // Moved inward from 5%
                     transform: 'translateY(-50%)',
                     width: 'clamp(200px, 20vw, 350px)',
