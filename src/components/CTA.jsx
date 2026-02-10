@@ -77,7 +77,7 @@ const CTA = () => {
 
             {/* Body Section */}
             <div className="cta-container" style={{
-                padding: '30px 15px 30px', // Reduced padding
+                padding: '30px 15px 50px', // Increased bottom padding slightly
                 backgroundColor: '#fff'
             }}>
                 {/* Checklist */}
