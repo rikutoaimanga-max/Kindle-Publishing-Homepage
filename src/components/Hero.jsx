@@ -39,7 +39,7 @@ const Hero = () => {
                     transform: 'translate(-50%, -50%)',
                     fontSize: 'clamp(3rem, 6vw, 5rem)',
                     fontWeight: '900',
-                    color: '#ccc', // Light gray color for the cross
+                    color: 'var(--color-secondary)', // Blue color for the cross
                     zIndex: 0,
                     opacity: 0.5,
                     fontFamily: 'sans-serif'
