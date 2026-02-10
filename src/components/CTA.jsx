@@ -82,118 +82,97 @@ const CTA = () => {
                     maxWidth: '550px',
                     margin: '0 auto 40px'
                 }}>
-                    {[
-                        '今のあなたの出版ポテンシャルを診断',
-                        '今の執筆・出版の課題がわかる',
-                        '3ヶ月でどれぐらい印税が入るかわかる'
-                    ].map((text, index) => (
-                        <div key={index} style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            fontSize: '1.1rem',
-                            fontWeight: 'bold',
-                            color: '#333',
-                            borderBottom: '1px dashed #cceeff', // Subtle blue dashed line
-                            paddingBottom: '15px'
-                        }}>
-                            <span style={{
+                    {/* Description Text */}
+                    <p style={{
+                        textAlign: 'center',
+                        fontSize: '1.2rem',
+                        fontWeight: 'bold',
+                        lineHeight: '1.8',
+                        color: '#333',
+                        marginBottom: '40px',
+                        padding: '0 10px'
+                    }}>
+                        あなたの発信・コンテンツの資産価値を診断し、<br className="desktop-only" />
+                        あなただけの 目的別 出版戦略をご提案いたします！
+                    </p>
+
+                    {/* Button */}
+                    <div style={{ textAlign: 'center' }}>
+                        <a
+                            href="https://forms.gle/BBb3FbiVkBH4qbFr6"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="cta-button-hover cta-button"
+                            style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                justifyContent: 'space-between',
+                                background: 'linear-gradient(to right, #f5a623, #f7b731)', // Orange gradient (btn-primary)
+                                color: '#fff',
+                                textDecoration: 'none',
+                                padding: '20px 40px 20px 90px', // Default desktop padding
+                                borderRadius: '50px',
+                                fontWeight: 'bold',
+                                fontSize: '1.5rem',
+                                position: 'relative',
+                                width: '100%',
+                                maxWidth: '600px',
+                                boxShadow: '0 10px 20px rgba(245, 166, 35, 0.4)', // Orange shadow
+                                transition: 'transform 0.2s, box-shadow 0.2s',
+                                boxSizing: 'border-box'
+                            }}
+                        >
+                            {/* Bubble "Imasugu" */}
+                            <div className="cta-bubble" style={{
+                                position: 'absolute',
+                                top: '50%',
+                                left: '15px',
+                                transform: 'translateY(-50%)',
+                                width: '65px',
+                                height: '65px',
+                                backgroundColor: '#fff',
+                                border: '2px solid #f5a623', // Orange border
+                                borderRadius: '50%',
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
-                                width: '28px',
-                                height: '28px',
-                                backgroundColor: 'var(--color-secondary)', // Blue check bg
-                                color: '#fff',
-                                marginRight: '15px',
-                                fontSize: '16px',
-                                fontWeight: 'bold',
-                                flexShrink: 0,
-                                borderRadius: '50%' // Circle check
+                                color: '#f5a623', // Orange text
+                                fontSize: '1rem',
+                                fontWeight: '900',
+                                lineHeight: '1.1',
+                                textAlign: 'center',
+                                zIndex: 1,
+                                boxShadow: '0 2px 5px rgba(0,0,0,0.1)'
                             }}>
-                                ✓
-                            </span>
-                            <span>{text}</span>
-                        </div>
-                    ))}
-                </div>
-
-                {/* Button */}
-                <div style={{ textAlign: 'center' }}>
-                    <a
-                        href="https://forms.gle/BBb3FbiVkBH4qbFr6"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-button-hover cta-button"
-                        style={{
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            justifyContent: 'space-between',
-                            background: 'linear-gradient(to right, #f5a623, #f7b731)', // Orange gradient (btn-primary)
-                            color: '#fff',
-                            textDecoration: 'none',
-                            padding: '20px 40px 20px 90px', // Default desktop padding
-                            borderRadius: '50px',
-                            fontWeight: 'bold',
-                            fontSize: '1.5rem',
-                            position: 'relative',
-                            width: '100%',
-                            maxWidth: '600px',
-                            boxShadow: '0 10px 20px rgba(245, 166, 35, 0.4)', // Orange shadow
-                            transition: 'transform 0.2s, box-shadow 0.2s',
-                            boxSizing: 'border-box'
-                        }}
-                    >
-                        {/* Bubble "Imasugu" */}
-                        <div className="cta-bubble" style={{
-                            position: 'absolute',
-                            top: '50%',
-                            left: '15px',
-                            transform: 'translateY(-50%)',
-                            width: '65px',
-                            height: '65px',
-                            backgroundColor: '#fff',
-                            border: '2px solid #f5a623', // Orange border
-                            borderRadius: '50%',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            color: '#f5a623', // Orange text
-                            fontSize: '1rem',
-                            fontWeight: '900',
-                            lineHeight: '1.1',
-                            textAlign: 'center',
-                            zIndex: 1,
-                            boxShadow: '0 2px 5px rgba(0,0,0,0.1)'
-                        }}>
-                            今すぐ
-                        </div>
-
-                        {/* Button Text Container */}
-                        <div style={{ flex: 1, textAlign: 'center' }}>
-                            <div className="cta-text-sub" style={{
-                                fontSize: '0.9rem',
-                                backgroundColor: 'rgba(255,255,255,0.2)', // Semi-transparent white
-                                color: '#fff',
-                                display: 'inline-block',
-                                padding: '4px 12px',
-                                borderRadius: '20px',
-                                marginBottom: '5px',
-                                fontWeight: 'bold'
-                            }}>
-                                30秒でカンタン入力!
+                                今すぐ
                             </div>
-                            <div className="cta-text-main" style={{ fontSize: '1.6rem', textShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>
-                                カウンセリングを予約する
-                            </div>
-                        </div>
 
-                        {/* Arrow */}
-                        <span style={{ fontSize: '1.5rem', fontWeight: 'bold', paddingLeft: '10px' }}>&gt;</span>
-                    </a>
+                            {/* Button Text Container */}
+                            <div style={{ flex: 1, textAlign: 'center' }}>
+                                <div className="cta-text-sub" style={{
+                                    fontSize: '0.9rem',
+                                    backgroundColor: 'rgba(255,255,255,0.2)', // Semi-transparent white
+                                    color: '#fff',
+                                    display: 'inline-block',
+                                    padding: '4px 12px',
+                                    borderRadius: '20px',
+                                    marginBottom: '5px',
+                                    fontWeight: 'bold'
+                                }}>
+                                    30秒でカンタン入力!
+                                </div>
+                                <div className="cta-text-main" style={{ fontSize: '1.6rem', textShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>
+                                    カウンセリングを予約する
+                                </div>
+                            </div>
+
+                            {/* Arrow */}
+                            <span style={{ fontSize: '1.5rem', fontWeight: 'bold', paddingLeft: '10px' }}>&gt;</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    );
+            );
 };
 
-export default CTA;
+            export default CTA;
