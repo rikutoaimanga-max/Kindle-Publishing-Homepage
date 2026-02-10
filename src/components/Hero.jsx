@@ -6,7 +6,7 @@ import shuzoImg from '../assets/shuzo_icon.png';
 const Hero = () => {
     return (
         <section className="hero-section" style={{
-            padding: '220px 0 40px', // Further increased top padding
+            padding: '280px 0 40px', // Further increased top padding to push text down
             background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)', // Light clean gradient
             minHeight: '100vh',
             display: 'flex',
@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="hero-icons-wrapper">
                 <div className="hero-icon-left" style={{
                     position: 'absolute',
-                    top: '20%', // Lowered from 15%
+                    top: '20%',
                     left: '10%', // Moved inward from 5%
                     transform: 'translateY(-50%)',
                     width: 'clamp(200px, 20vw, 350px)',
@@ -31,9 +31,25 @@ const Hero = () => {
                     <img src={shuzoImg} alt="しゅーぞー" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%', border: '4px solid #ffffff' }} />
                 </div>
 
+                {/* Cross Icon - Centered between images */}
+                <div style={{
+                    position: 'absolute',
+                    top: '20%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                    fontSize: 'clamp(3rem, 6vw, 5rem)',
+                    fontWeight: '900',
+                    color: '#ccc', // Light gray color for the cross
+                    zIndex: 0,
+                    opacity: 0.5,
+                    fontFamily: 'sans-serif'
+                }}>
+                    ×
+                </div>
+
                 <div className="hero-icon-right" style={{
                     position: 'absolute',
-                    top: '20%', // Lowered from 15%
+                    top: '20%',
                     right: '10%', // Moved inward from 5%
                     transform: 'translateY(-50%)',
                     width: 'clamp(200px, 20vw, 350px)',
