@@ -154,8 +154,8 @@ const CTA = () => {
                                 <div style={{
                                     position: 'absolute',
                                     right: '-12px',
-                                    top: '60%',
-                                    transform: 'translateY(-50%)',
+                                    top: '65%', // Moved down slightly to point to main text
+                                    transform: 'translateY(-50%) rotate(10deg)', // Rotated down slightly
                                     width: 0,
                                     height: 0,
                                     borderTop: '10px solid transparent',
@@ -165,8 +165,8 @@ const CTA = () => {
                                 <div style={{
                                     position: 'absolute',
                                     right: '-8px',
-                                    top: '60%',
-                                    transform: 'translateY(-50%)',
+                                    top: '65%', // Moved down to match
+                                    transform: 'translateY(-50%) rotate(10deg)', // Rotated down slightly
                                     width: 0,
                                     height: 0,
                                     borderTop: '7px solid transparent',
