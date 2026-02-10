@@ -53,14 +53,15 @@ const CTA = () => {
                         あなたの情報資産を書籍に変える戦略をご提案
                     </div>
                     <div style={{
-                        fontSize: 'clamp(1.8rem, 4.5vw, 2.6rem)', // Reduced from 3.2rem to match width
+                        fontSize: 'clamp(2.5rem, 6.5vw, 4rem)', // Significantly increased to match width
                         fontWeight: '900',
                         color: 'var(--color-secondary)',
                         textShadow: '0 2px 4px rgba(0,0,0,0.05)',
                         lineHeight: '1.1',
                         fontFamily: 'var(--font-family-serif)',
-                        letterSpacing: '0.02em', // Reduced spacing
-                        whiteSpace: 'nowrap'
+                        letterSpacing: '0.05em', // Increased spacing
+                        whiteSpace: 'nowrap',
+                        marginTop: '5px'
                     }}>
                         円カウンセリング
                     </div>
