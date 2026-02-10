@@ -117,7 +117,7 @@ const CTA = () => {
                                 background: 'linear-gradient(to right, #f5a623, #f7b731)', // Orange gradient (btn-primary)
                                 color: '#fff',
                                 textDecoration: 'none',
-                                padding: '20px 40px 20px 90px', // Default desktop padding
+                                padding: '20px 40px 20px 110px', // Increased left padding
                                 borderRadius: '50px',
                                 fontWeight: 'bold',
                                 fontSize: '1.5rem',
@@ -133,7 +133,7 @@ const CTA = () => {
                             <div className="cta-bubble" style={{
                                 position: 'absolute',
                                 top: '50%',
-                                left: '15px',
+                                left: '30px', // Moved right from 15px
                                 transform: 'translateY(-50%)',
                                 width: '65px',
                                 height: '65px',
