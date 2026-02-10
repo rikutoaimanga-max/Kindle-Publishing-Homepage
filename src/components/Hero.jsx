@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <section className="hero-section" style={{
             padding: '340px 0 40px', // Further increased top padding
-            background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)', // Light clean gradient
+            background: 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%)', // Updated to match CTA title background
             minHeight: '100vh',
             display: 'flex',
             alignItems: 'center',
