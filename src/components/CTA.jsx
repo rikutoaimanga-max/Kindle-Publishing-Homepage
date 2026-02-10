@@ -151,9 +151,9 @@ const CTA = () => {
                                 {/* Bubble Tail (Border) */}
                                 <div style={{
                                     position: 'absolute',
-                                    right: '-10px',
-                                    top: '70%', // Moved down to point to main text
-                                    transform: 'translateY(-50%)',
+                                    right: '-8px', // Adjusted to fit circle curve at 70% top
+                                    top: '70%',
+                                    transform: 'translateY(-50%) rotate(15deg)', // Rotated to point down
                                     width: 0,
                                     height: 0,
                                     borderTop: '10px solid transparent',
@@ -163,9 +163,9 @@ const CTA = () => {
                                 {/* Bubble Tail (Inner) */}
                                 <div style={{
                                     position: 'absolute',
-                                    right: '-7px',
-                                    top: '70%', // Moved down to point to main text
-                                    transform: 'translateY(-50%)',
+                                    right: '-5px', // Adjusted offset
+                                    top: '70%',
+                                    transform: 'translateY(-50%) rotate(15deg)', // Rotated to match border
                                     width: 0,
                                     height: 0,
                                     borderTop: '7px solid transparent',
