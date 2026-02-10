@@ -23,12 +23,27 @@ const Hero = () => {
                     left: '10%', // Moved inward from 5%
                     transform: 'translateY(-50%)',
                     width: 'clamp(200px, 20vw, 350px)',
-                    height: 'clamp(200px, 20vw, 350px)',
                     zIndex: 1,
-                    opacity: 0.8,
-                    filter: 'drop-shadow(0 10px 20px rgba(0, 160, 233, 0.2))' // Soft blue shadow
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center'
                 }}>
-                    <img src={shuzoImg} alt="しゅーぞー" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%', border: '4px solid #ffffff' }} />
+                    <div style={{
+                        fontSize: 'clamp(1.2rem, 2vw, 1.5rem)',
+                        fontWeight: 'bold',
+                        color: '#000',
+                        marginBottom: '0.5rem',
+                        textShadow: '0 2px 4px rgba(255,255,255,0.8)'
+                    }}>テキスト本</div>
+                    <img src={shuzoImg} alt="しゅーぞー" style={{
+                        width: '100%',
+                        height: 'clamp(200px, 20vw, 350px)', // Maintain height constraint on image
+                        objectFit: 'cover',
+                        borderRadius: '50%',
+                        border: '4px solid #ffffff',
+                        opacity: 0.8,
+                        filter: 'drop-shadow(0 10px 20px rgba(0, 160, 233, 0.2))'
+                    }} />
                 </div>
 
                 {/* Cross Icon - Centered between images */}
@@ -53,12 +68,27 @@ const Hero = () => {
                     right: '10%', // Moved inward from 5%
                     transform: 'translateY(-50%)',
                     width: 'clamp(200px, 20vw, 350px)',
-                    height: 'clamp(200px, 20vw, 350px)',
                     zIndex: 1,
-                    opacity: 0.8,
-                    filter: 'drop-shadow(0 10px 20px rgba(0, 160, 233, 0.2))' // Soft blue shadow
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center'
                 }}>
-                    <img src={rikutoImg} alt="りくと" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%', border: '4px solid #ffffff' }} />
+                    <div style={{
+                        fontSize: 'clamp(1.2rem, 2vw, 1.5rem)',
+                        fontWeight: 'bold',
+                        color: '#000',
+                        marginBottom: '0.5rem',
+                        textShadow: '0 2px 4px rgba(255,255,255,0.8)'
+                    }}>漫画本</div>
+                    <img src={rikutoImg} alt="りくと" style={{
+                        width: '100%',
+                        height: 'clamp(200px, 20vw, 350px)', // Maintain height constraint on image
+                        objectFit: 'cover',
+                        borderRadius: '50%',
+                        border: '4px solid #ffffff',
+                        opacity: 0.8,
+                        filter: 'drop-shadow(0 10px 20px rgba(0, 160, 233, 0.2))'
+                    }} />
                 </div>
             </div>
 
