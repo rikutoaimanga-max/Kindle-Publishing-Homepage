@@ -10,7 +10,7 @@ const CTA = () => {
             borderRadius: '20px',
             overflow: 'hidden',
             backgroundColor: '#fff',
-            border: '1px solid #e0f2ff' // Subtle blue border
+            border: '4px solid var(--color-secondary)' // Prominent blue border
         }}>
             <div style={{
                 background: 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%)', // Light blue gradient
