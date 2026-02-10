@@ -80,6 +80,9 @@ const Problem = () => {
                         display: 'grid',
                         gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
                         gap: '1rem',
+                        justifyContent: 'center',
+                        maxWidth: '1000px', // Constrained width for narrower cards
+                        margin: '0 auto',
                         width: '100%'
                     }}>
                         {problems.slice(3).map((item, index) => (
