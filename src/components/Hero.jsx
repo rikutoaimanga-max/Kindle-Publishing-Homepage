@@ -15,6 +15,37 @@ const Hero = () => {
             overflow: 'hidden', // Prevent horizontal scroll from large icons
             position: 'relative'
         }}>
+            {/* Icons - Moved to top for mobile flow, Absolute Positioned on Desktop */}
+            <div className="hero-icons-wrapper">
+                <div className="hero-icon-left" style={{
+                    position: 'absolute',
+                    top: '25%',
+                    left: '5%',
+                    transform: 'translateY(-50%)',
+                    width: 'clamp(200px, 20vw, 350px)',
+                    height: 'clamp(200px, 20vw, 350px)',
+                    zIndex: 1,
+                    opacity: 0.8,
+                    filter: 'drop-shadow(0 10px 20px rgba(0, 160, 233, 0.2))' // Soft blue shadow
+                }}>
+                    <img src={shuzoImg} alt="しゅーぞー" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%', border: '4px solid #ffffff' }} />
+                </div>
+
+                <div className="hero-icon-right" style={{
+                    position: 'absolute',
+                    top: '25%',
+                    right: '5%',
+                    transform: 'translateY(-50%)',
+                    width: 'clamp(200px, 20vw, 350px)',
+                    height: 'clamp(200px, 20vw, 350px)',
+                    zIndex: 1,
+                    opacity: 0.8,
+                    filter: 'drop-shadow(0 10px 20px rgba(0, 160, 233, 0.2))' // Soft blue shadow
+                }}>
+                    <img src={rikutoImg} alt="りくと" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%', border: '4px solid #ffffff' }} />
+                </div>
+            </div>
+
             {/* Main Content Container */}
             <div className="container" style={{ position: 'relative', zIndex: 10 }}>
 
@@ -88,37 +119,6 @@ const Hero = () => {
                 }}>
                     ※現在、実績作り中のため、今だけお得にご案内できます！
                 </p>
-            </div>
-
-            {/* Icons - Moved after content for mobile flow, Absolute Positioned on Desktop */}
-            <div className="hero-icons-wrapper">
-                <div className="hero-icon-left" style={{
-                    position: 'absolute',
-                    top: '25%',
-                    left: '5%',
-                    transform: 'translateY(-50%)',
-                    width: 'clamp(200px, 20vw, 350px)',
-                    height: 'clamp(200px, 20vw, 350px)',
-                    zIndex: 1,
-                    opacity: 0.8,
-                    filter: 'drop-shadow(0 10px 20px rgba(0, 160, 233, 0.2))' // Soft blue shadow
-                }}>
-                    <img src={shuzoImg} alt="しゅーぞー" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%', border: '4px solid #ffffff' }} />
-                </div>
-
-                <div className="hero-icon-right" style={{
-                    position: 'absolute',
-                    top: '25%',
-                    right: '5%',
-                    transform: 'translateY(-50%)',
-                    width: 'clamp(200px, 20vw, 350px)',
-                    height: 'clamp(200px, 20vw, 350px)',
-                    zIndex: 1,
-                    opacity: 0.8,
-                    filter: 'drop-shadow(0 10px 20px rgba(0, 160, 233, 0.2))' // Soft blue shadow
-                }}>
-                    <img src={rikutoImg} alt="りくと" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%', border: '4px solid #ffffff' }} />
-                </div>
             </div>
         </section>
     );
