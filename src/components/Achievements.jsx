@@ -29,7 +29,7 @@ const Achievements = () => {
         <section style={{ backgroundColor: '#fff', padding: '80px 0', color: 'var(--color-text-dark)' }}>
             <div className="container">
                 <h2 className="section-title" style={{ color: '#000' }}>実績紹介</h2>
-                <p style={{ textAlign: 'center', marginBottom: '3rem' }}>実名・数値・伸び率のトリプルインパクト</p>
+
 
                 <div className="grid grid-3">
                     {clients.map((client, index) => (
