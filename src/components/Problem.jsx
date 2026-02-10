@@ -5,7 +5,9 @@ const Problem = () => {
     return (
         <section style={{ backgroundColor: '#f0f0f0', padding: '80px 0', color: 'var(--color-text-dark)' }}>
             <div className="container">
-                <h2 className="section-title" style={{ color: '#000', textAlign: 'center' }}>こんなお悩みありませんか？</h2>
+                <div style={{ textAlign: 'center' }}>
+                    <h2 className="section-title" style={{ color: '#000' }}>こんなお悩みありませんか？</h2>
+                </div>
                 <div className="grid grid-2">
                     <div style={{ padding: '2rem', backgroundColor: '#fff', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
                         <ul style={{ listStyle: 'none', padding: 0 }}>
