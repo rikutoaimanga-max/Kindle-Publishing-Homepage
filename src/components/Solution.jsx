@@ -29,12 +29,14 @@ const Solution = () => {
                             border: '1px solid var(--color-secondary)',
                             padding: '2rem',
                             textAlign: 'center',
-                            backgroundColor: 'rgba(255,255,255,0.05)'
+                            backgroundColor: '#fff', // Changed to white background
+                            borderRadius: '8px',
+                            boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
                         }}>
                             <h3 style={{ color: 'var(--color-secondary)', marginBottom: '1rem', fontSize: '1.5rem' }}>
                                 Point {index + 1}<br />{point.title}
                             </h3>
-                            <p style={{ textAlign: 'left' }}>{point.desc}</p>
+                            <p style={{ textAlign: 'left', color: '#333' }}>{point.desc}</p>
                         </div>
                     ))}
                 </div>
