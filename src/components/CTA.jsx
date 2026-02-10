@@ -147,7 +147,7 @@ const CTA = () => {
                                 fontSize: '1rem',
                                 boxShadow: '0 2px 5px rgba(0,0,0,0.1)'
                             }}>
-                                <span style={{ display: 'inline-block', transform: 'rotate(-5deg)' }}>今すぐ</span>
+                                <span style={{ display: 'inline-block', transform: 'rotate(-10deg)' }}>今すぐ</span>
                                 {/* Bubble Tail (Border) */}
                                 <div style={{
                                     position: 'absolute',
