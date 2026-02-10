@@ -181,11 +181,11 @@ const CTA = () => {
                             {/* Button Text Container */}
                             <div style={{ flex: 1, textAlign: 'center' }}>
                                 <div className="cta-text-sub" style={{
-                                    fontSize: '0.9rem',
-                                    backgroundColor: 'rgba(255,255,255,0.2)', // Semi-transparent white
-                                    color: '#fff',
+                                    fontSize: '1.1rem', // Increased from 0.9rem
+                                    backgroundColor: 'rgba(255,255,255,0.9)', // More opaque white for better contrast with black text
+                                    color: '#000', // Changed to black
                                     display: 'inline-block',
-                                    padding: '4px 12px',
+                                    padding: '4px 15px',
                                     borderRadius: '20px',
                                     marginBottom: '5px',
                                     fontWeight: 'bold'
