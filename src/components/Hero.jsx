@@ -34,7 +34,7 @@ const Hero = () => {
                         color: '#000',
                         marginBottom: '0.5rem',
                         textShadow: '0 2px 4px rgba(255,255,255,0.8)'
-                    }}>テキスト本</div>
+                    }}>テキスト</div>
                     <img src={shuzoImg} alt="しゅーぞー" style={{
                         width: '100%',
                         height: 'clamp(200px, 20vw, 350px)', // Maintain height constraint on image
@@ -79,7 +79,7 @@ const Hero = () => {
                         color: '#000',
                         marginBottom: '0.5rem',
                         textShadow: '0 2px 4px rgba(255,255,255,0.8)'
-                    }}>漫画本</div>
+                    }}>漫画</div>
                     <img src={rikutoImg} alt="りくと" style={{
                         width: '100%',
                         height: 'clamp(200px, 20vw, 350px)', // Maintain height constraint on image
