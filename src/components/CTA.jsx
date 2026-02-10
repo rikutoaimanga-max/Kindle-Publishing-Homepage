@@ -132,7 +132,7 @@ const CTA = () => {
                             {/* Bubble "Imasugu" */}
                             <div className="cta-bubble" style={{
                                 position: 'absolute',
-                                top: '-5px', // Moved down further from -15px
+                                top: '5px', // Moved down further from -5px
                                 left: '60px', // Moved right to overlap text
                                 width: '65px',
                                 height: '65px',
