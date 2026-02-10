@@ -5,7 +5,7 @@ const CTA = () => {
     return (
         <div style={{
             maxWidth: '800px',
-            margin: '0 auto',
+            margin: '60px auto 0', // Added top margin
             boxShadow: '0 10px 30px rgba(0, 160, 233, 0.15)', // Blue shadow
             borderRadius: '20px',
             overflow: 'hidden',
