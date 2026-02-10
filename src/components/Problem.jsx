@@ -50,7 +50,7 @@ const Problem = () => {
                     </div>
                 </div>
                 <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-                    <h3 style={{ fontSize: '2rem', fontWeight: 'bold', color: 'var(--color-accent)' }}>
+                    <h3 style={{ fontSize: '2rem', fontWeight: 'bold', color: '#000' }}>
                         私たちにお任せください！
                     </h3>
                 </div>
