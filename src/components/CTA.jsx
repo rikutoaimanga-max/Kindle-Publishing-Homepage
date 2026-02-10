@@ -53,13 +53,13 @@ const CTA = () => {
                         あなたの情報資産を書籍に変える戦略をご提案
                     </div>
                     <div style={{
-                        fontSize: 'clamp(2rem, 5.5vw, 3.3rem)', // Reduced from 4rem to fix overshoot
+                        fontSize: 'clamp(1.8rem, 5vw, 3rem)', // Slightly reduced again
                         fontWeight: '900',
                         color: 'var(--color-secondary)',
                         textShadow: '0 2px 4px rgba(0,0,0,0.05)',
                         lineHeight: '1.1',
                         fontFamily: 'var(--font-family-serif)',
-                        letterSpacing: '0.02em', // Reduced spacing
+                        letterSpacing: '0.02em',
                         whiteSpace: 'nowrap',
                         marginTop: '5px'
                     }}>
