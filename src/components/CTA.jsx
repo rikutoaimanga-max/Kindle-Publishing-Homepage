@@ -13,25 +13,25 @@ const CTA = () => {
             border: '1px solid #e0f2ff' // Subtle blue border
         }}>
             <div style={{
-                background: 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%)', // Light blue gradient
-                padding: '30px 20px',
+                background: 'linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%)', // Very subtle gradient
+                padding: '40px 20px 20px', // Adjusted padding
                 textAlign: 'center',
                 position: 'relative',
-                borderBottom: '1px solid #e0f2ff',
+                // borderBottom removed for cohesion
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                gap: '5px' // Reduced gap
+                gap: '5px'
             }}>
                 <div style={{
                     fontSize: 'clamp(6rem, 12vw, 8rem)',
                     fontWeight: '900',
                     color: 'var(--color-secondary)', // #00A0E9 Blue
                     textShadow: '0 2px 4px rgba(0,0,0,0.05)',
-                    lineHeight: '0.8', // Tighter line height for better vertical alignment visual
-                    fontFamily: 'var(--font-family-serif)', // Consistent serif for headings
+                    lineHeight: '0.8',
+                    fontFamily: 'var(--font-family-serif)',
                     flexShrink: 0,
-                    transform: 'translateY(-2px)' // Fine-tune vertical position
+                    transform: 'translateY(-2px)'
                 }}>
                     0
                 </div>
@@ -41,10 +41,10 @@ const CTA = () => {
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
-                    paddingTop: '15px' // Increased from 10px
+                    paddingTop: '15px'
                 }}>
                     <div style={{
-                        fontSize: 'clamp(0.9rem, 2.2vw, 1.1rem)', // Slightly increased
+                        fontSize: 'clamp(0.9rem, 2.2vw, 1.1rem)',
                         fontWeight: 'bold',
                         color: '#555',
                         display: 'inline-block',
@@ -60,7 +60,7 @@ const CTA = () => {
                         あなたの情報資産を書籍に変える戦略をご提案
                     </div>
                     <div style={{
-                        fontSize: 'clamp(1.8rem, 5vw, 3rem)', // Slightly reduced again
+                        fontSize: 'clamp(1.8rem, 5vw, 3rem)',
                         fontWeight: '900',
                         color: 'var(--color-secondary)',
                         textShadow: '0 2px 4px rgba(0,0,0,0.05)',
@@ -68,7 +68,7 @@ const CTA = () => {
                         fontFamily: 'var(--font-family-serif)',
                         letterSpacing: '0.02em',
                         whiteSpace: 'nowrap',
-                        marginTop: '0' // Removed top margin to bring closer
+                        marginTop: '0'
                     }}>
                         円カウンセリング
                     </div>
@@ -77,7 +77,7 @@ const CTA = () => {
 
             {/* Body Section */}
             <div className="cta-container" style={{
-                padding: '40px 30px',
+                padding: '10px 30px 40px', // Reduced top padding drastically to connect with header
                 backgroundColor: '#fff'
             }}>
                 {/* Checklist */}
@@ -149,31 +149,31 @@ const CTA = () => {
                                 zIndex: 2
                             }}>
                                 <span style={{ display: 'inline-block', transform: 'rotate(-15deg)', fontWeight: '900' }}>今すぐ</span>
-
-                                {/* Bubble Tail - Pointing to button content */}
-                                <div style={{
-                                    position: 'absolute',
-                                    right: '-16px', // Adjusted for better connection
-                                    top: '60%', // Adjusted vertical position
-                                    transform: 'translateY(-50%) rotate(10deg)',
-                                    width: 0,
-                                    height: 0,
-                                    borderTop: '12px solid transparent', // Slightly larger
-                                    borderBottom: '12px solid transparent',
-                                    borderLeft: '18px solid #f5a623' // Thicker border
-                                }} />
-                                <div style={{
-                                    position: 'absolute',
-                                    right: '-12px',
-                                    top: '60%',
-                                    transform: 'translateY(-50%) rotate(10deg)',
-                                    width: 0,
-                                    height: 0,
-                                    borderTop: '9px solid transparent',
-                                    borderBottom: '9px solid transparent',
-                                    borderLeft: '14px solid #fff' // Matches white background
-                                }} />
                             </div>
+
+                            {/* Bubble Tail - Pointing to button content */}
+                            <div style={{
+                                position: 'absolute',
+                                right: '-16px', // Adjusted for better connection
+                                top: '60%', // Adjusted vertical position
+                                transform: 'translateY(-50%) rotate(10deg)',
+                                width: 0,
+                                height: 0,
+                                borderTop: '12px solid transparent', // Slightly larger
+                                borderBottom: '12px solid transparent',
+                                borderLeft: '18px solid #f5a623' // Thicker border
+                            }} />
+                            <div style={{
+                                position: 'absolute',
+                                right: '-12px',
+                                top: '60%',
+                                transform: 'translateY(-50%) rotate(10deg)',
+                                width: 0,
+                                height: 0,
+                                borderTop: '9px solid transparent',
+                                borderBottom: '9px solid transparent',
+                                borderLeft: '14px solid #fff' // Matches white background
+                            }} />
 
                             {/* Button Text Container */}
                             <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
