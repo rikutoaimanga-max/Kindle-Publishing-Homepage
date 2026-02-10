@@ -27,9 +27,10 @@ const CTA = () => {
                     color: '#555',
                     display: 'inline-block',
                     paddingBottom: '5px',
-                    letterSpacing: '0.05em'
+                    letterSpacing: '0.05em',
+                    borderBottom: '2px solid var(--color-secondary)' // Added blue underline
                 }}>
-                    あなたの知識・経験を資産に変える60分
+                    あなたの情報資産を書籍に変える戦略をご提案
                 </div>
                 <div style={{
                     fontSize: '2.5rem',
