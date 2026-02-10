@@ -37,25 +37,28 @@ const CTA = () => {
 
                 <div style={{ textAlign: 'left', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                     <div style={{
-                        fontSize: 'clamp(0.9rem, 2.5vw, 1.1rem)',
+                        fontSize: 'clamp(0.8rem, 2vw, 1rem)', // Slightly smaller to match width
                         fontWeight: 'bold',
                         color: '#555',
                         display: 'inline-block',
                         paddingBottom: '5px',
                         letterSpacing: '0.05em',
-                        borderBottom: '2px solid var(--color-secondary)', // Added blue underline
+                        borderBottom: '2px solid var(--color-secondary)',
                         marginBottom: '5px',
-                        lineHeight: '1.4'
+                        lineHeight: '1.4',
+                        width: 'fit-content' // Ensure border matches text width
                     }}>
-                        あなたの情報資産を<br className="mobile-br" />書籍に変える戦略をご提案
+                        あなたの情報資産を書籍に変える戦略をご提案
                     </div>
                     <div style={{
-                        fontSize: 'clamp(1.8rem, 4vw, 2.5rem)',
+                        fontSize: 'clamp(2rem, 5vw, 3.2rem)', // Increased size
                         fontWeight: '900',
-                        color: 'var(--color-secondary)', // #00A0E9 Blue
+                        color: 'var(--color-secondary)',
                         textShadow: '0 2px 4px rgba(0,0,0,0.05)',
                         lineHeight: '1',
-                        fontFamily: 'var(--font-family-serif)' // Consistent serif for headings
+                        fontFamily: 'var(--font-family-serif)',
+                        letterSpacing: '0.1em', // Spacing to match width
+                        whiteSpace: 'nowrap'
                     }}>
                         円カウンセリング
                     </div>
