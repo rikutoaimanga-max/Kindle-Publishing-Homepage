@@ -174,7 +174,7 @@ const CTA = () => {
                             </div>
 
                             {/* Button Text Container */}
-                            <div style={{ flex: 1, textAlign: 'center' }}>
+                            <div style={{ flex: 1, textAlign: 'center', paddingTop: '5px' }}>
                                 <div className="cta-text-sub" style={{
                                     fontSize: '1.1rem', // Increased from 0.9rem
                                     backgroundColor: 'rgba(255,255,255,0.9)', // More opaque white for better contrast with black text
