@@ -145,13 +145,9 @@ const CTA = () => {
                                 justifyContent: 'center',
                                 color: '#f5a623', // Orange text
                                 fontSize: '1rem',
-                                fontWeight: '900',
-                                lineHeight: '1.1',
-                                textAlign: 'center',
-                                zIndex: 1,
                                 boxShadow: '0 2px 5px rgba(0,0,0,0.1)'
                             }}>
-                                今すぐ
+                                <span style={{ display: 'inline-block', transform: 'rotate(-5deg)' }}>今すぐ</span>
                                 {/* Bubble Tail (Border) */}
                                 <div style={{
                                     position: 'absolute',
