@@ -123,7 +123,7 @@ const CTA = () => {
                                 fontSize: '1.5rem',
                                 position: 'relative',
                                 width: '100%',
-                                maxWidth: '600px',
+                                maxWidth: '500px', // Reduced from 600px to shorten width
                                 boxShadow: '0 10px 20px rgba(245, 166, 35, 0.4)', // Orange shadow
                                 transition: 'transform 0.2s, box-shadow 0.2s',
                                 boxSizing: 'border-box'
