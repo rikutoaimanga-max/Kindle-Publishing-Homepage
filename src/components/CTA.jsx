@@ -21,16 +21,17 @@ const CTA = () => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                gap: '20px'
+                gap: '5px' // Reduced gap
             }}>
                 <div style={{
                     fontSize: 'clamp(6rem, 12vw, 8rem)',
                     fontWeight: '900',
                     color: 'var(--color-secondary)', // #00A0E9 Blue
                     textShadow: '0 2px 4px rgba(0,0,0,0.05)',
-                    lineHeight: '1',
+                    lineHeight: '0.8', // Tighter line height for better vertical alignment visual
                     fontFamily: 'var(--font-family-serif)', // Consistent serif for headings
-                    flexShrink: 0
+                    flexShrink: 0,
+                    transform: 'translateY(-2px)' // Fine-tune vertical position
                 }}>
                     0
                 </div>
@@ -61,7 +62,7 @@ const CTA = () => {
                         fontFamily: 'var(--font-family-serif)',
                         letterSpacing: '0.02em',
                         whiteSpace: 'nowrap',
-                        marginTop: '5px'
+                        marginTop: '0' // Removed top margin to bring closer
                     }}>
                         円カウンセリング
                     </div>
