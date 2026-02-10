@@ -117,7 +117,7 @@ const CTA = () => {
                                 background: 'linear-gradient(to right, #f5a623, #f7b731)', // Orange gradient (btn-primary)
                                 color: '#fff',
                                 textDecoration: 'none',
-                                padding: '20px 40px 20px 110px', // Increased left padding
+                                padding: '20px 40px', // Restored balanced padding
                                 borderRadius: '50px',
                                 fontWeight: 'bold',
                                 fontSize: '1.5rem',
@@ -132,9 +132,8 @@ const CTA = () => {
                             {/* Bubble "Imasugu" */}
                             <div className="cta-bubble" style={{
                                 position: 'absolute',
-                                top: '50%',
-                                left: '30px', // Moved right from 15px
-                                transform: 'translateY(-50%)',
+                                top: '-25px', // Moved up to overlap top edge
+                                left: '60px', // Moved right to overlap text
                                 width: '65px',
                                 height: '65px',
                                 backgroundColor: '#fff',
