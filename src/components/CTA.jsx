@@ -14,7 +14,7 @@ const CTA = () => {
         }}>
             <div style={{
                 background: 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%)', // Light blue gradient
-                padding: '30px 20px',
+                padding: '30px 10px', // Reduced horizontal padding
                 textAlign: 'center',
                 position: 'relative',
                 borderBottom: '1px solid #e0f2ff',
@@ -77,7 +77,7 @@ const CTA = () => {
 
             {/* Body Section */}
             <div className="cta-container" style={{
-                padding: '40px 30px',
+                padding: '30px 15px 30px', // Reduced padding
                 backgroundColor: '#fff'
             }}>
                 {/* Checklist */}
@@ -85,9 +85,8 @@ const CTA = () => {
                     display: 'flex',
                     flexDirection: 'column',
                     gap: '20px',
-                    marginBottom: '40px',
                     maxWidth: '550px',
-                    margin: '0 auto 40px'
+                    margin: '0 auto' // Removed bottom margin for tighter look
                 }}>
                     {/* Description Text */}
                     <p style={{
