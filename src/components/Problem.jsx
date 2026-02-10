@@ -14,7 +14,7 @@ const Problem = () => {
     ];
 
     return (
-        <section style={{ backgroundColor: '#e6f7ff', padding: '60px 0', overflow: 'hidden' }}>
+        <section style={{ backgroundColor: '#f0f0f0', padding: '60px 0', overflow: 'hidden' }}>
             <div className="container">
                 <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                     <h2 className="section-title" style={{ color: '#000' }}>こんなお悩みありませんか？</h2>
@@ -29,7 +29,7 @@ const Problem = () => {
                 }}>
                     {problems.map((item, index) => (
                         <div key={index} style={{
-                            backgroundColor: '#e6f7ff',
+                            backgroundColor: '#fff',
                             border: '2px solid var(--color-secondary)',
                             borderRadius: '10px',
                             padding: '1.5rem 0.5rem',
