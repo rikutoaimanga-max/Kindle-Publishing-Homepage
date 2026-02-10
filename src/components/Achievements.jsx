@@ -28,7 +28,9 @@ const Achievements = () => {
     return (
         <section style={{ backgroundColor: '#fff', padding: '80px 0', color: 'var(--color-text-dark)' }}>
             <div className="container">
-                <h2 className="section-title" style={{ color: '#000' }}>実績紹介</h2>
+                <div style={{ textAlign: 'center' }}>
+                    <h2 className="section-title" style={{ color: '#000' }}>実績紹介</h2>
+                </div>
 
 
                 <div className="grid grid-3">
