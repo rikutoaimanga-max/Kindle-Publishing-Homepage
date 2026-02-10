@@ -18,7 +18,7 @@ const Problem = () => {
     ];
 
     return (
-        <section style={{ backgroundColor: '#f0f0f0', padding: '50px 0 50px', color: 'var(--color-text-dark)' }}>
+        <section style={{ background: 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%)', padding: '50px 0 50px', color: 'var(--color-text-dark)' }}>
             <div className="container">
                 <div style={{ textAlign: 'center' }}>
                     <h2 className="section-title" style={{ color: '#000' }}>こんなお悩みありませんか？</h2>
