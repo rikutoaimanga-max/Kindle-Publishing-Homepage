@@ -88,7 +88,12 @@ const Problem = () => {
                     </div>
                 </div>
                 <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-                    <h3 style={{ fontSize: '2rem', fontWeight: 'bold', color: '#000' }}>
+                    <h3 style={{
+                        fontSize: '2rem',
+                        fontWeight: '600', // Matched with section-title
+                        color: '#000',
+                        fontFamily: 'var(--font-family-serif)' // Added serif font
+                    }}>
                         私たちにお任せください！
                     </h3>
                 </div>
