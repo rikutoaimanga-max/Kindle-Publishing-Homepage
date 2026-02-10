@@ -41,7 +41,7 @@ const CTA = () => {
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
-                    paddingTop: '10px' // Move text down slightly
+                    paddingTop: '15px' // Increased from 10px
                 }}>
                     <div style={{
                         fontSize: 'clamp(0.9rem, 2.2vw, 1.1rem)', // Slightly increased
