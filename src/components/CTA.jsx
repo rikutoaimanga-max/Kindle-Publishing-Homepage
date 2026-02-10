@@ -153,25 +153,25 @@ const CTA = () => {
                                 {/* Bubble Tail - Pointing to button content */}
                                 <div style={{
                                     position: 'absolute',
-                                    right: '-12px',
-                                    top: '65%', // Moved down slightly to point to main text
-                                    transform: 'translateY(-50%) rotate(10deg)', // Rotated down slightly
+                                    right: '-16px', // Adjusted for better connection
+                                    top: '60%', // Adjusted vertical position
+                                    transform: 'translateY(-50%) rotate(10deg)',
                                     width: 0,
                                     height: 0,
-                                    borderTop: '10px solid transparent',
-                                    borderBottom: '10px solid transparent',
-                                    borderLeft: '15px solid #f5a623'
+                                    borderTop: '12px solid transparent', // Slightly larger
+                                    borderBottom: '12px solid transparent',
+                                    borderLeft: '18px solid #f5a623' // Thicker border
                                 }} />
                                 <div style={{
                                     position: 'absolute',
-                                    right: '-8px',
-                                    top: '65%', // Moved down to match
-                                    transform: 'translateY(-50%) rotate(10deg)', // Rotated down slightly
+                                    right: '-12px',
+                                    top: '60%',
+                                    transform: 'translateY(-50%) rotate(10deg)',
                                     width: 0,
                                     height: 0,
-                                    borderTop: '7px solid transparent',
-                                    borderBottom: '7px solid transparent',
-                                    borderLeft: '10px solid #fff'
+                                    borderTop: '9px solid transparent',
+                                    borderBottom: '9px solid transparent',
+                                    borderLeft: '14px solid #fff' // Matches white background
                                 }} />
                             </div>
 
