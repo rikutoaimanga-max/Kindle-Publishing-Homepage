@@ -152,6 +152,30 @@ const CTA = () => {
                                 boxShadow: '0 2px 5px rgba(0,0,0,0.1)'
                             }}>
                                 今すぐ
+                                {/* Bubble Tail (Border) */}
+                                <div style={{
+                                    position: 'absolute',
+                                    right: '-10px',
+                                    top: '50%',
+                                    transform: 'translateY(-50%)',
+                                    width: 0,
+                                    height: 0,
+                                    borderTop: '10px solid transparent',
+                                    borderBottom: '10px solid transparent',
+                                    borderLeft: '11px solid #f5a623'
+                                }} />
+                                {/* Bubble Tail (Inner) */}
+                                <div style={{
+                                    position: 'absolute',
+                                    right: '-7px',
+                                    top: '50%',
+                                    transform: 'translateY(-50%)',
+                                    width: 0,
+                                    height: 0,
+                                    borderTop: '7px solid transparent',
+                                    borderBottom: '7px solid transparent',
+                                    borderLeft: '8px solid #fff'
+                                }} />
                             </div>
 
                             {/* Button Text Container */}
