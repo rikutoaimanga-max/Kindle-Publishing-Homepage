@@ -161,7 +161,8 @@ const Hero = () => {
                     textAlign: 'center',
                     fontSize: '0.9rem',
                     color: '#333',
-                    marginTop: '0.5rem',
+                    marginTop: '3rem', // Increased margin
+                    fontWeight: 'bold'
                 }}>
                     ※現在、実績作り中のため、今だけお得にご案内できます！
                 </p>
