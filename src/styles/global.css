@@ -159,23 +159,32 @@ ul {
   }
 
   /* Reduce icon size and adjust position on mobile */
+  .hero-section {
+    flex-direction: column !important;
+  }
+
+  .hero-icons-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    width: 100%;
+    order: 2;
+    /* Ensure it's below */
+  }
+
   .hero-icon-left,
   .hero-icon-right {
-    width: 80px !important;
-    height: 80px !important;
-    top: 15% !important;
-    /* Move higher up */
-    opacity: 0.6 !important;
-    /* Slightly more transparent */
-  }
-
-  /* Adjust horizontal position to fit screen edges */
-  .hero-icon-left {
-    left: -10px !important;
-  }
-
-  .hero-icon-right {
-    right: -10px !important;
+    position: relative !important;
+    width: 120px !important;
+    height: 120px !important;
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    opacity: 1 !important;
+    /* Full opacity */
   }
 
   .container {
