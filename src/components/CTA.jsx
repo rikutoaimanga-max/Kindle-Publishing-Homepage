@@ -37,10 +37,14 @@ const CTA = () => {
                     fontWeight: '900',
                     color: 'var(--color-secondary)', // #00A0E9 Blue
                     textShadow: '0 2px 4px rgba(0,0,0,0.05)',
-                    lineHeight: '1.2',
-                    fontFamily: 'var(--font-family-serif)' // Consistent serif for headings
+                    lineHeight: '1',
+                    fontFamily: 'var(--font-family-serif)', // Consistent serif for headings
+                    display: 'flex',
+                    alignItems: 'baseline',
+                    justifyContent: 'center'
                 }}>
-                    0円カウンセリング
+                    <span style={{ fontSize: '2.2em', marginRight: '5px', transform: 'translateY(5px)' }}>0</span>
+                    <span>円カウンセリング</span>
                 </div>
             </div>
 
