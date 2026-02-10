@@ -6,7 +6,7 @@ import shuzoImg from '../assets/shuzo_icon.png';
 const Hero = () => {
     return (
         <section className="hero-section" style={{
-            padding: '280px 0 40px', // Further increased top padding to push text down
+            padding: '340px 0 40px', // Further increased top padding
             background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)', // Light clean gradient
             minHeight: '100vh',
             display: 'flex',
@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="hero-icons-wrapper">
                 <div className="hero-icon-left" style={{
                     position: 'absolute',
-                    top: '20%',
+                    top: '25%', // Lowered from 20%
                     left: '10%', // Moved inward from 5%
                     transform: 'translateY(-50%)',
                     width: 'clamp(200px, 20vw, 350px)',
@@ -49,7 +49,7 @@ const Hero = () => {
                 {/* Cross Icon - Centered between images */}
                 <div style={{
                     position: 'absolute',
-                    top: '20%',
+                    top: '25%', // Lowered from 20%
                     left: '50%',
                     transform: 'translate(-50%, -50%)',
                     fontSize: 'clamp(3rem, 6vw, 5rem)',
@@ -64,7 +64,7 @@ const Hero = () => {
 
                 <div className="hero-icon-right" style={{
                     position: 'absolute',
-                    top: '20%',
+                    top: '25%', // Lowered from 20%
                     right: '10%', // Moved inward from 5%
                     transform: 'translateY(-50%)',
                     width: 'clamp(200px, 20vw, 350px)',
