@@ -20,7 +20,7 @@ const Hero = () => {
                 <div className="hero-icon-left" style={{
                     position: 'absolute',
                     top: '25%',
-                    left: '5%',
+                    left: '10%', // Moved inward from 5%
                     transform: 'translateY(-50%)',
                     width: 'clamp(200px, 20vw, 350px)',
                     height: 'clamp(200px, 20vw, 350px)',
@@ -34,7 +34,7 @@ const Hero = () => {
                 <div className="hero-icon-right" style={{
                     position: 'absolute',
                     top: '25%',
-                    right: '5%',
+                    right: '10%', // Moved inward from 5%
                     transform: 'translateY(-50%)',
                     width: 'clamp(200px, 20vw, 350px)',
                     height: 'clamp(200px, 20vw, 350px)',
