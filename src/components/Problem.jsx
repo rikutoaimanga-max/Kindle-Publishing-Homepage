@@ -148,7 +148,10 @@ const Problem = () => {
                     alignItems: 'center',
                     justifyContent: 'center',
                     gap: '2rem',
-                    flexWrap: 'wrap'
+                    flexWrap: 'wrap',
+                    maxWidth: '800px',
+                    margin: '0 auto',
+                    width: '100%'
                 }}>
                     <div style={{
                         fontSize: 'clamp(1.5rem, 4vw, 2.5rem)',
