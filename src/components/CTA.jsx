@@ -193,7 +193,7 @@ const CTA = () => {
                                     120秒でカンタン入力!
                                 </div>
                                 <div className="cta-text-main" style={{ fontSize: '1.6rem', textShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>
-                                    カウンセリングを予約する
+                                    出版カウンセリングを依頼する
                                 </div>
                             </div>
 
