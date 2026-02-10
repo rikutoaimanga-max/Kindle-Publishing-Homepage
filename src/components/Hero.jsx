@@ -50,18 +50,18 @@ const Hero = () => {
             <div className="container" style={{ position: 'relative', zIndex: 10 }}>
 
                 <h1 className="hero-title" style={{
-                    fontSize: 'clamp(3rem, 7vw, 6rem)',
+                    fontSize: 'clamp(3.5rem, 8vw, 7rem)', // Increased from clamp(3rem, 7vw, 6rem)
                     fontWeight: '900',
                     lineHeight: '1.3',
                     margin: '0 auto 2rem',
-                    maxWidth: '1000px', // Wider container for larger text
+                    maxWidth: '1200px', // Increased container width
                     color: '#333'
                 }}>
-                    <span style={{ fontSize: '0.6em', display: 'block', marginBottom: '1.5rem', letterSpacing: '0.1em' }}>あなたの<br />知識・経験を、</span>
+                    <span style={{ fontSize: '0.7em', display: 'block', marginBottom: '1.5rem', letterSpacing: '0.1em' }}>あなたの<br />知識・経験を、</span>
                     <span className="hero-marker" style={{
                         fontFamily: 'var(--font-family-serif)',
                         color: 'var(--color-secondary)',
-                        fontSize: '0.8em',
+                        fontSize: '1.0em', // Increased from 0.8em
                         display: 'block',
                         lineHeight: '1.2',
                         // background property moved to CSS .hero-marker for responsive control
@@ -71,9 +71,9 @@ const Hero = () => {
                 </h1>
 
                 <p className="hero-description" style={{
-                    fontSize: '1.1rem', // Reduced from 1.3rem
+                    fontSize: '1.4rem', // Increased from 1.1rem
                     marginBottom: '3.5rem',
-                    maxWidth: '900px',
+                    maxWidth: '1000px', // Increased max-width
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     color: '#555',
@@ -88,7 +88,7 @@ const Hero = () => {
                     flexDirection: 'column', // Stack vertically
                     alignItems: 'center', // Center align items
                     justifyContent: 'center',
-                    gap: '1rem', // Slightly reduced gap for vertical stacking
+                    gap: '1.2rem', // Increased gap
                     marginBottom: '0'
                 }}>
                     {[
@@ -97,10 +97,10 @@ const Hero = () => {
                     ].map((badge, index) => (
                         <div key={index} className="hero-badge" style={{
                             background: '#ffffff',
-                            border: '2px solid var(--color-secondary)',
-                            padding: '0.8rem 1.6rem',
+                            border: '3px solid var(--color-secondary)', // Thicker border
+                            padding: '1rem 2rem', // Increased padding
                             borderRadius: '50px',
-                            fontSize: '1.1rem',
+                            fontSize: '1.3rem', // Increased from 1.1rem
                             color: 'var(--color-secondary)',
                             boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
                             fontWeight: 'bold',
