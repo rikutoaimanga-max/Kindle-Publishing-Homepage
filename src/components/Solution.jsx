@@ -26,7 +26,7 @@ const Solution = () => {
                 <div className="grid grid-3">
                     {points.map((point, index) => (
                         <div key={index} style={{
-                            border: '3px solid #0d47a1', // Thicker and darker blue border
+                            border: '4px solid var(--color-secondary)', // Match CTA border color and width
                             padding: '2rem',
                             textAlign: 'center',
                             backgroundColor: '#fff', // Changed to white background
