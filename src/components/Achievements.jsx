@@ -32,7 +32,12 @@ const Achievements = () => {
     ];
 
     return (
-        <section style={{ background: 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%)', padding: '80px 0', color: 'var(--color-text-dark)' }}>
+        <section style={{
+            background: 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%)',
+            backgroundColor: '#e6f7ff', // Fallback
+            padding: '80px 0',
+            color: 'var(--color-text-dark)'
+        }}>
             <div className="container">
                 <div style={{ textAlign: 'center' }}>
                     <h2 className="section-title" style={{ color: '#000' }}>実績紹介</h2>
