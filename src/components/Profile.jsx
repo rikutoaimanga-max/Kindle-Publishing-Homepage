@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/global.css';
 import rikutoImg from '../assets/rikuto_icon.png';
 import shuzoImg from '../assets/shuzo_icon.png';
-import { TwitterTimelineEmbed } from 'react-twitter-embed';
+// import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
 const Profile = () => {
     return (
