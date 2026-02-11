@@ -149,8 +149,8 @@ const Achievements = () => {
                                 padding: '1.2rem',
                                 borderRadius: '10px',
                                 position: 'relative',
-                                flexGrow: 1, // Let this fill remaining space
-                                minHeight: 0, // Important for scrolling in flex item
+                                flex: '1 1 0', // Force height constraint (flex-grow: 1, flex-shrink: 1, flex-basis: 0)
+                                minHeight: 0,
                                 fontSize: '0.9rem',
                                 overflowY: 'auto' // Enable scrolling
                             }}>
