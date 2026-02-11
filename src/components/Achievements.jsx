@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/global.css';
 import CTA from './CTA';
 import { FaTrophy } from 'react-icons/fa';
@@ -7,6 +7,21 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
 const Achievements = () => {
+    // Twitterウィジェットの読み込み
+    useEffect(() => {
+        const script = document.createElement("script");
+        script.src = "https://platform.twitter.com/widgets.js";
+        script.async = true;
+        document.body.appendChild(script);
+
+        return () => {
+            // クリーンアップは特に不要だが、コンポーネントアンマウント時に何かする必要があれば記述
+            if (document.body.contains(script)) {
+                document.body.removeChild(script);
+            }
+        };
+    }, []);
+
     // スライド画像の総数設定 (ここに数字を入れるだけでスライドが増減します)
     // 画像は public/image/manga_slide_{番号}.png という名前にしてください
     const TOTAL_SLIDES = 35;
