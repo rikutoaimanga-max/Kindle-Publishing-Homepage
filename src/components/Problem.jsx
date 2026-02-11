@@ -1,11 +1,11 @@
 import React from 'react';
-import { FaChartLine, FaShareAlt, FaCrown, FaClock, FaUserPlus, FaRoute, FaGem } from 'react-icons/fa';
+import { FaChartLine, FaBook, FaCrown, FaClock, FaUserPlus, FaRoute, FaGem } from 'react-icons/fa';
 import '../styles/global.css';
 
 const Problem = () => {
     const problems = [
         { text: '広告費高騰の負担', icon: <FaChartLine /> },
-        { text: 'SNS投稿の資産化', icon: <FaShareAlt /> },
+        { text: 'SNS投稿の資産化', icon: <FaBook /> },
         { text: '権威性の確立', icon: <FaCrown /> },
         { text: '出版の時間がない', icon: <FaClock /> },
         { text: 'リスト獲得の拡大', icon: <FaUserPlus /> },
