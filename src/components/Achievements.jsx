@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/global.css';
-import '../styles/global.css';
 import CTA from './CTA';
 
 const Achievements = () => {
@@ -45,10 +44,10 @@ const Achievements = () => {
 
 
                 <div style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: '2.5rem',
-                    maxWidth: '800px',
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                    gap: '2rem',
+                    maxWidth: '1000px',
                     margin: '0 auto',
                     marginBottom: '4rem'
                 }}>
@@ -56,14 +55,17 @@ const Achievements = () => {
                         <div key={index} style={{
                             backgroundColor: '#fff',
                             borderRadius: '15px',
-                            padding: '2rem',
+                            padding: '1.5rem',
                             boxShadow: '0 4px 15px rgba(0,0,0,0.05)',
                             display: 'flex',
                             flexDirection: 'column',
-                            gap: '1.5rem',
+                            gap: '1rem',
                             textAlign: 'left',
                             position: 'relative',
-                            overflow: 'hidden'
+                            overflow: 'hidden',
+                            height: '100%',
+                            aspectRatio: '1 / 1',
+                            justifyContent: 'space-between'
                         }}>
                             {/* 装飾的な背景要素 */}
                             <div style={{
@@ -76,33 +78,32 @@ const Achievements = () => {
                             }}></div>
 
                             {/* ヘッダーエリア：人物紹介 */}
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
                                 {/* アイコン */}
                                 <div style={{
-                                    width: '80px',
-                                    height: '80px',
+                                    width: '60px',
+                                    height: '60px',
                                     borderRadius: '50%',
                                     backgroundColor: '#eee',
                                     flexShrink: 0,
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
-                                    fontSize: '2rem',
+                                    fontSize: '1.5rem',
                                     color: '#aaa'
                                 }}>
-                                    {/* Placeholder Icon */}
                                     User
                                 </div>
 
                                 {/* プロフィール */}
                                 <div>
-                                    <div style={{ fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '0.25rem', display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+                                    <div style={{ fontSize: '1rem', fontWeight: 'bold', marginBottom: '0.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
                                         {client.name}
-                                        <span style={{ fontSize: '0.85rem', fontWeight: 'normal', color: '#fff', backgroundColor: '#999', padding: '2px 8px', borderRadius: '12px' }}>
+                                        <span style={{ fontSize: '0.75rem', fontWeight: 'normal', color: '#fff', backgroundColor: '#999', padding: '2px 6px', borderRadius: '10px' }}>
                                             {client.attribute}
                                         </span>
                                     </div>
-                                    <div style={{ fontSize: '1rem', color: 'var(--color-secondary)', fontWeight: 'bold' }}>
+                                    <div style={{ fontSize: '0.9rem', color: 'var(--color-secondary)', fontWeight: 'bold' }}>
                                         {client.title}
                                     </div>
                                 </div>
@@ -112,16 +113,20 @@ const Achievements = () => {
                             <div style={{
                                 backgroundColor: '#fffaf0', // 薄い暖色系
                                 border: '1px solid #ffeeba',
-                                padding: '1.5rem',
-                                borderRadius: '10px'
+                                padding: '1rem',
+                                borderRadius: '8px',
+                                flexGrow: 1, // Allow this to grow fill space
+                                display: 'flex',
+                                flexDirection: 'column',
+                                justifyContent: 'center'
                             }}>
-                                <div style={{ fontSize: '0.9rem', fontWeight: 'bold', color: 'var(--color-accent)', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                                    <span style={{ fontSize: '1.2rem' }}>🏆</span> 成果
+                                <div style={{ fontSize: '0.85rem', fontWeight: 'bold', color: 'var(--color-accent)', marginBottom: '0.3rem', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+                                    <span style={{ fontSize: '1rem' }}>🏆</span> 成果
                                 </div>
-                                <div style={{ fontSize: '1.1rem', fontWeight: 'bold', lineHeight: '1.6' }}>
+                                <div style={{ fontSize: '1rem', fontWeight: 'bold', lineHeight: '1.4' }}>
                                     {client.result}
                                 </div>
-                                <div style={{ fontSize: '0.85rem', color: '#666', marginTop: '0.5rem', textAlign: 'right' }}>
+                                <div style={{ fontSize: '0.8rem', color: '#666', marginTop: '0.3rem', textAlign: 'right' }}>
                                     期間：{client.period}
                                 </div>
                             </div>
@@ -129,12 +134,14 @@ const Achievements = () => {
                             {/* フッターエリア：感想 */}
                             <div style={{
                                 backgroundColor: '#f9f9f9',
-                                padding: '1.5rem',
-                                borderRadius: '10px',
-                                position: 'relative'
+                                padding: '1rem',
+                                borderRadius: '8px',
+                                position: 'relative',
+                                minHeight: '80px',
+                                fontSize: '0.85rem'
                             }}>
-                                <div style={{ position: 'absolute', top: '-10px', left: '20px', fontSize: '3rem', color: '#e0e0e0', lineHeight: 1 }}>❝</div>
-                                <p style={{ fontSize: '0.95rem', lineHeight: '1.8', color: '#444', position: 'relative', zIndex: 1 }}>
+                                <div style={{ position: 'absolute', top: '-5px', left: '10px', fontSize: '2rem', color: '#e0e0e0', lineHeight: 1 }}>❝</div>
+                                <p style={{ lineHeight: '1.6', color: '#444', position: 'relative', zIndex: 1, maxHeight: '80px', overflowY: 'auto' }}>
                                     {client.voice}
                                 </p>
                             </div>
