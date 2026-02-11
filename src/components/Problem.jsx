@@ -163,18 +163,6 @@ const Problem = () => {
                     }}>
                         私たちが解決します！
                     </div>
-                    <div style={{
-                        fontSize: 'clamp(1rem, 2.5vw, 1.2rem)',
-                        fontWeight: 'bold',
-                        color: 'var(--color-primary)', // Changed to primary color for better readability against the background
-                        textAlign: 'center',
-                        lineHeight: '1.6',
-                        width: '100%',
-                        marginTop: '0.5rem'
-                    }}>
-                        書籍を通して、ファン化とリスト獲得の自動化が可能。<br />
-                        Amazonがあなたの代わりに「教育済み」の顧客を連れてくる。
-                    </div>
                 </div>
             </div>
         </section>
