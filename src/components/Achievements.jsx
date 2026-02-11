@@ -56,17 +56,11 @@ const Achievements = () => {
                         <div key={index} style={{
                             backgroundColor: '#fff',
                             borderRadius: '15px',
-                            padding: '1.8rem',
                             boxShadow: '0 4px 15px rgba(0,0,0,0.05)',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            gap: '1.2rem',
-                            textAlign: 'left',
                             position: 'relative',
                             overflow: 'hidden',
-                            height: '100%',
-                            aspectRatio: '3 / 4', // Taller aspect ratio (0.75)
-                            justifyContent: 'space-between'
+                            width: '100%',
+                            aspectRatio: '3 / 4', // Fixed aspect ratio container
                         }}>
                             {/* 装飾的な背景要素 */}
                             <div style={{
@@ -75,89 +69,106 @@ const Achievements = () => {
                                 left: 0,
                                 width: '6px',
                                 height: '100%',
-                                backgroundColor: 'var(--color-secondary)'
+                                backgroundColor: 'var(--color-secondary)',
+                                zIndex: 1
                             }}></div>
 
-                            {/* ヘッダーエリア：人物紹介 */}
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-                                {/* アイコン */}
-                                {client.image ? (
-                                    <img
-                                        src={client.image}
-                                        alt={client.name}
-                                        style={{
+                            {/* 絶対配置の内部ラッパーで高さを強制 */}
+                            <div style={{
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                width: '100%',
+                                height: '100%',
+                                padding: '1.8rem',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                gap: '1.2rem',
+                                zIndex: 2
+                            }}>
+
+                                {/* ヘッダーエリア：人物紹介 */}
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+                                    {/* アイコン */}
+                                    {client.image ? (
+                                        <img
+                                            src={client.image}
+                                            alt={client.name}
+                                            style={{
+                                                width: '64px',
+                                                height: '64px',
+                                                borderRadius: '50%',
+                                                objectFit: 'cover',
+                                                border: '2px solid #eee'
+                                            }}
+                                        />
+                                    ) : (
+                                        <div style={{
                                             width: '64px',
                                             height: '64px',
                                             borderRadius: '50%',
-                                            objectFit: 'cover',
-                                            border: '2px solid #eee'
-                                        }}
-                                    />
-                                ) : (
-                                    <div style={{
-                                        width: '64px',
-                                        height: '64px',
-                                        borderRadius: '50%',
-                                        backgroundColor: '#eee',
-                                        flexShrink: 0,
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        justifyContent: 'center',
-                                        fontSize: '1.8rem',
-                                        color: '#aaa'
-                                    }}>
-                                        User
-                                    </div>
-                                )}
+                                            backgroundColor: '#eee',
+                                            flexShrink: 0,
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            fontSize: '1.8rem',
+                                            color: '#aaa'
+                                        }}>
+                                            User
+                                        </div>
+                                    )}
 
-                                {/* プロフィール */}
-                                <div>
-                                    <div style={{ fontSize: '1.1rem', fontWeight: 'bold', marginBottom: '0.3rem', display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
-                                        {client.name}
-                                    </div>
-                                    <div style={{ fontSize: '0.95rem', color: 'var(--color-secondary)', fontWeight: 'bold' }}>
-                                        {client.title}
+                                    {/* プロフィール */}
+                                    <div>
+                                        <div style={{ fontSize: '1.1rem', fontWeight: 'bold', marginBottom: '0.3rem', display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+                                            {client.name}
+                                        </div>
+                                        <div style={{ fontSize: '0.95rem', color: 'var(--color-secondary)', fontWeight: 'bold' }}>
+                                            {client.title}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            {/* ボディエリア：成果 */}
-                            <div style={{
-                                backgroundColor: '#fffaf0', // 薄い暖色系
-                                border: '1px solid #ffeeba',
-                                padding: '1.2rem',
-                                borderRadius: '10px',
-                                flexGrow: 0, // Don't stretch this too much
-                                display: 'flex',
-                                flexDirection: 'column',
-                                justifyContent: 'center'
-                            }}>
-                                <div style={{ fontSize: '0.9rem', fontWeight: 'bold', color: 'var(--color-accent)', marginBottom: '0.4rem', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                                    <span style={{ fontSize: '1.1rem' }}>🏆</span> 成果
+                                {/* ボディエリア：成果 */}
+                                <div style={{
+                                    backgroundColor: '#fffaf0', // 薄い暖色系
+                                    border: '1px solid #ffeeba',
+                                    padding: '1.2rem',
+                                    borderRadius: '10px',
+                                    flexGrow: 0, // Don't stretch this too much
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    justifyContent: 'center'
+                                }}>
+                                    <div style={{ fontSize: '0.9rem', fontWeight: 'bold', color: 'var(--color-accent)', marginBottom: '0.4rem', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                                        <span style={{ fontSize: '1.1rem' }}>🏆</span> 成果
+                                    </div>
+                                    <div style={{ fontSize: '1.05rem', fontWeight: 'bold', lineHeight: '1.5' }}>
+                                        {client.result}
+                                    </div>
+                                    <div style={{ fontSize: '0.85rem', color: '#666', marginTop: '0.4rem', textAlign: 'right' }}>
+                                        期間：{client.period}
+                                    </div>
                                 </div>
-                                <div style={{ fontSize: '1.05rem', fontWeight: 'bold', lineHeight: '1.5' }}>
-                                    {client.result}
-                                </div>
-                                <div style={{ fontSize: '0.85rem', color: '#666', marginTop: '0.4rem', textAlign: 'right' }}>
-                                    期間：{client.period}
-                                </div>
-                            </div>
 
-                            {/* フッターエリア：感想 */}
-                            <div style={{
-                                backgroundColor: '#f9f9f9',
-                                padding: '1.2rem',
-                                borderRadius: '10px',
-                                position: 'relative',
-                                flex: '1 1 0', // Force height constraint (flex-grow: 1, flex-shrink: 1, flex-basis: 0)
-                                minHeight: 0,
-                                fontSize: '0.9rem',
-                                overflowY: 'auto' // Enable scrolling
-                            }}>
-                                <div style={{ position: 'absolute', top: '-8px', left: '15px', fontSize: '2.5rem', color: '#e0e0e0', lineHeight: 1 }}>❝</div>
-                                <p style={{ lineHeight: '1.7', color: '#444', position: 'relative', zIndex: 1, margin: 0 }}>
-                                    {client.voice}
-                                </p>
+                                {/* フッターエリア：感想 */}
+                                <div style={{
+                                    backgroundColor: '#f9f9f9',
+                                    padding: '1.2rem',
+                                    borderRadius: '10px',
+                                    position: 'relative',
+                                    flex: '1 1 0', // Force this to take remaining space but shrinking if needed
+                                    minHeight: 0, // Allow shrinking below content size
+                                    fontSize: '0.9rem',
+                                    overflowY: 'auto' // Enable scrolling
+                                }}>
+                                    <div style={{ position: 'absolute', top: '-8px', left: '15px', fontSize: '2.5rem', color: '#e0e0e0', lineHeight: 1 }}>❝</div>
+                                    <p style={{ lineHeight: '1.7', color: '#444', position: 'relative', zIndex: 1, margin: 0 }}>
+                                        {client.voice}
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
                     ))}
