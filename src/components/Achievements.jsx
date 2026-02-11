@@ -7,6 +7,13 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
 const Achievements = () => {
+    // スライド画像の総数設定 (ここに数字を入れるだけでスライドが増減します)
+    // 画像は public/image/manga_slide_{番号}.jpg という名前にしてください
+    const TOTAL_SLIDES = 4;
+
+    // Create array of slide numbers based on TOTAL_SLIDES
+    const slideNumbers = Array.from({ length: TOTAL_SLIDES }, (_, i) => i + 1);
+
     const clients = [
         {
             name: 'こう吉様',
@@ -241,7 +248,7 @@ const Achievements = () => {
                             className="mySwiper"
                             style={{ width: '100%', height: 'auto' }}
                         >
-                            {[1, 2, 3, 4].map((num) => (
+                            {slideNumbers.map((num) => (
                                 <SwiperSlide key={num}>
                                     <div style={{
                                         overflow: 'hidden',
