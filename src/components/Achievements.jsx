@@ -2,6 +2,9 @@ import React from 'react';
 import '../styles/global.css';
 import CTA from './CTA';
 import { FaTrophy } from 'react-icons/fa';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
 
 const Achievements = () => {
     const clients = [
@@ -206,19 +209,59 @@ const Achievements = () => {
                 </div>
 
                 <div style={{ marginTop: '4rem', textAlign: 'center' }}>
-                    {/* Manga Quality Image Placeholder */}
                     <div style={{
                         width: '100%',
-                        maxWidth: '800px',
-                        height: '300px',
-                        backgroundColor: '#eee',
-                        margin: '0 auto',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        border: '2px dashed #ccc'
+                        overflow: 'hidden',
+                        padding: '20px 0' // Add padding
                     }}>
-                        マンガクオリティ・テキスト本データイメージが入ります
+                        <style>
+                            {`
+                                .swiper-wrapper {
+                                    transition-timing-function: linear !important;
+                                }
+                            `}
+                        </style>
+                        <Swiper
+                            modules={[Autoplay]}
+                            spaceBetween={30}
+                            slidesPerView={1.5} // Show partial slides
+                            breakpoints={{
+                                640: { slidesPerView: 2.5 },
+                                768: { slidesPerView: 3.5 },
+                            }}
+                            loop={true}
+                            speed={5000} // Slow constant speed
+                            autoplay={{
+                                delay: 0,
+                                disableOnInteraction: false,
+                                pauseOnMouseEnter: true, // Stop on hover
+                            }}
+                            className="mySwiper"
+                            style={{ width: '100%', height: 'auto' }}
+                        >
+                            {[1, 2, 3, 4, 5].map((num) => (
+                                <SwiperSlide key={num}>
+                                    <div style={{
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        backgroundColor: '#e6e6e6',
+                                        height: '220px', // Adjusted height
+                                        color: '#aaa',
+                                        fontSize: '1rem',
+                                        fontWeight: 'bold',
+                                        borderRadius: '8px',
+                                        boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+                                        border: '1px solid #ddd'
+                                    }}>
+                                        作品スライド {num}
+                                        <br />
+                                        (画像準備中)
+                                    </div>
+                                    {/* <img src={`/image/slide${num}.png`} alt={`Slide ${num}`} style={{ width: '100%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }} /> */}
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
                     </div>
                 </div>
 
