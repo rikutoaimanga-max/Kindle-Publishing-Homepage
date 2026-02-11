@@ -36,34 +36,97 @@ const Achievements = () => {
                 <div style={{
                     display: 'flex',
                     flexDirection: 'column',
-                    gap: '2rem',
+                    gap: '2.5rem',
                     maxWidth: '800px',
                     margin: '0 auto',
                     marginBottom: '4rem'
                 }}>
                     {clients.map((client, index) => (
                         <div key={index} style={{
-                            backgroundColor: '#f9f9f9',
+                            backgroundColor: '#fff',
+                            borderRadius: '15px',
                             padding: '2rem',
-                            borderRadius: '8px',
-                            textAlign: 'left', // Changed to left align
-                            boxShadow: '0 4px 10px rgba(0,0,0,0.1)',
+                            boxShadow: '0 4px 15px rgba(0,0,0,0.05)',
                             display: 'flex',
-                            flexDirection: 'column', // Keep vertical stack within card
-                            alignItems: 'flex-start' // Align items to start (left)
+                            flexDirection: 'column',
+                            gap: '1.5rem',
+                            textAlign: 'left',
+                            position: 'relative',
+                            overflow: 'hidden'
                         }}>
+                            {/* 装飾的な背景要素 */}
                             <div style={{
-                                width: '100px',
-                                height: '100px',
-                                backgroundColor: '#ddd',
-                                borderRadius: '50%',
-                                margin: '0 0 1rem 0' // Changed margin to zero on left/right, bottom 1rem
-                            }}>
-                                {/* Image Placeholder */}
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                width: '6px',
+                                height: '100%',
+                                backgroundColor: 'var(--color-secondary)'
+                            }}></div>
+
+                            {/* ヘッダーエリア：人物紹介 */}
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
+                                {/* アイコン */}
+                                <div style={{
+                                    width: '80px',
+                                    height: '80px',
+                                    borderRadius: '50%',
+                                    backgroundColor: '#eee',
+                                    flexShrink: 0,
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    fontSize: '2rem',
+                                    color: '#aaa'
+                                }}>
+                                    {/* Placeholder Icon */}
+                                    User
+                                </div>
+
+                                {/* プロフィール */}
+                                <div>
+                                    <div style={{ fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '0.25rem', display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+                                        {client.name}
+                                        <span style={{ fontSize: '0.85rem', fontWeight: 'normal', color: '#fff', backgroundColor: '#999', padding: '2px 8px', borderRadius: '12px' }}>
+                                            {client.attribute}
+                                        </span>
+                                    </div>
+                                    <div style={{ fontSize: '1rem', color: 'var(--color-secondary)', fontWeight: 'bold' }}>
+                                        {client.title}
+                                    </div>
+                                </div>
                             </div>
-                            <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>{client.name} <span style={{ fontSize: '0.9rem', fontWeight: 'normal' }}>{client.title}</span></h3>
-                            <p style={{ fontWeight: 'bold', color: 'var(--color-accent)', marginBottom: '0.5rem' }}>{client.result}</p>
-                            <p style={{ fontSize: '0.9rem', color: '#666' }}>{client.period}</p>
+
+                            {/* ボディエリア：成果 */}
+                            <div style={{
+                                backgroundColor: '#fffaf0', // 薄い暖色系
+                                border: '1px solid #ffeeba',
+                                padding: '1.5rem',
+                                borderRadius: '10px'
+                            }}>
+                                <div style={{ fontSize: '0.9rem', fontWeight: 'bold', color: 'var(--color-accent)', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                    <span style={{ fontSize: '1.2rem' }}>🏆</span> 成果
+                                </div>
+                                <div style={{ fontSize: '1.1rem', fontWeight: 'bold', lineHeight: '1.6' }}>
+                                    {client.result}
+                                </div>
+                                <div style={{ fontSize: '0.85rem', color: '#666', marginTop: '0.5rem', textAlign: 'right' }}>
+                                    期間：{client.period}
+                                </div>
+                            </div>
+
+                            {/* フッターエリア：感想 */}
+                            <div style={{
+                                backgroundColor: '#f9f9f9',
+                                padding: '1.5rem',
+                                borderRadius: '10px',
+                                position: 'relative'
+                            }}>
+                                <div style={{ position: 'absolute', top: '-10px', left: '20px', fontSize: '3rem', color: '#e0e0e0', lineHeight: 1 }}>❝</div>
+                                <p style={{ fontSize: '0.95rem', lineHeight: '1.8', color: '#444', position: 'relative', zIndex: 1 }}>
+                                    {client.voice}
+                                </p>
+                            </div>
                         </div>
                     ))}
                 </div>
