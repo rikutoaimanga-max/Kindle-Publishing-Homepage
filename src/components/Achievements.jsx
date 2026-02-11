@@ -45,9 +45,9 @@ const Achievements = () => {
 
                 <div style={{
                     display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-                    gap: '2rem',
-                    maxWidth: '1000px',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))',
+                    gap: '2.5rem',
+                    maxWidth: '900px', // 2 columns max (360*2 + gap < 900, 360*3 > 900)
                     margin: '0 auto',
                     marginBottom: '4rem'
                 }}>
@@ -55,16 +55,16 @@ const Achievements = () => {
                         <div key={index} style={{
                             backgroundColor: '#fff',
                             borderRadius: '15px',
-                            padding: '1.5rem',
+                            padding: '1.8rem',
                             boxShadow: '0 4px 15px rgba(0,0,0,0.05)',
                             display: 'flex',
                             flexDirection: 'column',
-                            gap: '1rem',
+                            gap: '1.2rem',
                             textAlign: 'left',
                             position: 'relative',
                             overflow: 'hidden',
                             height: '100%',
-                            aspectRatio: '1 / 1',
+                            aspectRatio: '3 / 4', // Taller aspect ratio (0.75)
                             justifyContent: 'space-between'
                         }}>
                             {/* 装飾的な背景要素 */}
@@ -81,15 +81,15 @@ const Achievements = () => {
                             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
                                 {/* アイコン */}
                                 <div style={{
-                                    width: '60px',
-                                    height: '60px',
+                                    width: '64px',
+                                    height: '64px',
                                     borderRadius: '50%',
                                     backgroundColor: '#eee',
                                     flexShrink: 0,
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
-                                    fontSize: '1.5rem',
+                                    fontSize: '1.8rem',
                                     color: '#aaa'
                                 }}>
                                     User
@@ -97,13 +97,10 @@ const Achievements = () => {
 
                                 {/* プロフィール */}
                                 <div>
-                                    <div style={{ fontSize: '1rem', fontWeight: 'bold', marginBottom: '0.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+                                    <div style={{ fontSize: '1.1rem', fontWeight: 'bold', marginBottom: '0.3rem', display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
                                         {client.name}
-                                        <span style={{ fontSize: '0.75rem', fontWeight: 'normal', color: '#fff', backgroundColor: '#999', padding: '2px 6px', borderRadius: '10px' }}>
-                                            {client.attribute}
-                                        </span>
                                     </div>
-                                    <div style={{ fontSize: '0.9rem', color: 'var(--color-secondary)', fontWeight: 'bold' }}>
+                                    <div style={{ fontSize: '0.95rem', color: 'var(--color-secondary)', fontWeight: 'bold' }}>
                                         {client.title}
                                     </div>
                                 </div>
@@ -113,20 +110,20 @@ const Achievements = () => {
                             <div style={{
                                 backgroundColor: '#fffaf0', // 薄い暖色系
                                 border: '1px solid #ffeeba',
-                                padding: '1rem',
-                                borderRadius: '8px',
-                                flexGrow: 1, // Allow this to grow fill space
+                                padding: '1.2rem',
+                                borderRadius: '10px',
+                                flexGrow: 0, // Don't stretch this too much
                                 display: 'flex',
                                 flexDirection: 'column',
                                 justifyContent: 'center'
                             }}>
-                                <div style={{ fontSize: '0.85rem', fontWeight: 'bold', color: 'var(--color-accent)', marginBottom: '0.3rem', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-                                    <span style={{ fontSize: '1rem' }}>🏆</span> 成果
+                                <div style={{ fontSize: '0.9rem', fontWeight: 'bold', color: 'var(--color-accent)', marginBottom: '0.4rem', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                                    <span style={{ fontSize: '1.1rem' }}>🏆</span> 成果
                                 </div>
-                                <div style={{ fontSize: '1rem', fontWeight: 'bold', lineHeight: '1.4' }}>
+                                <div style={{ fontSize: '1.05rem', fontWeight: 'bold', lineHeight: '1.5' }}>
                                     {client.result}
                                 </div>
-                                <div style={{ fontSize: '0.8rem', color: '#666', marginTop: '0.3rem', textAlign: 'right' }}>
+                                <div style={{ fontSize: '0.85rem', color: '#666', marginTop: '0.4rem', textAlign: 'right' }}>
                                     期間：{client.period}
                                 </div>
                             </div>
@@ -134,14 +131,16 @@ const Achievements = () => {
                             {/* フッターエリア：感想 */}
                             <div style={{
                                 backgroundColor: '#f9f9f9',
-                                padding: '1rem',
-                                borderRadius: '8px',
+                                padding: '1.2rem',
+                                borderRadius: '10px',
                                 position: 'relative',
-                                minHeight: '80px',
-                                fontSize: '0.85rem'
+                                flexGrow: 1, // Let this fill remaining space
+                                fontSize: '0.9rem',
+                                display: 'flex',
+                                alignItems: 'flex-start'
                             }}>
-                                <div style={{ position: 'absolute', top: '-5px', left: '10px', fontSize: '2rem', color: '#e0e0e0', lineHeight: 1 }}>❝</div>
-                                <p style={{ lineHeight: '1.6', color: '#444', position: 'relative', zIndex: 1, maxHeight: '80px', overflowY: 'auto' }}>
+                                <div style={{ position: 'absolute', top: '-8px', left: '15px', fontSize: '2.5rem', color: '#e0e0e0', lineHeight: 1 }}>❝</div>
+                                <p style={{ lineHeight: '1.7', color: '#444', position: 'relative', zIndex: 1, margin: 0 }}>
                                     {client.voice}
                                 </p>
                             </div>
