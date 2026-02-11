@@ -242,7 +242,7 @@ const Achievements = () => {
                             autoplay={{
                                 delay: 0,
                                 disableOnInteraction: false,
-                                pauseOnMouseEnter: true, // Stop on hover
+                                pauseOnMouseEnter: false, // Don't stop on hover
                             }}
                             allowTouchMove={false} // Disable touch dragging for smoother continuous flow
                             className="mySwiper"
