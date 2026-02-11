@@ -7,21 +7,27 @@ const Achievements = () => {
     const clients = [
         {
             name: 'K.S様',
+            attribute: '30代 男性',
             title: 'マーケティングコンサル',
-            result: 'リスト取得：30件/月 → 80件（166% UP）',
-            period: '出版後2ヶ月'
+            result: <>リスト取得：30件/月 → <span style={{ fontWeight: 'bold', fontSize: '1.1em', color: '#e60012' }}>80件（166% UP）</span></>,
+            period: '出版後2ヶ月',
+            voice: '以前は広告に頼っていましたが、CPAが高騰し限界を感じていました。電子書籍を出版したことで、「先生」としてのポジションが確立され、広告を使わずに質の高いリストが入ってくるようになりました。成約率も明らかに上がっています。'
         },
         {
             name: 'T.M様',
+            attribute: '40代 男性',
             title: '経営者',
-            result: '講演依頼：1件/月 → 4件（300% UP / 4倍増）',
-            period: '出版後1ヶ月'
+            result: <>講演依頼：1件/月 → <span style={{ fontWeight: 'bold', fontSize: '1.1em', color: '#e60012' }}>4件（300% UP / 4倍増）</span></>,
+            period: '出版後1ヶ月',
+            voice: '出版前は「ただの経営者」でしたが、出版後は「著者の先生」として見られるようになり、講演依頼が急増しました。書籍が名刺代わりになり、初対面の方からの信頼獲得スピードが段違いです。'
         },
         {
             name: 'Y.I様',
+            attribute: '30代 女性',
             title: '起業家・コーチ',
-            result: '月商：100万円 → 300万円（200% UP / 3倍増）',
-            period: '出版後2ヶ月'
+            result: <>月商：100万円 → <span style={{ fontWeight: 'bold', fontSize: '1.1em', color: '#e60012' }}>300万円（200% UP / 3倍増）</span></>,
+            period: '出版後2ヶ月',
+            voice: '集客に追われる日々から解放されました。Amazonが自動的に集客してくれるので、私は本業のコーチングに集中できています。お客様の方から「お願いします」と言われるようになり、セールスのストレスがなくなりました。'
         }
     ];
 
