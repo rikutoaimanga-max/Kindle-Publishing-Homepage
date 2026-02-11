@@ -216,6 +216,26 @@ const Achievements = () => {
                                     </p>
                                 </div>
 
+                                {/* X (Twitter) タイムライン埋め込み (公式ウィジェット) */}
+                                {client.twitterId && (
+                                    <div style={{ marginTop: '1rem', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                        <div style={{ fontSize: '0.8rem', color: '#888', marginBottom: '0.5rem', textAlign: 'center' }}>
+                                            ▼ {client.name}様の最新の投稿
+                                        </div>
+                                        <div style={{ width: '100%', maxWidth: '100%', height: '400px', overflowY: 'auto', border: '1px solid #eee', borderRadius: '12px' }}>
+                                            <a
+                                                className="twitter-timeline"
+                                                data-lang="ja"
+                                                // data-height="400" 
+                                                data-theme="light"
+                                                href={`https://twitter.com/${client.twitterId.replace('@', '')}?ref_src=twsrc%5Etfw`}
+                                            >
+                                                Tweets by {client.name}
+                                            </a>
+                                        </div>
+                                    </div>
+                                )}
+
                             </div>
                         </div>
                     ))}
