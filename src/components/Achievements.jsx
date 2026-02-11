@@ -27,7 +27,7 @@ const Achievements = () => {
             period: '出版後2ヶ月',
             // ここにX(Twitter)のIDを入れると、感想の下にタイムラインが表示されます
             // 例: twitterId: 'koukichi_t',
-            twitterId: ''
+            twitterId: 'kokichi_00'
         },
         {
             name: 'T.M様',
@@ -36,7 +36,8 @@ const Achievements = () => {
             before: '講演依頼：1件/月',
             after: '4件（300% UP / 4倍増）',
             voice: '出版前は「ただの経営者」でしたが、出版後は「著者の先生」として見られるようになり、講演依頼が急増しました。書籍が名刺代わりになり、初対面の方からの信頼獲得スピードが段違いです。',
-            period: '出版後1ヶ月'
+            period: '出版後1ヶ月',
+            twitterId: ''
         },
         {
             name: 'Y.I様',
@@ -45,7 +46,8 @@ const Achievements = () => {
             before: '月商：100万円',
             after: '300万円（200% UP / 3倍増）',
             voice: '集客に追われる日々から解放されました。Amazonが自動的に集客してくれるので、私は本業のコーチングに集中できています。お客様の方から「お願いします」と言われるようになり、セールスのストレスがなくなりました。',
-            period: '出版後2ヶ月'
+            period: '出版後2ヶ月',
+            twitterId: ''
         }
     ];
 
