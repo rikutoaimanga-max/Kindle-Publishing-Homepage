@@ -166,7 +166,6 @@ const Achievements = () => {
                                         overflowY: 'auto', // Enable scrolling
                                         overscrollBehavior: 'contain' // Prevent scroll chaining to parent
                                     }}>
-                                    <div style={{ position: 'absolute', top: '-8px', left: '15px', fontSize: '2.5rem', color: '#e0e0e0', lineHeight: 1 }}>❝</div>
                                     <p style={{ lineHeight: '1.7', color: '#444', position: 'relative', zIndex: 1, margin: 0 }}>
                                         {client.voice}
                                     </p>
