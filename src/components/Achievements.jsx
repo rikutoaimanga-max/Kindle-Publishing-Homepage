@@ -5,9 +5,10 @@ import CTA from './CTA';
 const Achievements = () => {
     const clients = [
         {
-            name: 'K.S様',
+            name: 'こう吉様',
             attribute: '30代 男性',
-            title: 'マーケティングコンサル',
+            title: '500名超えのKindleサロンオーナー',
+            image: '/images/koukichi.png',
             result: <>リスト取得：30件/月 → <span style={{ fontWeight: 'bold', fontSize: '1.1em', color: '#e60012' }}>80件（166% UP）</span></>,
             period: '出版後2ヶ月',
             voice: '以前は広告に頼っていましたが、CPAが高騰し限界を感じていました。電子書籍を出版したことで、「先生」としてのポジションが確立され、広告を使わずに質の高いリストが入ってくるようになりました。成約率も明らかに上がっています。'
@@ -80,20 +81,34 @@ const Achievements = () => {
                             {/* ヘッダーエリア：人物紹介 */}
                             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
                                 {/* アイコン */}
-                                <div style={{
-                                    width: '64px',
-                                    height: '64px',
-                                    borderRadius: '50%',
-                                    backgroundColor: '#eee',
-                                    flexShrink: 0,
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    fontSize: '1.8rem',
-                                    color: '#aaa'
-                                }}>
-                                    User
-                                </div>
+                                {client.image ? (
+                                    <img
+                                        src={client.image}
+                                        alt={client.name}
+                                        style={{
+                                            width: '64px',
+                                            height: '64px',
+                                            borderRadius: '50%',
+                                            objectFit: 'cover',
+                                            border: '2px solid #eee'
+                                        }}
+                                    />
+                                ) : (
+                                    <div style={{
+                                        width: '64px',
+                                        height: '64px',
+                                        borderRadius: '50%',
+                                        backgroundColor: '#eee',
+                                        flexShrink: 0,
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        fontSize: '1.8rem',
+                                        color: '#aaa'
+                                    }}>
+                                        User
+                                    </div>
+                                )}
 
                                 {/* プロフィール */}
                                 <div>
