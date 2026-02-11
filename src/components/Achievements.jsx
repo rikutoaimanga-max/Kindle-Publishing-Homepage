@@ -152,7 +152,9 @@ const Achievements = () => {
                                 flexGrow: 1, // Let this fill remaining space
                                 fontSize: '0.9rem',
                                 display: 'flex',
-                                alignItems: 'flex-start'
+                                alignItems: 'flex-start',
+                                overflowY: 'auto', // Enable scrolling
+                                maxHeight: '150px' // Set a max height to trigger scroll
                             }}>
                                 <div style={{ position: 'absolute', top: '-8px', left: '15px', fontSize: '2.5rem', color: '#e0e0e0', lineHeight: 1 }}>❝</div>
                                 <p style={{ lineHeight: '1.7', color: '#444', position: 'relative', zIndex: 1, margin: 0 }}>
