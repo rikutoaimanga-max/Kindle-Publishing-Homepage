@@ -80,9 +80,10 @@ const Achievements = () => {
                             position: 'relative',
                             overflow: 'hidden',
                             width: '100%',
-                            height: '650px', // Fixed height strategy
-                            display: 'flex',       // Flex container
-                            flexDirection: 'column' // Column layout
+                            minHeight: '650px', // Allow growth
+                            height: 'auto',     // Allow growth
+                            display: 'flex',
+                            flexDirection: 'column'
                         }}>
                             {/* 装飾的な背景要素 */}
                             <div style={{
@@ -218,14 +219,15 @@ const Achievements = () => {
 
                                 {/* X (Twitter) タイムライン埋め込み */}
                                 {client.twitterId && (
-                                    <div style={{ marginTop: '1rem', height: '300px', overflowY: 'short' }}>
+                                    <div style={{ marginTop: '1rem', height: '400px', overflowY: 'auto' }}>
                                         <div style={{ fontSize: '0.8rem', color: '#888', marginBottom: '0.5rem', textAlign: 'center' }}>
                                             ▼ {client.name}様の最新の投稿
                                         </div>
                                         <TwitterTimelineEmbed
+                                            key={client.twitterId}
                                             sourceType="profile"
                                             screenName={client.twitterId.replace('@', '')}
-                                            options={{ height: 300 }}
+                                            options={{ height: 400 }}
                                             lang="ja"
                                         />
                                     </div>
