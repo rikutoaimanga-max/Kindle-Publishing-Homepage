@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaChartLine, FaShareAlt, FaCrown, FaClock, FaUserPlus, FaRoute, FaPuzzlePiece } from 'react-icons/fa';
+import { FaChartLine, FaShareAlt, FaCrown, FaClock, FaUserPlus, FaRoute, FaGem } from 'react-icons/fa';
 import '../styles/global.css';
 
 const Problem = () => {
@@ -10,7 +10,7 @@ const Problem = () => {
         { text: '出版の時間がない', icon: <FaClock /> },
         { text: 'リスト獲得の拡大', icon: <FaUserPlus /> },
         { text: 'バックエンド導線の増加', icon: <FaRoute /> },
-        { text: '競合との差別化', icon: <FaPuzzlePiece /> },
+        { text: '競合との差別化', icon: <FaGem /> },
     ];
 
     return (
