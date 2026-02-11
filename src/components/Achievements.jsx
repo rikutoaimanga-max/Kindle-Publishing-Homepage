@@ -144,18 +144,27 @@ const Achievements = () => {
                             </div>
 
                             {/* フッターエリア：感想 */}
-                            <div style={{
-                                backgroundColor: '#f9f9f9',
-                                padding: '1.2rem',
-                                borderRadius: '10px',
-                                position: 'relative',
-                                flexGrow: 1, // Let this fill remaining space
-                                fontSize: '0.9rem',
-                                display: 'flex',
-                                alignItems: 'flex-start',
-                                overflowY: 'auto', // Enable scrolling
-                                maxHeight: '150px' // Set a max height to trigger scroll
-                            }}>
+                            <div
+                                className="hide-scrollbar"
+                                style={{
+                                    backgroundColor: '#f9f9f9',
+                                    padding: '1.2rem',
+                                    borderRadius: '10px',
+                                    position: 'relative',
+                                    flexGrow: 1, // Let this fill remaining space
+                                    minHeight: 0, // Important for scrolling in flex item
+                                    fontSize: '0.9rem',
+                                    overflowY: 'auto', // Enable scrolling
+                                    scrollbarWidth: 'none', // Firefox
+                                    msOverflowStyle: 'none', // IE/Edge
+                                }}>
+                                <style>
+                                    {`
+                                        .hide-scrollbar::-webkit-scrollbar {
+                                            display: none;
+                                        }
+                                    `}
+                                </style>
                                 <div style={{ position: 'absolute', top: '-8px', left: '15px', fontSize: '2.5rem', color: '#e0e0e0', lineHeight: 1 }}>❝</div>
                                 <p style={{ lineHeight: '1.7', color: '#444', position: 'relative', zIndex: 1, margin: 0 }}>
                                     {client.voice}
