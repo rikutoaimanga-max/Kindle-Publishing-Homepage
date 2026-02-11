@@ -133,53 +133,53 @@ const Achievements = () => {
                                     </div>
                                 </div>
 
-                                {/* ボディエリア：成果（Before -> After） */}
+                                {/* ボディエリア：実績（B案：左側アクセントライン強調） */}
                                 <div style={{
-                                    backgroundColor: '#fff4e6', // Slightly darker warm color
-                                    border: '2px solid #ffcc80', // Thicker, darker border
+                                    backgroundColor: '#fff',
+                                    borderLeft: '4px solid #f5a623', // Match CTA button color, thinner line
+                                    boxShadow: '0 3px 10px rgba(0,0,0,0.08)', // Shadow for depth
                                     padding: '1.2rem',
-                                    borderRadius: '12px',
+                                    borderRadius: '4px', // Slightly sharper corners
                                     flexShrink: 0,
                                     display: 'flex',
                                     flexDirection: 'column',
                                     justifyContent: 'center',
-                                    textAlign: 'center' // Center alignment
+                                    textAlign: 'center'
                                 }}>
                                     <div style={{
                                         fontSize: '1rem',
                                         fontWeight: 'bold',
-                                        color: '#000', // Black text for title
-                                        marginBottom: '0.6rem',
+                                        color: '#333',
+                                        marginBottom: '0.8rem',
                                         display: 'flex',
                                         alignItems: 'center',
-                                        justifyContent: 'center', // Center content
+                                        justifyContent: 'center',
                                         gap: '0.5rem',
-                                        borderBottom: '1px dashed #ffcc80',
+                                        borderBottom: '1px solid #eee', // Lighter separator
                                         paddingBottom: '0.5rem'
                                     }}>
-                                        <span style={{ fontSize: '1.4rem' }}>🏆</span> <span style={{ letterSpacing: '0.1em' }}>成果</span>
+                                        <FaTrophy style={{ fontSize: '1.2rem', color: '#f57c00' }} /> <span style={{ letterSpacing: '0.05em' }}>実績</span>
                                     </div>
 
                                     {/* Before / After Layout */}
                                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.2rem' }}>
                                         {/* Before */}
-                                        <div style={{ fontSize: '0.95rem', fontWeight: 'bold', color: '#555' }}>
+                                        <div style={{ fontSize: '0.9rem', color: '#666' }}>
                                             {client.before}
                                         </div>
 
                                         {/* Arrow */}
-                                        <div style={{ fontSize: '1.4rem', color: '#e65100', lineHeight: 1, padding: '0.2rem 0' }}>
+                                        <div style={{ fontSize: '1.2rem', color: '#f57c00', lineHeight: 1, padding: '0.2rem 0' }}>
                                             ▼
                                         </div>
 
                                         {/* After */}
-                                        <div style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#d32f2f' }}>
+                                        <div style={{ fontSize: '1.4rem', fontWeight: 'bold', color: '#d32f2f' }}>
                                             {client.after}
                                         </div>
                                     </div>
 
                                 </div>
-
                                 {/* フッターエリア：感想 */}
                                 <div
                                     data-lenis-prevent // Prevent Lenis smooth scroll from hijacking wheel event
