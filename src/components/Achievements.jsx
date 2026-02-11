@@ -146,9 +146,7 @@ const Achievements = () => {
                                     <div style={{ fontSize: '1.05rem', fontWeight: 'bold', lineHeight: '1.5' }}>
                                         {client.result}
                                     </div>
-                                    <div style={{ fontSize: '0.85rem', color: '#666', marginTop: '0.4rem', textAlign: 'right' }}>
-                                        期間：{client.period}
-                                    </div>
+
                                 </div>
 
                                 {/* フッターエリア：感想 */}
