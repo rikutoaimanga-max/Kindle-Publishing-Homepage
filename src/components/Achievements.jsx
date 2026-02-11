@@ -4,6 +4,7 @@ import CTA from './CTA';
 import { FaTrophy } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import 'swiper/css';
 
 const Achievements = () => {
@@ -23,7 +24,10 @@ const Achievements = () => {
             before: 'リスト取得：30件/月',
             after: '80件（166% UP）',
             voice: 'りくとさんの制作する漫画は非常にクオリティが高く、告知前から印税が伸びるほど読者の反応が素晴らしいものでした。テキスト本を漫画化したことで、本のボリュームとクオリティが劇的に上がり、出版から時間が経った今でも1日1万ページ以上読まれるという成果が出ています。Amazon総合ランキングでも300位以内を記録するなど、あからさまに良い影響を実感しています。今回はテキストの原稿をそのまま漫画の原稿に差し替える形での対応を希望したため、リスト取りの部分に関しては正確なデータが取れていませんが、非常に満足度が高く、すでに2冊目の漫画化も依頼お願いしていて、3冊目、4冊目も継続して制作をお願いすることを決めています。現在、りくとさん自身の予約が数ヶ月先まで埋まっているとのことで、次の制作が待ち遠しいですが、それでも順番を待ってでもお願いしたいと思える安心感があります。シリーズ化を見据え、今後も長くお付き合いさせていただきたいクリエイターさんです。',
-            period: '出版後2ヶ月'
+            period: '出版後2ヶ月',
+            // ここにX(Twitter)のIDを入れると、感想の下にタイムラインが表示されます
+            // 例: twitterId: 'koukichi_t',
+            twitterId: ''
         },
         {
             name: 'T.M様',
@@ -209,6 +213,21 @@ const Achievements = () => {
                                         {client.voice}
                                     </p>
                                 </div>
+
+                                {/* X (Twitter) タイムライン埋め込み */}
+                                {client.twitterId && (
+                                    <div style={{ marginTop: '1rem', height: '300px', overflowY: 'short' }}>
+                                        <div style={{ fontSize: '0.8rem', color: '#888', marginBottom: '0.5rem', textAlign: 'center' }}>
+                                            ▼ {client.name}様の最新の投稿
+                                        </div>
+                                        <TwitterTimelineEmbed
+                                            sourceType="profile"
+                                            screenName={client.twitterId}
+                                            options={{ height: 300 }}
+                                            lang="ja"
+                                        />
+                                    </div>
+                                )}
 
                             </div>
                         </div>
