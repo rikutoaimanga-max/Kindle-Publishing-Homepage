@@ -1,10 +1,10 @@
 import React from 'react';
-import { FaChartLine, FaBook, FaCrown, FaClock, FaUserPlus, FaRoute, FaGem } from 'react-icons/fa';
+import { FaMoneyBillWave, FaBook, FaCrown, FaClock, FaUserPlus, FaRoute, FaGem } from 'react-icons/fa';
 import '../styles/global.css';
 
 const Problem = () => {
     const problems = [
-        { text: '広告費高騰の負担', icon: <FaChartLine /> },
+        { text: '広告費高騰の負担', icon: <FaMoneyBillWave /> },
         { text: 'SNS投稿の資産化', icon: <FaBook /> },
         { text: '権威性の確立', icon: <FaCrown /> },
         { text: '出版の時間がない', icon: <FaClock /> },
@@ -161,7 +161,7 @@ const Problem = () => {
                         letterSpacing: '0.05em',
                         textAlign: 'center' // Ensure text is centered
                     }}>
-                        私たちにお任せください！
+                        私たちが解決します！
                     </div>
                 </div>
             </div>
