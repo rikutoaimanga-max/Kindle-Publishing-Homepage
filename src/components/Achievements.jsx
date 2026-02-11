@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/global.css';
 import CTA from './CTA';
+import { FaTrophy } from 'react-icons/fa';
 
 const Achievements = () => {
     const clients = [
