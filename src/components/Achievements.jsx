@@ -8,8 +8,8 @@ import 'swiper/css';
 
 const Achievements = () => {
     // スライド画像の総数設定 (ここに数字を入れるだけでスライドが増減します)
-    // 画像は public/image/manga_slide_{番号}.jpg という名前にしてください
-    const TOTAL_SLIDES = 4;
+    // 画像は public/image/manga_slide_{番号}.png という名前にしてください
+    const TOTAL_SLIDES = 35;
 
     // Create array of slide numbers based on TOTAL_SLIDES
     const slideNumbers = Array.from({ length: TOTAL_SLIDES }, (_, i) => i + 1);
@@ -260,7 +260,7 @@ const Achievements = () => {
                                         backgroundColor: '#fff'
                                     }}>
                                         <img
-                                            src={`/image/manga_slide_${num}.jpg`}
+                                            src={`/image/manga_slide_${num}.png`}
                                             alt={`マンガ作品例 ${num}`}
                                             style={{
                                                 width: '100%',
