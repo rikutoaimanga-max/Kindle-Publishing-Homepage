@@ -8,7 +8,7 @@ const Achievements = () => {
             name: 'こう吉様',
             attribute: '30代 男性',
             title: '500名超えのKindleサロンオーナー',
-            image: '/images/koukichi.png',
+            image: '/image/koukichi.png',
             result: <>リスト取得：30件/月 → <span style={{ fontWeight: 'bold', fontSize: '1.1em', color: '#e60012' }}>80件（166% UP）</span></>,
             period: '出版後2ヶ月',
             voice: '以前は広告に頼っていましたが、CPAが高騰し限界を感じていました。電子書籍を出版したことで、「先生」としてのポジションが確立され、広告を使わずに質の高いリストが入ってくるようになりました。成約率も明らかに上がっています。'
