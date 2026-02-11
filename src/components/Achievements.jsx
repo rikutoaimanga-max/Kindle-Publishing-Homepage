@@ -33,16 +33,32 @@ const Achievements = () => {
                 </div>
 
 
-                <div className="grid grid-3">
+                <div style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '2rem',
+                    maxWidth: '800px',
+                    margin: '0 auto',
+                    marginBottom: '4rem'
+                }}>
                     {clients.map((client, index) => (
                         <div key={index} style={{
                             backgroundColor: '#f9f9f9',
                             padding: '2rem',
                             borderRadius: '8px',
-                            textAlign: 'center',
-                            boxShadow: '0 4px 10px rgba(0,0,0,0.1)'
+                            textAlign: 'left', // Changed to left align
+                            boxShadow: '0 4px 10px rgba(0,0,0,0.1)',
+                            display: 'flex',
+                            flexDirection: 'column', // Keep vertical stack within card
+                            alignItems: 'flex-start' // Align items to start (left)
                         }}>
-                            <div style={{ width: '100px', height: '100px', backgroundColor: '#ddd', borderRadius: '50%', margin: '0 auto 1rem' }}>
+                            <div style={{
+                                width: '100px',
+                                height: '100px',
+                                backgroundColor: '#ddd',
+                                borderRadius: '50%',
+                                margin: '0 0 1rem 0' // Changed margin to zero on left/right, bottom 1rem
+                            }}>
                                 {/* Image Placeholder */}
                             </div>
                             <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>{client.name} <span style={{ fontSize: '0.9rem', fontWeight: 'normal' }}>{client.title}</span></h3>
