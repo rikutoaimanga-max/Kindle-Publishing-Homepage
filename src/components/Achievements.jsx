@@ -152,16 +152,20 @@ const Achievements = () => {
                                 </div>
 
                                 {/* フッターエリア：感想 */}
-                                <div style={{
-                                    backgroundColor: '#f9f9f9',
-                                    padding: '1.2rem',
-                                    borderRadius: '10px',
-                                    position: 'relative',
-                                    flex: '1 1 0', // Grow to fill remaining space
-                                    minHeight: 0,  // Allow content to be taller than container (trigger overflow)
-                                    fontSize: '0.9rem',
-                                    overflowY: 'auto' // Enable scrolling
-                                }}>
+                                <div
+                                    data-lenis-prevent // Prevent Lenis smooth scroll from hijacking wheel event
+                                    onWheel={(e) => e.stopPropagation()} // Stop event propagation just in case
+                                    style={{
+                                        backgroundColor: '#f9f9f9',
+                                        padding: '1.2rem',
+                                        borderRadius: '10px',
+                                        position: 'relative',
+                                        flex: '1 1 0', // Grow to fill remaining space
+                                        minHeight: 0,  // Allow content to be taller than container (trigger overflow)
+                                        fontSize: '0.9rem',
+                                        overflowY: 'auto', // Enable scrolling
+                                        overscrollBehavior: 'contain' // Prevent scroll chaining to parent
+                                    }}>
                                     <div style={{ position: 'absolute', top: '-8px', left: '15px', fontSize: '2.5rem', color: '#e0e0e0', lineHeight: 1 }}>❝</div>
                                     <p style={{ lineHeight: '1.7', color: '#444', position: 'relative', zIndex: 1, margin: 0 }}>
                                         {client.voice}
