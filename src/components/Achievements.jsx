@@ -4,7 +4,6 @@ import CTA from './CTA';
 import { FaTrophy } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-// import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import 'swiper/css';
 
 const Achievements = () => {
@@ -216,22 +215,6 @@ const Achievements = () => {
                                         {client.voice}
                                     </p>
                                 </div>
-
-                                {/* X (Twitter) タイムライン埋め込み (一時コメントアウト: 本番環境エラー調査中) */}
-                                {/* {client.twitterId && (
-                                    <div style={{ marginTop: '1rem', height: '400px', overflowY: 'auto' }}>
-                                         <div style={{ fontSize: '0.8rem', color: '#888', marginBottom: '0.5rem', textAlign: 'center' }}>
-                                            ▼ {client.name}様の最新の投稿
-                                         </div>
-                                        <TwitterTimelineEmbed
-                                            key={client.twitterId}
-                                            sourceType="profile"
-                                            screenName={client.twitterId.replace('@', '')}
-                                            options={{ height: 400 }}
-                                            lang="ja"
-                                        />
-                                    </div>
-                                )} */}
 
                             </div>
                         </div>
