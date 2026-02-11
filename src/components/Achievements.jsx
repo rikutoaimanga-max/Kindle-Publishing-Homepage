@@ -60,7 +60,9 @@ const Achievements = () => {
                             position: 'relative',
                             overflow: 'hidden',
                             width: '100%',
-                            aspectRatio: '3 / 4', // Fixed aspect ratio container
+                            height: '650px', // Fixed height strategy
+                            display: 'flex',       // Flex container
+                            flexDirection: 'column' // Column layout
                         }}>
                             {/* 装飾的な背景要素 */}
                             <div style={{
@@ -73,11 +75,8 @@ const Achievements = () => {
                                 zIndex: 1
                             }}></div>
 
-                            {/* 絶対配置の内部ラッパーで高さを強制 */}
+                            {/* コンテンツラッパー（パディング用） */}
                             <div style={{
-                                position: 'absolute',
-                                top: 0,
-                                left: 0,
                                 width: '100%',
                                 height: '100%',
                                 padding: '1.8rem',
@@ -88,7 +87,7 @@ const Achievements = () => {
                             }}>
 
                                 {/* ヘッダーエリア：人物紹介 */}
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap', flexShrink: 0 }}>
                                     {/* アイコン */}
                                     {client.image ? (
                                         <img
@@ -136,7 +135,7 @@ const Achievements = () => {
                                     border: '1px solid #ffeeba',
                                     padding: '1.2rem',
                                     borderRadius: '10px',
-                                    flexGrow: 0, // Don't stretch this too much
+                                    flexShrink: 0, // Prevent shrinking
                                     display: 'flex',
                                     flexDirection: 'column',
                                     justifyContent: 'center'
@@ -158,8 +157,8 @@ const Achievements = () => {
                                     padding: '1.2rem',
                                     borderRadius: '10px',
                                     position: 'relative',
-                                    flex: '1 1 0', // Force this to take remaining space but shrinking if needed
-                                    minHeight: 0, // Allow shrinking below content size
+                                    flex: '1 1 0', // Grow to fill remaining space
+                                    minHeight: 0,  // Allow content to be taller than container (trigger overflow)
                                     fontSize: '0.9rem',
                                     overflowY: 'auto' // Enable scrolling
                                 }}>
