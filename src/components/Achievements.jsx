@@ -226,8 +226,9 @@ const Achievements = () => {
                             spaceBetween={30}
                             slidesPerView={1.5} // Show partial slides
                             breakpoints={{
-                                640: { slidesPerView: 2.5 },
-                                768: { slidesPerView: 3.5 },
+                                640: { slidesPerView: 2.2 },
+                                768: { slidesPerView: 3.2 },
+                                1024: { slidesPerView: 3.8 },
                             }}
                             loop={true}
                             speed={5000} // Slow constant speed
@@ -236,29 +237,32 @@ const Achievements = () => {
                                 disableOnInteraction: false,
                                 pauseOnMouseEnter: true, // Stop on hover
                             }}
+                            allowTouchMove={false} // Disable touch dragging for smoother continuous flow
                             className="mySwiper"
                             style={{ width: '100%', height: 'auto' }}
                         >
-                            {[1, 2, 3, 4, 5].map((num) => (
+                            {[1, 2, 3, 4].map((num) => (
                                 <SwiperSlide key={num}>
                                     <div style={{
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        justifyContent: 'center',
-                                        backgroundColor: '#e6e6e6',
-                                        height: '220px', // Adjusted height
-                                        color: '#aaa',
-                                        fontSize: '1rem',
-                                        fontWeight: 'bold',
+                                        overflow: 'hidden',
                                         borderRadius: '8px',
-                                        boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
-                                        border: '1px solid #ddd'
+                                        boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
+                                        border: '1px solid #eee',
+                                        height: 'auto',
+                                        aspectRatio: '3/4', // Maintain manga aspect ratio
+                                        backgroundColor: '#fff'
                                     }}>
-                                        作品スライド {num}
-                                        <br />
-                                        (画像準備中)
+                                        <img
+                                            src={`/image/manga_slide_${num}.jpg`}
+                                            alt={`マンガ作品例 ${num}`}
+                                            style={{
+                                                width: '100%',
+                                                height: '100%',
+                                                objectFit: 'cover',
+                                                display: 'block'
+                                            }}
+                                        />
                                     </div>
-                                    {/* <img src={`/image/slide${num}.png`} alt={`Slide ${num}`} style={{ width: '100%', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }} /> */}
                                 </SwiperSlide>
                             ))}
                         </Swiper>
