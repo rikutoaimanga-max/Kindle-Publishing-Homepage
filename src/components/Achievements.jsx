@@ -9,25 +9,28 @@ const Achievements = () => {
             attribute: '30代 男性',
             title: '500名超えのKindleサロンオーナー',
             image: '/image/koukichi.png',
-            result: <>リスト取得：30件/月 → <span style={{ fontWeight: 'bold', fontSize: '1.1em', color: '#e60012' }}>80件（166% UP）</span></>,
-            period: '出版後2ヶ月',
-            voice: 'りくとさんの制作する漫画は非常にクオリティが高く、告知前から印税が伸びるほど読者の反応が素晴らしいものでした。テキスト本を漫画化したことで、本のボリュームとクオリティが劇的に上がり、出版から時間が経った今でも1日1万ページ以上読まれるという成果が出ています。Amazon総合ランキングでも300位以内を記録するなど、あからさまに良い影響を実感しています。今回はテキストの原稿をそのまま漫画の原稿に差し替えてしまったため、リスト取りの部分に関しては、正確にデータが取れないですが、非常に満足度が高く、すでに2冊目の漫画かも依頼しており、3冊目、4冊目も継続して制作をお願いすることを決めています。現在、りくとさんの自信の予約が数ヶ月先まで埋まっているとのことですが、それでも順番を待ってお願いしたいと思える安心感があります。シリーズ化を見据え、今後も長くパートナーとしてお付き合いさせていただきたいクリエイターです。'
+            before: 'リスト取得：30件/月',
+            after: '80件（166% UP）',
+            voice: 'りくとさんの制作する漫画は非常にクオリティが高く、告知前から印税が伸びるほど読者の反応が素晴らしいものでした。テキスト本を漫画化したことで、本のボリュームとクオリティが劇的に上がり、出版から時間が経った今でも1日1万ページ以上読まれるという成果が出ています。Amazon総合ランキングでも300位以内を記録するなど、あからさまに良い影響を実感しています。今回はテキストの原稿をそのまま漫画の原稿に差し替えてしまったため、リスト取りの部分に関しては、正確にデータが取れないですが、非常に満足度が高く、すでに2冊目の漫画かも依頼しており、3冊目、4冊目も継続して制作をお願いすることを決めています。現在、りくとさんの自信の予約が数ヶ月先まで埋まっているとのことですが、それでも順番を待ってお願いしたいと思える安心感があります。シリーズ化を見据え、今後も長くパートナーとしてお付き合いさせていただきたいクリエイターです。',
+            period: '出版後2ヶ月'
         },
         {
             name: 'T.M様',
             attribute: '40代 男性',
             title: '経営者',
-            result: <>講演依頼：1件/月 → <span style={{ fontWeight: 'bold', fontSize: '1.1em', color: '#e60012' }}>4件（300% UP / 4倍増）</span></>,
-            period: '出版後1ヶ月',
-            voice: '出版前は「ただの経営者」でしたが、出版後は「著者の先生」として見られるようになり、講演依頼が急増しました。書籍が名刺代わりになり、初対面の方からの信頼獲得スピードが段違いです。'
+            before: '講演依頼：1件/月',
+            after: '4件（300% UP / 4倍増）',
+            voice: '出版前は「ただの経営者」でしたが、出版後は「著者の先生」として見られるようになり、講演依頼が急増しました。書籍が名刺代わりになり、初対面の方からの信頼獲得スピードが段違いです。',
+            period: '出版後1ヶ月'
         },
         {
             name: 'Y.I様',
             attribute: '30代 女性',
             title: '起業家・コーチ',
-            result: <>月商：100万円 → <span style={{ fontWeight: 'bold', fontSize: '1.1em', color: '#e60012' }}>300万円（200% UP / 3倍増）</span></>,
-            period: '出版後2ヶ月',
-            voice: '集客に追われる日々から解放されました。Amazonが自動的に集客してくれるので、私は本業のコーチングに集中できています。お客様の方から「お願いします」と言われるようになり、セールスのストレスがなくなりました。'
+            before: '月商：100万円',
+            after: '300万円（200% UP / 3倍増）',
+            voice: '集客に追われる日々から解放されました。Amazonが自動的に集客してくれるので、私は本業のコーチングに集中できています。お客様の方から「お願いします」と言われるようになり、セールスのストレスがなくなりました。',
+            period: '出版後2ヶ月'
         }
     ];
 
@@ -129,22 +132,49 @@ const Achievements = () => {
                                     </div>
                                 </div>
 
-                                {/* ボディエリア：成果 */}
+                                {/* ボディエリア：成果（Before -> After） */}
                                 <div style={{
-                                    backgroundColor: '#fffaf0', // 薄い暖色系
-                                    border: '1px solid #ffeeba',
+                                    backgroundColor: '#fff4e6', // Slightly darker warm color
+                                    border: '2px solid #ffcc80', // Thicker, darker border
                                     padding: '1.2rem',
-                                    borderRadius: '10px',
-                                    flexShrink: 0, // Prevent shrinking
+                                    borderRadius: '12px',
+                                    flexShrink: 0,
                                     display: 'flex',
                                     flexDirection: 'column',
-                                    justifyContent: 'center'
+                                    justifyContent: 'center',
+                                    textAlign: 'center' // Center alignment
                                 }}>
-                                    <div style={{ fontSize: '0.9rem', fontWeight: 'bold', color: 'var(--color-accent)', marginBottom: '0.4rem', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                                        <span style={{ fontSize: '1.1rem' }}>🏆</span> 成果
+                                    <div style={{
+                                        fontSize: '1rem',
+                                        fontWeight: 'bold',
+                                        color: '#000', // Black text for title
+                                        marginBottom: '0.6rem',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center', // Center content
+                                        gap: '0.5rem',
+                                        borderBottom: '1px dashed #ffcc80',
+                                        paddingBottom: '0.5rem'
+                                    }}>
+                                        <span style={{ fontSize: '1.4rem' }}>🏆</span> <span style={{ letterSpacing: '0.1em' }}>成果</span>
                                     </div>
-                                    <div style={{ fontSize: '1.05rem', fontWeight: 'bold', lineHeight: '1.5' }}>
-                                        {client.result}
+
+                                    {/* Before / After Layout */}
+                                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.2rem' }}>
+                                        {/* Before */}
+                                        <div style={{ fontSize: '0.95rem', fontWeight: 'bold', color: '#555' }}>
+                                            {client.before}
+                                        </div>
+
+                                        {/* Arrow */}
+                                        <div style={{ fontSize: '1.4rem', color: '#e65100', lineHeight: 1, padding: '0.2rem 0' }}>
+                                            ▼
+                                        </div>
+
+                                        {/* After */}
+                                        <div style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#d32f2f' }}>
+                                            {client.after}
+                                        </div>
                                     </div>
 
                                 </div>
