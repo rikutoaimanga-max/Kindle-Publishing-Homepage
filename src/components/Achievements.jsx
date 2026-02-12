@@ -284,7 +284,7 @@ const Achievements = () => {
 
                 <div style={{ textAlign: 'center', marginTop: '3rem' }}>
                     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-                        <CTA />
+                        <CTA headerBackground="#fff" />
                     </div>
                 </div>
             </div>
