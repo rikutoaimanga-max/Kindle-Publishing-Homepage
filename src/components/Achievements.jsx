@@ -61,6 +61,7 @@ const Achievements = () => {
             attribute: '30代 男性',
             title: 'Xフォロワー14.7万人越えの自動化のプロ',
             image: '/image/tatsumin_icon.jpg', // Updated icon
+            bookImage: '/image/tatsumin_book.png', // Placeholder book image
             before: '鋭意制作中',
             after: '3月出版予定',
             voice: '',
