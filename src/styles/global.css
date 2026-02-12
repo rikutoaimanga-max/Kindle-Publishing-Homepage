@@ -211,7 +211,7 @@ ul {
 
   /* CTA Mobile Adjustments */
   .cta-container {
-    padding: 20px 15px !important;
+    padding: 20px 15px;
   }
 
   .cta-button {

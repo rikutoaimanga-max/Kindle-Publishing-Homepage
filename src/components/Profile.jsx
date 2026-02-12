@@ -7,7 +7,7 @@ const Profile = () => {
     return (
 
         <section style={{ backgroundColor: 'var(--color-secondary)', color: '#333', padding: '80px 0' }}>
-            <div className="container">
+            <div className="container" style={{ textAlign: 'center' }}>
                 <h2 className="section-title" style={{ color: '#fff', textAlign: 'center' }}>運営者プロフィール</h2>
                 <div className="grid grid-2">
                     <div style={{ padding: '2rem', border: '1px solid #eee', borderRadius: '8px', backgroundColor: '#fff' }}>

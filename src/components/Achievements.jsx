@@ -287,7 +287,7 @@ const Achievements = () => {
 
             <section style={{
                 backgroundColor: '#ffffff',
-                padding: '80px 0',
+                padding: '80px 0 120px', // Increased bottom padding
                 color: 'var(--color-text-dark)'
             }}>
                 <div className="container">
