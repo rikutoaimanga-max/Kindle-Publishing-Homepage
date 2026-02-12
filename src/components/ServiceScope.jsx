@@ -129,8 +129,7 @@ const ServiceScope = () => {
             <div style={{ backgroundColor: '#ffffff', padding: '120px 0 60px', color: '#333' }}>
                 <div className="container" style={{ maxWidth: '1000px' }}>
                     <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-                        {/* This div was intended for a title, but currently contains the map. */}
-                        {/* The map should be in a grid container. */}
+                        <h2 className="section-title" style={{ color: '#000', display: 'inline-block', borderBottom: '2px solid var(--color-secondary)', paddingBottom: '0.5rem' }}>サービス内容と支援範囲</h2>
                     </div>
                     <div style={{
                         display: 'grid',
