@@ -16,7 +16,7 @@ const Plans = () => {
                 <div style={{ overflowX: 'auto', marginBottom: '4rem', padding: '10px' }}>
                     <table style={{
                         width: '100%',
-                        maxWidth: '1000px',
+                        maxWidth: '800px',
                         margin: '0 auto',
                         borderCollapse: 'separate',
                         borderSpacing: 0,
@@ -36,12 +36,12 @@ const Plans = () => {
                             <tr style={{ borderBottom: '1px solid #eee' }}>
                                 <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', fontWeight: 'bold' }}>テキスト出版丸投げプラン</td>
                                 <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', color: '#999', textDecoration: 'line-through' }}>400,000円</td>
-                                <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', fontWeight: 'bold', fontSize: '1.2rem', color: '#e60000' }}>328,000円</td>
+                                <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', fontWeight: 'bold', fontSize: '1.2rem' }}>328,000円</td>
                             </tr>
                             <tr style={{ backgroundColor: '#f9f9f9' }}>
                                 <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', fontWeight: 'bold' }}>マンガ出版丸投げプラン</td>
                                 <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', color: '#999', textDecoration: 'line-through' }}>400,000円</td>
-                                <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', fontWeight: 'bold', fontSize: '1.2rem', color: '#e60000' }}>328,000円</td>
+                                <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', fontWeight: 'bold', fontSize: '1.2rem' }}>328,000円</td>
                             </tr>
                             <tr style={{ backgroundColor: '#fffbeb', borderLeft: '4px solid #f5a623' }}>
                                 <td style={{ padding: '1.5rem', fontWeight: 'bold', color: '#333' }}>
