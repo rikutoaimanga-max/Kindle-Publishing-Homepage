@@ -10,16 +10,27 @@ const Achievements = () => {
     // Twitterウィジェットの読み込み
     // Twitterウィジェットの読み込み
     useEffect(() => {
-        // 既存のTwitterスクリプトを確認
-        if (window.twttr) {
-            // すでに読み込まれている場合は再描画をトリガー
-            window.twttr.widgets.load();
-        } else {
-            // スクリプトが存在しない場合は追加
+        const scriptId = 'twitter-wjs';
+
+        // ウィジェットロード関数
+        const loadWidgets = () => {
+            if (window.twttr && window.twttr.widgets) {
+                window.twttr.widgets.load();
+            }
+        };
+
+        // すでにスクリプトが存在するか確認
+        if (!document.getElementById(scriptId)) {
             const script = document.createElement("script");
+            script.id = scriptId;
             script.src = "https://platform.twitter.com/widgets.js";
             script.async = true;
+            // スクリプト読み込み完了後にロードを実行
+            script.onload = loadWidgets;
             document.body.appendChild(script);
+        } else {
+            // すでに存在する場合はロードを実行
+            loadWidgets();
         }
     }, []);
 
