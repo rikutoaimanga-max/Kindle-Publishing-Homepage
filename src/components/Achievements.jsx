@@ -8,18 +8,19 @@ import 'swiper/css';
 
 const Achievements = () => {
     // Twitterウィジェットの読み込み
+    // Twitterウィジェットの読み込み
     useEffect(() => {
-        const script = document.createElement("script");
-        script.src = "https://platform.twitter.com/widgets.js";
-        script.async = true;
-        document.body.appendChild(script);
-
-        return () => {
-            // クリーンアップは特に不要だが、コンポーネントアンマウント時に何かする必要があれば記述
-            if (document.body.contains(script)) {
-                document.body.removeChild(script);
-            }
-        };
+        // 既存のTwitterスクリプトを確認
+        if (window.twttr) {
+            // すでに読み込まれている場合は再描画をトリガー
+            window.twttr.widgets.load();
+        } else {
+            // スクリプトが存在しない場合は追加
+            const script = document.createElement("script");
+            script.src = "https://platform.twitter.com/widgets.js";
+            script.async = true;
+            document.body.appendChild(script);
+        }
     }, []);
 
     // スライド画像の総数設定 (ここに数字を入れるだけでスライドが増減します)
