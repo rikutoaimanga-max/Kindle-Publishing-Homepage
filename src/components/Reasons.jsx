@@ -57,9 +57,7 @@ const Reasons = () => {
                                 <circle cx="25" cy="75" r="3" fill="var(--color-secondary)" />
                                 <circle cx="40" cy="60" r="3" fill="var(--color-secondary)" />
                                 <circle cx="55" cy="65" r="3" fill="var(--color-secondary)" />
-                                <circle cx="80" cy="30" r="4" fill="var(--color-accent)" />
-                                {/* Crown */}
-                                <path d="M70 20 L75 10 L80 20 L85 10 L90 20 L80 30 Z" fill="var(--color-accent)" stroke="var(--color-accent)" strokeWidth="1" />
+                                <circle cx="80" cy="30" r="4" fill="var(--color-secondary)" />
                             </svg>
                         </div>
                         <h3 style={{ color: 'var(--color-secondary)', fontSize: '1.3rem', marginBottom: '1rem', borderBottom: '2px solid var(--color-accent)', display: 'inline-block', paddingBottom: '0.5rem' }}>
