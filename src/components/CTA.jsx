@@ -39,10 +39,11 @@ const CTA = ({ headerBackground = 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 1
                 </div>
 
                 <div style={{
-                    textAlign: 'left',
+                    textAlign: 'center', // Changed to center
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
+                    alignItems: 'center', // Added to center items horizontally
                     paddingTop: '15px' // Increased from 10px
                 }}>
                     <div style={{
@@ -56,8 +57,8 @@ const CTA = ({ headerBackground = 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 1
                         marginBottom: '0',
                         lineHeight: '1.4',
                         width: 'fit-content',
-                        textAlign: 'justify',
-                        textAlignLast: 'justify'
+                        textAlign: 'center', // Changed to center
+                        // Removed justify styles
                     }}>
                         あなたの情報資産を書籍に変える戦略をご提案
                     </div>
