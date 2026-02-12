@@ -61,7 +61,7 @@ const Reasons = () => {
                             </svg>
                         </div>
                         <h3 style={{ color: 'var(--color-secondary)', fontSize: '1.3rem', marginBottom: '1rem', borderBottom: '2px solid var(--color-accent)', display: 'inline-block', paddingBottom: '0.5rem' }}>
-                            02：圧倒的な<br />実績に基づく支援
+                            02：圧倒的な実績に基づく支援
                         </h3>
                         <p style={{ textAlign: 'left', fontSize: '0.95rem' }}>
                             50冊以上のベストセラー実績に基づくプロモーションとSEO対策。一時的なランキング操作ではなく、「長く読まれる仕組み」を構築し、Amazonからの集客を最大化します。
