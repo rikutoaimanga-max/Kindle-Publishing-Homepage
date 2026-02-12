@@ -5,9 +5,11 @@ const Reasons = () => {
     return (
         <section style={{ backgroundColor: '#f9f9f9', padding: '80px 0', color: '#333' }}>
             <div className="container">
-                <h2 className="section-title" style={{ color: '#000' }}>選ばれる3つの理由</h2>
+                <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+                    <h2 className="section-title" style={{ color: '#000', display: 'inline-block', borderBottom: '2px solid var(--color-secondary)' }}>選ばれる3つの理由</h2>
+                </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', maxWidth: '1000px', margin: '0 auto' }}>
                     {/* Reason 1: Delegation */}
                     <div style={{
                         backgroundColor: '#fff',
