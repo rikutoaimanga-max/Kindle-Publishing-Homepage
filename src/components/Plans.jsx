@@ -63,7 +63,7 @@ const Plans = () => {
                     </h3>
                     <ul style={{ listStyle: 'none', paddingLeft: '0', fontSize: '1.1rem', lineHeight: '2' }}>
                         <li style={{ marginBottom: '1rem', textAlign: 'center' }}>
-                            <span><span style={{ fontWeight: 'bold' }}>戦略・制作費</span>：298,000円<br />（企画、執筆、制作、SEO、プロモーション）</span>
+                            <span><span style={{ fontWeight: 'bold' }}>戦略・制作費</span>：298,000円<br />企画、執筆、制作、SEO、プロモーション</span>
                         </li>
                         <li style={{ marginBottom: '1rem', textAlign: 'center' }}>
                             <div style={{ textAlign: 'center' }}>
