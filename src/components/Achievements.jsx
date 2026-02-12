@@ -282,6 +282,59 @@ const Achievements = () => {
                             </Swiper>
                         </div>
                     </div>
+
+                    {/* Duplicate Slider (Text only) requested by user */}
+                    <div style={{ marginTop: '4rem', textAlign: 'center' }}>
+                        <Swiper
+                            modules={[Autoplay]}
+                            spaceBetween={30}
+                            slidesPerView={1.5} // Show partial slides
+                            breakpoints={{
+                                640: { slidesPerView: 2.2 },
+                                768: { slidesPerView: 3.2 },
+                                1024: { slidesPerView: 3.8 },
+                            }}
+                            loop={true}
+                            speed={5000} // Slow constant speed
+                            autoplay={{
+                                delay: 0,
+                                disableOnInteraction: false,
+                                pauseOnMouseEnter: false, // Don't stop on hover
+                                reverseDirection: true // Reverse direction for variety? No, keep same as requested "same slider"
+                            }}
+                            allowTouchMove={false} // Disable touch dragging for smoother continuous flow
+                            className="mySwiperText"
+                            style={{ width: '100%', height: 'auto' }}
+                        >
+                            {slideNumbers.map((num) => (
+                                <SwiperSlide key={`text-${num}`}>
+                                    <div style={{
+                                        overflow: 'hidden',
+                                        borderRadius: '8px',
+                                        boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
+                                        border: '1px solid #eee',
+                                        height: 'auto',
+                                        aspectRatio: '3/4', // Maintain manga aspect ratio
+                                        backgroundColor: '#fff',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        padding: '2rem'
+                                    }}>
+                                        <div style={{
+                                            fontSize: '1.2rem',
+                                            fontWeight: 'bold',
+                                            color: '#aaa',
+                                            textAlign: 'center'
+                                        }}>
+                                            No Image Slide {num}<br />
+                                            <span style={{ fontSize: '0.8rem', fontWeight: 'normal' }}>Text Content Here</span>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
                 </div>
             </section>
 
