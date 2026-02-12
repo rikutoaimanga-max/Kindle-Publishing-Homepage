@@ -27,31 +27,31 @@ const Plans = () => {
                     }}>
                         <thead>
                             <tr style={{ backgroundColor: 'var(--color-secondary)', color: '#fff' }}>
-                                <th style={{ padding: '1.5rem', textAlign: 'left', width: '40%', fontSize: '1.1rem' }}>プラン名</th>
-                                <th style={{ padding: '1.5rem', textAlign: 'left', width: '30%', fontSize: '1.1rem' }}>通常価格</th>
-                                <th style={{ padding: '1.5rem', textAlign: 'left', width: '30%', fontSize: '1.1rem' }}>特別価格</th>
+                                <th style={{ padding: '1.5rem', textAlign: 'center', width: '40%', fontSize: '1.1rem' }}>プラン名</th>
+                                <th style={{ padding: '1.5rem', textAlign: 'center', width: '30%', fontSize: '1.1rem' }}>通常価格</th>
+                                <th style={{ padding: '1.5rem', textAlign: 'center', width: '30%', fontSize: '1.1rem' }}>特別価格</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr style={{ borderBottom: '1px solid #eee' }}>
-                                <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', fontWeight: 'bold' }}>テキスト出版丸投げプラン</td>
-                                <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', color: '#999', textDecoration: 'line-through' }}>400,000円</td>
-                                <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', fontWeight: 'bold', fontSize: '1.2rem' }}>328,000円</td>
+                                <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', fontWeight: 'bold', textAlign: 'center' }}>テキスト出版丸投げプラン</td>
+                                <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', color: '#999', textDecoration: 'line-through', textAlign: 'center' }}>400,000円</td>
+                                <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', fontWeight: 'bold', fontSize: '1.2rem', textAlign: 'center' }}>328,000円</td>
                             </tr>
                             <tr style={{ backgroundColor: '#f9f9f9' }}>
-                                <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', fontWeight: 'bold' }}>マンガ出版丸投げプラン</td>
-                                <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', color: '#999', textDecoration: 'line-through' }}>400,000円</td>
-                                <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', fontWeight: 'bold', fontSize: '1.2rem' }}>328,000円</td>
+                                <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', fontWeight: 'bold', textAlign: 'center' }}>マンガ出版丸投げプラン</td>
+                                <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', color: '#999', textDecoration: 'line-through', textAlign: 'center' }}>400,000円</td>
+                                <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', fontWeight: 'bold', fontSize: '1.2rem', textAlign: 'center' }}>328,000円</td>
                             </tr>
                             <tr style={{ backgroundColor: '#fffbeb', borderLeft: '4px solid #f5a623' }}>
-                                <td style={{ padding: '1.5rem', fontWeight: 'bold', color: '#333' }}>
+                                <td style={{ padding: '1.5rem', fontWeight: 'bold', color: '#333', textAlign: 'center' }}>
                                     <span style={{
                                         backgroundColor: '#f5a623', color: '#fff', fontSize: '0.8rem', padding: '2px 8px', borderRadius: '4px', marginRight: '8px', verticalAlign: 'middle'
                                     }}>推奨</span>
                                     二刀流丸投げプラン
                                 </td>
-                                <td style={{ padding: '1.5rem', color: '#999', textDecoration: 'line-through' }}>800,000円</td>
-                                <td style={{ padding: '1.5rem', fontWeight: 'bold', fontSize: '1.4rem', color: '#e60000' }}>548,000円</td>
+                                <td style={{ padding: '1.5rem', color: '#999', textDecoration: 'line-through', textAlign: 'center' }}>800,000円</td>
+                                <td style={{ padding: '1.5rem', fontWeight: 'bold', fontSize: '1.4rem', color: '#e60000', textAlign: 'center' }}>548,000円</td>
                             </tr>
                         </tbody>
                     </table>
