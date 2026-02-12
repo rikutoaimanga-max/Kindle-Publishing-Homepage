@@ -23,7 +23,7 @@ const Solution = () => {
                 <div style={{ textAlign: 'center' }}>
                     <h2 className="section-title" style={{ color: '#000', fontFamily: 'var(--font-family-base)', textTransform: 'none' }}>なぜ、<span style={{ fontWeight: '900' }}>Amazon Kindle</span>出版なのか？</h2>
                 </div>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '2rem', maxWidth: '800px', margin: '0 auto' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '2rem', maxWidth: '800px', margin: '0 auto' }}>
                     {points.map((point, index) => (
                         <div key={index} style={{
                             border: '4px solid var(--color-secondary)', // Match CTA border color and width
