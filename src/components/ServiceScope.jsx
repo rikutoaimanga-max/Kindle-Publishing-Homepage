@@ -129,8 +129,7 @@ const ServiceScope = () => {
             <div style={{ backgroundColor: '#ffffff', padding: '60px 0', color: '#333' }}>
                 <div className="container" style={{ maxWidth: '1000px' }}>
                     <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-                        <p style={{ fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '0.5rem', color: '#e6ac00' }}>貴社の想いをカタチにするお手伝い</p>
-                        <h2 className="section-title" style={{ borderBottom: 'none', fontSize: '2.5rem' }}>サービス内容と支援範囲</h2>
+                        <h2 className="section-title" style={{ borderBottom: 'none', fontSize: '2.5rem', color: '#000' }}>サービス内容と支援範囲</h2>
                     </div>
 
                     <div style={{
