@@ -46,8 +46,9 @@ const Achievements = () => {
         },
         {
             name: 'Y.I様',
-            attribute: '30代 女性',
+            attribute: '30代 男性',
             title: '起業家・コーチ',
+            image: '/image/yi_icon.jpg', // Updated icon
             bookImage: '/image/yi_book.png', // Added book image
             before: '月商：100万円',
             after: '300万円（200% UP / 3倍増）',
