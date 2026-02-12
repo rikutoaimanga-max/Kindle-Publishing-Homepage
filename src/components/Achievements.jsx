@@ -16,7 +16,7 @@ const Achievements = () => {
 
     const clients = [
         {
-            name: 'こう吉様',
+            name: 'こう吉 様',
             attribute: '30代 男性',
             title: '500名超えのKindleサロンオーナー',
             image: '/image/koukichi.png',
@@ -33,7 +33,7 @@ const Achievements = () => {
             twitterId: '@kokichi_00'
         },
         {
-            name: 'しんぱぱ様',
+            name: 'しんぱぱ 様',
             attribute: '40代 男性',
             title: 'フォロワー8万人越えのXアフィリエイター',
             image: '/image/tm_icon.png', // Updated icon
@@ -45,7 +45,7 @@ const Achievements = () => {
             twitterId: ''
         },
         {
-            name: 'おさむ様',
+            name: 'おさむ 様',
             attribute: '30代 男性',
             title: 'YouTubeショート収益化コンサル',
             image: '/image/yi_icon.jpg', // Updated icon
