@@ -57,14 +57,14 @@ const Achievements = () => {
             twitterId: ''
         },
         {
-            name: '（お名前） 様',
-            attribute: '年代 性別',
-            title: '（肩書き）',
-            image: '/image/no_image.png', // Placeholder
-            before: '（Before）',
-            after: '（After）',
-            voice: '（感想コメント）',
-            period: '出版後○ヶ月',
+            name: 'たつみん 様',
+            attribute: '30代 男性',
+            title: 'Xフォロワー14.7万人越えの自動化のプロ',
+            image: '/image/tatsumin_icon.jpg', // Updated icon
+            before: '鋭意制作中',
+            after: '3月出版予定',
+            voice: '',
+            period: '出版後2ヶ月',
             twitterId: ''
         }
     ];
