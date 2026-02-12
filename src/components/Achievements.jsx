@@ -38,9 +38,9 @@ const Achievements = () => {
             title: 'フォロワー8万人越えのXアフィリエイター',
             image: '/image/tm_icon.png', // Updated icon
             bookImage: '/image/shinpapa_book.jpg', // Added book image
-            before: '講演依頼：1件/月',
-            after: '4件（300% UP / 4倍増）',
-            voice: '出版前は「ただの経営者」でしたが、出版後は「著者の先生」として見られるようになり、講演依頼が急増しました。書籍が名刺代わりになり、初対面の方からの信頼獲得スピードが段違いです。',
+            before: '鋭意制作中',
+            after: '3月出版予定',
+            voice: '', // Cleared voice text
             period: '出版後1ヶ月',
             twitterId: ''
         },
@@ -48,6 +48,7 @@ const Achievements = () => {
             name: 'Y.I様',
             attribute: '30代 女性',
             title: '起業家・コーチ',
+            bookImage: '/image/yi_book.png', // Added book image
             before: '月商：100万円',
             after: '300万円（200% UP / 3倍増）',
             voice: '集客に追われる日々から解放されました。Amazonが自動的に集客してくれるので、私は本業のコーチングに集中できています。お客様の方から「お願いします」と言われるようになり、セールスのストレスがなくなりました。',
