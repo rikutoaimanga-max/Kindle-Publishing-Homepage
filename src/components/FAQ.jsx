@@ -54,7 +54,7 @@ const FAQ = () => {
 
     return (
         <section style={{ backgroundColor: '#fff', padding: '80px 0', color: '#333' }}>
-            <div className="container">
+            <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
                 <h2 className="section-title" style={{ color: '#000' }}>Q&A</h2>
                 <div style={{ maxWidth: '800px', margin: '0 auto' }}>
                     {questions.map((item, index) => (
