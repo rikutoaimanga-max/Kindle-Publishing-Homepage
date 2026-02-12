@@ -48,6 +48,10 @@ const Profile = () => {
                         </p>
                     </div>
                 </div>
+                <div style={{ marginTop: '3rem', textAlign: 'center', fontSize: '1.1rem', fontWeight: 'bold', lineHeight: '2' }}>
+                    「Xフォロワー1.7万人の影響力」×「緻密なAmazon SEO」×「売れる構成力」で、<br />
+                    あなたの知識と経験を、単なる本ではなく「24時間働き続ける最強の資産」へと昇華させます。
+                </div>
             </div>
         </section>
     );
