@@ -17,11 +17,15 @@ const Profile = () => {
                         <h3 style={{ textAlign: 'center', color: 'var(--color-secondary)', marginBottom: '1rem' }}>
                             【テキスト本制作・PR支援】<br />小川 修平（しゅーぞー）
                         </h3>
-                        <p style={{ fontSize: '0.9rem', lineHeight: '1.8' }}>
-                            株式会社Publinks代表（インボイス対応法人）。<br />
-                            25冊出版、代表作レビュー600件超、Amazonランキング12位獲得等実績多数のSEOエキスパート。<br />
-                            1.7万フォロワー、合計2000名コミュニティ運営等の影響力でプロモーションを完全支援。<br />
-                            積水ハウス、サンクチュアリ出版にてオフラインセミナー実施
+                        <p style={{ fontSize: '0.9rem', lineHeight: '1.8', textAlign: 'left' }}>
+                            株式会社Publinks代表（インボイス対応法人）<br />
+                            ・元東証プライムメーカー研究・開発職<br />
+                            ・25冊出版、総印税600万円超え、Amazon総合ランキング最高12位<br />
+                            ・Xフォロワー 約1.7万人<br />
+                            ・代表作『“超”X運用術』レビュー600件超え<br />
+                            ・Kindle出版オンラインサロンNEXUS主催（約500名在席）<br />
+                            ・Kindle出版オープンチャットゆると～く主催（約1400名在席）<br />
+                            ・積水ハウス、サンクチュアリ出版にてオフラインセミナー実施
                         </p>
                     </div>
 
