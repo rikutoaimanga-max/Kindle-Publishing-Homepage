@@ -20,6 +20,7 @@ const Achievements = () => {
             attribute: '30代 男性',
             title: '500名超えのKindleサロンオーナー',
             image: '/image/koukichi.png',
+            bookImage: '/image/koukichi_book.png', // Added book image
             before: 'リスト取得：30件/月',
             after: '80件（166% UP）',
             voice: 'りくとさんの制作する漫画は非常にクオリティが高く、告知前から印税が伸びるほど読者の反応が素晴らしいものでした。テキスト本を漫画化したことで、本のボリュームとクオリティが劇的に上がり、出版から時間が経った今でも1日1万ページ以上読まれるという成果が出ています。Amazon総合ランキングでも300位以内を記録するなど、あからさまに良い影響を実感しています。今回はテキストの原稿をそのまま漫画の原稿に差し替える形での対応を希望したため、リスト取りの部分に関しては正確なデータが取れていませんが、非常に満足度が高く、すでに2冊目の漫画化も依頼お願いしていて、3冊目、4冊目も継続して制作をお願いすることを決めています。現在、りくとさん自身の予約が数ヶ月先まで埋まっているとのことで、次の制作が待ち遠しいですが、それでも順番を待ってでもお願いしたいと思える安心感があります。シリーズ化を見据え、今後も長くお付き合いさせていただきたいクリエイターさんです。',
@@ -149,6 +150,13 @@ const Achievements = () => {
                                             </div>
                                         </div>
                                     </div>
+
+                                    {/* 書籍画像 (Optional) */}
+                                    {client.bookImage && (
+                                        <div style={{ margin: '0.5rem 0', textAlign: 'center' }}>
+                                            <img src={client.bookImage} alt={`${client.name}の書籍`} style={{ maxWidth: '100%', height: 'auto', maxHeight: '200px', borderRadius: '4px', boxShadow: '0 2px 5px rgba(0,0,0,0.1)' }} />
+                                        </div>
+                                    )}
 
                                     {/* ボディエリア：実績（B案：左側アクセントライン強調） */}
                                     <div style={{
