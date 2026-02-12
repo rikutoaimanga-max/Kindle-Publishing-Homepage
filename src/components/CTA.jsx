@@ -14,7 +14,7 @@ const CTA = ({ headerBackground = 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 1
         }}>
             <div style={{
                 background: headerBackground, // Use the prop (default is handled in args)
-                padding: '30px 10px', // Reduced horizontal padding
+                padding: '50px 10px', // Increased top padding to match bottom padding
                 textAlign: 'center',
                 position: 'relative',
                 borderBottom: '1px solid #e0f2ff',
