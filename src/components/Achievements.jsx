@@ -50,9 +50,9 @@ const Achievements = () => {
             title: 'YouTubeショート収益化コンサル',
             image: '/image/yi_icon.jpg', // Updated icon
             bookImage: '/image/yi_book.png', // Added book image
-            before: '月商：100万円',
-            after: '300万円（200% UP / 3倍増）',
-            voice: '集客に追われる日々から解放されました。Amazonが自動的に集客してくれるので、私は本業のコーチングに集中できています。お客様の方から「お願いします」と言われるようになり、セールスのストレスがなくなりました。',
+            before: '鋭意制作中',
+            after: '3月出版予定',
+            voice: '',
             period: '出版後2ヶ月',
             twitterId: ''
         }
