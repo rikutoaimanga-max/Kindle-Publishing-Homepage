@@ -77,7 +77,7 @@ const CTA = ({ headerBackground = 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 1
 
             {/* Body Section */}
             <div className="cta-container" style={{
-                padding: '30px 15px 50px', // Increased bottom padding slightly
+                padding: '50px 15px 50px', // Increased top padding to match bottom
                 backgroundColor: '#fff'
             }}>
                 {/* Checklist */}
