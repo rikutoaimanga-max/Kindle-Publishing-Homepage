@@ -5,11 +5,12 @@ import shuzoImg from '../assets/shuzo_icon.png';
 
 const Profile = () => {
     return (
-        <section style={{ backgroundColor: '#fff', color: '#333', padding: '80px 0' }}>
+    return (
+        <section style={{ backgroundColor: 'var(--color-secondary)', color: '#333', padding: '80px 0' }}>
             <div className="container">
-                <h2 className="section-title">運営者プロフィール</h2>
+                <h2 className="section-title" style={{ color: '#fff' }}>運営者プロフィール</h2>
                 <div className="grid grid-2">
-                    <div style={{ padding: '2rem', border: '1px solid #eee', borderRadius: '8px' }}>
+                    <div style={{ padding: '2rem', border: '1px solid #eee', borderRadius: '8px', backgroundColor: '#fff' }}>
                         <div style={{ width: '150px', height: '150px', margin: '0 auto 1rem', borderRadius: '50%', overflow: 'hidden', border: '2px solid var(--color-secondary)' }}>
                             <img src={shuzoImg} alt="しゅーぞー" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                         </div>
@@ -24,7 +25,7 @@ const Profile = () => {
                         </p>
                     </div>
 
-                    <div style={{ padding: '2rem', border: '1px solid #eee', borderRadius: '8px' }}>
+                    <div style={{ padding: '2rem', border: '1px solid #eee', borderRadius: '8px', backgroundColor: '#fff' }}>
                         <div style={{ width: '150px', height: '150px', margin: '0 auto 1rem', borderRadius: '50%', overflow: 'hidden', border: '2px solid var(--color-secondary)' }}>
                             <img src={rikutoImg} alt="りくと" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                         </div>
