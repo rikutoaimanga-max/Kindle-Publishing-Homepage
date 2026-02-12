@@ -9,29 +9,40 @@ import 'swiper/css';
 const Achievements = () => {
     // Twitterウィジェットの読み込み
     // Twitterウィジェットの読み込み
+    // Twitterウィジェットの読み込み
     useEffect(() => {
         const scriptId = 'twitter-wjs';
 
-        // ウィジェットロード関数
+        // ウィジェットの再スキャン・ロード関数
         const loadWidgets = () => {
             if (window.twttr && window.twttr.widgets) {
                 window.twttr.widgets.load();
             }
         };
 
-        // すでにスクリプトが存在するか確認
+        // スクリプトの読み込み
         if (!document.getElementById(scriptId)) {
             const script = document.createElement("script");
             script.id = scriptId;
             script.src = "https://platform.twitter.com/widgets.js";
             script.async = true;
-            // スクリプト読み込み完了後にロードを実行
-            script.onload = loadWidgets;
             document.body.appendChild(script);
-        } else {
-            // すでに存在する場合はロードを実行
-            loadWidgets();
         }
+
+        // ポーリングでロードを試行（スクリプトのロード完了待ち）
+        const intervalId = setInterval(() => {
+            loadWidgets();
+        }, 500);
+
+        // 5秒後にポーリング停止（無限ループ防止）
+        const timeoutId = setTimeout(() => {
+            clearInterval(intervalId);
+        }, 5000);
+
+        return () => {
+            clearInterval(intervalId);
+            clearTimeout(timeoutId);
+        };
     }, []);
 
     // スライド画像の総数設定 (ここに数字を入れるだけでスライドが増減します)
