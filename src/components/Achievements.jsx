@@ -33,9 +33,10 @@ const Achievements = () => {
             twitterId: '@kokichi_00'
         },
         {
-            name: 'T.M様',
+            name: 'しんぱぱ様',
             attribute: '40代 男性',
-            title: '経営者',
+            title: 'フォロワー8万人越えのXアフィリエイター',
+            image: '/image/tm_icon.png', // Updated icon
             before: '講演依頼：1件/月',
             after: '4件（300% UP / 4倍増）',
             voice: '出版前は「ただの経営者」でしたが、出版後は「著者の先生」として見られるようになり、講演依頼が急増しました。書籍が名刺代わりになり、初対面の方からの信頼獲得スピードが段違いです。',
