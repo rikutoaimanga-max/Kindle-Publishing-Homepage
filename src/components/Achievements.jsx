@@ -45,9 +45,9 @@ const Achievements = () => {
             twitterId: ''
         },
         {
-            name: 'Y.I様',
+            name: 'おさむ様',
             attribute: '30代 男性',
-            title: '起業家・コーチ',
+            title: 'YouTubeショート収益化コンサル',
             image: '/image/yi_icon.jpg', // Updated icon
             bookImage: '/image/yi_book.png', // Added book image
             before: '月商：100万円',
