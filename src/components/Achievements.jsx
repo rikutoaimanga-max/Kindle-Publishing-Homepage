@@ -55,6 +55,17 @@ const Achievements = () => {
             voice: '',
             period: '出版後2ヶ月',
             twitterId: ''
+        },
+        {
+            name: '（お名前） 様',
+            attribute: '年代 性別',
+            title: '（肩書き）',
+            image: '/image/no_image.png', // Placeholder
+            before: '（Before）',
+            after: '（After）',
+            voice: '（感想コメント）',
+            period: '出版後○ヶ月',
+            twitterId: ''
         }
     ];
 
