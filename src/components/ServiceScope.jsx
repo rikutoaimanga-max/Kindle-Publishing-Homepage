@@ -125,8 +125,8 @@ const ServiceScope = () => {
 
     return (
         <section>
-            {/* Yellow Section */}
-            <div style={{ backgroundColor: '#fff100', padding: '60px 0', color: '#333' }}>
+            {/* Yellow Section -> White Section */}
+            <div style={{ backgroundColor: '#ffffff', padding: '60px 0', color: '#333' }}>
                 <div className="container" style={{ maxWidth: '1000px' }}>
                     <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                         <p style={{ fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '0.5rem', color: '#e6ac00' }}>貴社の想いをカタチにするお手伝い</p>
