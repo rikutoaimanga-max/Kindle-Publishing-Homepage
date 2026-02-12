@@ -34,10 +34,15 @@ const Profile = () => {
                             <img src={rikutoImg} alt="りくと" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                         </div>
                         <h3 style={{ textAlign: 'center', color: 'var(--color-secondary)', marginBottom: '1rem' }}>
-                            【漫画制作チーム監修】<br />りくと
+                            【漫画制作チーム監修】<br />町田 亮（りくと）
                         </h3>
-                        <p style={{ fontSize: '0.9rem', lineHeight: '1.8' }}>
-                            「Xフォロワー1.7万人の影響力」×「緻密なAmazon SEO」×「売れる構成力」で、あなたの知識と経験を、単なる本ではなく「24時間働き続ける最強の資産」へと昇華させます。
+                        <p style={{ fontSize: '0.9rem', lineHeight: '1.8', textAlign: 'left' }}>
+                            AI Create Studio（AI漫画クリエイター）<br />
+                            ・AI漫画制作代行実績業界1<br />
+                            ・AI漫画制作代行4件同時制作中<br />
+                            ・個人初Kindle漫画ベストセラー6冠獲得<br />
+                            ・8月のフェスイベントにAI漫画講師として登壇予定<br />
+                            ・LP漫画、漫画名刺、クライアントワーク多数対応
                         </p>
                     </div>
                 </div>
