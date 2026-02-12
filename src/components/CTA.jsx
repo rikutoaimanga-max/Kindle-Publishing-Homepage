@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/global.css';
 
-const CTA = ({ headerBackground }) => {
+const CTA = ({ headerBackground = 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%)' }) => {
     return (
         <div style={{
             maxWidth: '800px',
@@ -13,7 +13,7 @@ const CTA = ({ headerBackground }) => {
             border: '4px solid var(--color-secondary)' // Prominent blue border
         }}>
             <div style={{
-                background: headerBackground || 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%)', // Light blue gradient default
+                background: headerBackground, // Use the prop (default is handled in args)
                 padding: '30px 10px', // Reduced horizontal padding
                 textAlign: 'center',
                 position: 'relative',
