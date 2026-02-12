@@ -154,50 +154,7 @@ const ServiceScope = () => {
                 </div>
             </div>
 
-            {/* Detailed Table Section */}
-            <div style={{ padding: '60px 0', backgroundColor: '#fff' }}>
-                <div className="container" style={{ maxWidth: '1000px' }}>
-                    <div style={{
-                        border: '2px solid #000',
-                        borderRadius: '4px',
-                        overflow: 'hidden'
-                    }}>
-                        <div style={{
-                            display: 'grid',
-                            gridTemplateColumns: 'minmax(150px, 1fr) 2fr',
-                            borderBottom: '2px solid #000',
-                            backgroundColor: '#f0f0f0',
-                            fontWeight: 'bold',
-                            fontSize: '1.2rem'
-                        }}>
-                            <div style={{ padding: '1.5rem', borderRight: '2px solid #000' }}>項目</div>
-                            <div style={{ padding: '1.5rem' }}>内容</div>
-                        </div>
 
-                        {flows.map((item, index) => (
-                            <div key={index} style={{
-                                display: 'grid',
-                                gridTemplateColumns: 'minmax(150px, 1fr) 2fr',
-                                borderBottom: index === flows.length - 1 ? 'none' : '1px solid #000'
-                            }}>
-                                <div style={{
-                                    padding: '1.5rem',
-                                    borderRight: '1px solid #000',
-                                    fontWeight: 'bold',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    fontSize: '1.1rem'
-                                }}>
-                                    {index + 1}. {item}
-                                </div>
-                                <div style={{ padding: '1.5rem' }}>
-                                    {/* Empty content as per design image */}
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
         </section>
     );
 };
