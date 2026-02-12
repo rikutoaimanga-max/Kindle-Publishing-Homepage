@@ -78,8 +78,8 @@ const Plans = () => {
                         </li>
                     </ul>
                     <div style={{ marginTop: '2rem', fontWeight: 'bold', fontSize: '1.2rem', textAlign: 'center', color: 'var(--color-secondary)' }}>
-                        「丸投げ」にこだわり、出版に必要な<br />
-                        すべての工程をパッケージ化しました。<br />
+                        「丸投げ」にこだわり、<br />
+                        出版に必要なすべての工程をパッケージ化しました。<br />
                         追加のオプション費用は一切かかりません。
                     </div>
                 </div>
