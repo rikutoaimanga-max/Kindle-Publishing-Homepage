@@ -62,15 +62,16 @@ const Plans = () => {
                         本プラン（特別価格）に含まれるもの
                     </h3>
                     <ul style={{ listStyle: 'none', paddingLeft: '0', fontSize: '1.1rem', lineHeight: '2' }}>
-                        <li style={{ marginBottom: '1rem', textAlign: 'center' }}>
-                            <span><span style={{ fontWeight: 'bold' }}>戦略・制作費</span>：298,000円<br />企画、執筆、制作、SEO、プロモーション</span>
+                        <li style={{ marginBottom: '3rem', textAlign: 'center' }}>
+                            <div style={{ marginBottom: '0.8rem' }}><span style={{ fontWeight: 'bold' }}>戦略・制作費</span>：298,000円</div>
+                            <div style={{ fontSize: '1rem', color: '#555' }}>企画、執筆、制作、SEO、プロモーション</div>
                         </li>
                         <li style={{ marginBottom: '1rem', textAlign: 'center' }}>
                             <div style={{ textAlign: 'center' }}>
-                                <span style={{ fontWeight: 'bold' }}>デザイン・実費パッケージ</span>：30,000円
-                                <ul style={{ listStyle: 'none', paddingLeft: '0', marginTop: '0.5rem', fontSize: '1rem', color: '#555' }}>
-                                    <li>プロ仕様の表紙デザイン</li>
-                                    <li>Amazon A+コンテンツ（商品紹介コンテンツ）制作（3枚）</li>
+                                <div style={{ marginBottom: '1rem' }}><span style={{ fontWeight: 'bold' }}>デザイン・実費パッケージ</span>：30,000円</div>
+                                <ul style={{ listStyle: 'none', paddingLeft: '0', marginTop: '1rem', fontSize: '1rem', color: '#555' }}>
+                                    <li style={{ marginBottom: '0.5rem' }}>プロ仕様の表紙デザイン</li>
+                                    <li style={{ marginBottom: '0.5rem' }}>Amazon A+コンテンツ（商品紹介コンテンツ）制作（3枚）</li>
                                     <li>ペーパーバック（紙書籍）出版設定</li>
                                 </ul>
                             </div>
