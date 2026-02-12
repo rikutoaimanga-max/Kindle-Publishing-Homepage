@@ -5,7 +5,7 @@ import shuzoImg from '../assets/shuzo_icon.png';
 
 const Profile = () => {
     return (
-    return (
+
         <section style={{ backgroundColor: 'var(--color-secondary)', color: '#333', padding: '80px 0' }}>
             <div className="container">
                 <h2 className="section-title" style={{ color: '#fff' }}>運営者プロフィール</h2>
