@@ -57,7 +57,7 @@ const Plans = () => {
                     </table>
                 </div>
 
-                <div style={{ maxWidth: '800px', margin: '0 auto', backgroundColor: '#f8f8f8', padding: '2rem', borderRadius: '12px', textAlign: 'center' }}>
+                <div style={{ maxWidth: '800px', margin: '0 auto', backgroundColor: '#fff', padding: '2rem', borderRadius: '12px', textAlign: 'center' }}>
                     <h3 style={{ fontSize: '1.3rem', fontWeight: 'bold', marginBottom: '1.5rem', borderBottom: '2px solid var(--color-secondary)', paddingBottom: '0.5rem', display: 'inline-block' }}>
                         本プラン（特別価格）に含まれるもの
                     </h3>
