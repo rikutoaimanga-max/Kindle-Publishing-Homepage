@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../styles/global.css';
 import CTA from './CTA';
 import { FaTrophy } from 'react-icons/fa';
@@ -7,44 +7,6 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
 const Achievements = () => {
-    // Twitterウィジェットの読み込み
-    // Twitterウィジェットの読み込み
-    // Twitterウィジェットの読み込み
-    useEffect(() => {
-        const scriptId = 'twitter-wjs';
-
-        // ウィジェットの再スキャン・ロード関数
-        const loadWidgets = () => {
-            if (window.twttr && window.twttr.widgets) {
-                window.twttr.widgets.load();
-            }
-        };
-
-        // スクリプトの読み込み
-        if (!document.getElementById(scriptId)) {
-            const script = document.createElement("script");
-            script.id = scriptId;
-            script.src = "https://platform.twitter.com/widgets.js";
-            script.async = true;
-            document.body.appendChild(script);
-        }
-
-        // ポーリングでロードを試行（スクリプトのロード完了待ち）
-        const intervalId = setInterval(() => {
-            loadWidgets();
-        }, 500);
-
-        // 5秒後にポーリング停止（無限ループ防止）
-        const timeoutId = setTimeout(() => {
-            clearInterval(intervalId);
-        }, 5000);
-
-        return () => {
-            clearInterval(intervalId);
-            clearTimeout(timeoutId);
-        };
-    }, []);
-
     // スライド画像の総数設定 (ここに数字を入れるだけでスライドが増減します)
     // 画像は public/image/manga_slide_{番号}.png という名前にしてください
     const TOTAL_SLIDES = 35;
@@ -253,26 +215,6 @@ const Achievements = () => {
                                         {client.voice}
                                     </p>
                                 </div>
-
-                                {/* X (Twitter) タイムライン埋め込み (公式ウィジェット) */}
-                                {client.twitterId && (
-                                    <div style={{ marginTop: '1rem', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                        <div style={{ fontSize: '0.8rem', color: '#888', marginBottom: '0.5rem', textAlign: 'center' }}>
-                                            ▼ {client.name}様の最新の投稿
-                                        </div>
-                                        <div style={{ width: '100%', maxWidth: '100%', height: '400px', overflowY: 'auto', border: '1px solid #eee', borderRadius: '12px' }}>
-                                            <a
-                                                className="twitter-timeline"
-                                                data-lang="ja"
-                                                // data-height="400" 
-                                                data-theme="light"
-                                                href={`https://twitter.com/${client.twitterId.replace('@', '')}?ref_src=twsrc%5Etfw`}
-                                            >
-                                                Tweets by {client.name}
-                                            </a>
-                                        </div>
-                                    </div>
-                                )}
 
                             </div>
                         </div>
