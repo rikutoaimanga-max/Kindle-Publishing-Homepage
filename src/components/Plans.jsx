@@ -6,7 +6,7 @@ const Plans = () => {
         <section style={{ backgroundColor: '#f0f8ff', padding: '120px 0 80px 0', color: '#333' }}>
             <div className="container">
                 <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-                    <h2 className="section-title" style={{ color: '#000', borderBottom: 'none', marginBottom: '1rem' }}>ご利用料金</h2>
+                    <h2 className="section-title" style={{ color: '#000', display: 'inline-block', borderBottom: '2px solid var(--color-secondary)', paddingBottom: '0.5rem', marginBottom: '1rem' }}>ご利用料金</h2>
                     <p style={{ fontSize: '1.1rem' }}>
                         現在、サービス開始に伴う『制作実績（事例）』を募集しているため、<br />
                         <span style={{ fontWeight: 'bold', color: '#e60000', fontSize: '1.2rem' }}>先着10社限定</span>で特別価格にて承っております。
