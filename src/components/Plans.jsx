@@ -57,18 +57,18 @@ const Plans = () => {
                     </table>
                 </div>
 
-                <div style={{ maxWidth: '900px', margin: '0 auto', backgroundColor: '#f8f8f8', padding: '2rem', borderRadius: '12px' }}>
+                <div style={{ maxWidth: '800px', margin: '0 auto', backgroundColor: '#f8f8f8', padding: '2rem', borderRadius: '12px', textAlign: 'center' }}>
                     <h3 style={{ fontSize: '1.3rem', fontWeight: 'bold', marginBottom: '1.5rem', borderBottom: '2px solid var(--color-secondary)', paddingBottom: '0.5rem', display: 'inline-block' }}>
                         本プラン（特別価格）に含まれるもの
                     </h3>
                     <ul style={{ listStyle: 'none', paddingLeft: '0', fontSize: '1.1rem', lineHeight: '2' }}>
-                        <li style={{ marginBottom: '1rem', display: 'flex', alignItems: 'flex-start' }}>
+                        <li style={{ marginBottom: '1rem', display: 'flex', alignItems: 'flex-start', justifyContent: 'center' }}>
                             <span style={{ color: 'var(--color-secondary)', marginRight: '10px', fontWeight: 'bold' }}>✓</span>
                             <span><span style={{ fontWeight: 'bold' }}>戦略・制作費</span>：298,000円（企画、執筆、SEO、プロモーション）</span>
                         </li>
-                        <li style={{ marginBottom: '1rem', display: 'flex', alignItems: 'flex-start' }}>
+                        <li style={{ marginBottom: '1rem', display: 'flex', alignItems: 'flex-start', justifyContent: 'center' }}>
                             <span style={{ color: 'var(--color-secondary)', marginRight: '10px', fontWeight: 'bold' }}>✓</span>
-                            <div>
+                            <div style={{ textAlign: 'left' }}>
                                 <span style={{ fontWeight: 'bold' }}>デザイン・実費パッケージ</span>：30,000円
                                 <ul style={{ listStyle: 'disc', paddingLeft: '1.5rem', marginTop: '0.5rem', fontSize: '1rem', color: '#555' }}>
                                     <li>プロ仕様の表紙デザイン</li>
