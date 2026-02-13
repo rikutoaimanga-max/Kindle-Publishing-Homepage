@@ -12,7 +12,7 @@ const Footer = () => {
     };
 
     return (
-        <footer style={{ backgroundColor: 'var(--color-secondary)', color: '#ffffff', padding: '60px 0 20px', fontSize: '0.9rem' }}>
+        <footer style={{ backgroundColor: 'var(--color-secondary)', color: '#ffffff', padding: '60px 0 60px', fontSize: '0.9rem', position: 'relative' }}>
             <div className="container">
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px', marginBottom: '40px', textAlign: 'center' }}>
                     {/* Brand */}
@@ -44,7 +44,7 @@ const Footer = () => {
                         style={{
                             position: 'absolute',
                             right: '0',
-                            top: '20px', // Align with the copyright text roughly or slightly above
+                            top: '-50px', // Moved up significantly
                             backgroundColor: '#fff',
                             color: '#0f1c3f',
                             border: 'none',

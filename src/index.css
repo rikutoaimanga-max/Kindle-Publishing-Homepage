@@ -48,6 +48,16 @@ body {
   overflow-x: hidden;
   /* Prevent horizontal scroll */
   width: 100%;
+
+  /* Global Stylish Background */
+  background-color: #fafafa;
+  background-image:
+    radial-gradient(circle at 15% 50%, rgba(0, 160, 233, 0.08), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(245, 166, 35, 0.08), transparent 25%),
+    linear-gradient(#f0f2f5 1px, transparent 1px),
+    linear-gradient(90deg, #f0f2f5 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 50px 50px, 50px 50px;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -99,4 +109,126 @@ button:focus-visible {
 .cta-button-hover:hover {
   transform: translateY(-2px) scale(1.02);
   box-shadow: 0 6px 20px rgba(0, 85, 255, 0.5);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes spin-clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-counter-clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.text-shimmer {
+  background: linear-gradient(to right,
+      #00A0E9 0%,
+      #0077b6 20%,
+      #a6e4ff 50%,
+      #0077b6 80%,
+      #00A0E9 100%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+  display: inline-block;
+  font-weight: 900;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Stylish Underline */
+.stylish-underline {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.stylish-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+  width: 120%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, #00A0E9 15%, #00A0E9 85%, transparent 100%);
+  border-radius: 2px;
+  box-shadow: 0 4px 6px rgba(0, 160, 233, 0.3);
+}
+
+/* Gold Gradient Text */
+.text-gradient-gold {
+  background: linear-gradient(to right, #f5a623 0%, #f7b731 50%, #f5a623 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-weight: 700;
+}
+
+/* Header CTA Button - Force Style */
+#header-cta-btn {
+  background: linear-gradient(to right, #ffb74d, #ffcc80) !important;
+  color: #000 !important;
+  border: none !important;
+}
+
+@keyframes pulse-glow {
+  0% {
+    opacity: 0.4;
+    transform: translate(-50%, -50%) scale(1);
+    text-shadow: 0 0 10px rgba(0, 160, 233, 0.2);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.15);
+    text-shadow: 0 0 30px rgba(0, 160, 233, 0.8), 0 0 15px rgba(0, 160, 233, 0.5);
+  }
+
+  100% {
+    opacity: 0.4;
+    transform: translate(-50%, -50%) scale(1);
+    text-shadow: 0 0 10px rgba(0, 160, 233, 0.2);
+  }
+}
+
+/* Hover Opacity Utility */
+.hover-opacity {
+  transition: opacity 0.3s;
+}
+
+.hover-opacity:hover {
+  opacity: 0.7;
 }

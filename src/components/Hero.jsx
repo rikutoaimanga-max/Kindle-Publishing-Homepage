@@ -3,11 +3,12 @@ import '../styles/global.css';
 import rikutoImg from '../assets/rikuto_icon.png';
 import shuzoImg from '../assets/shuzo_icon.png';
 
+
 const Hero = () => {
     return (
         <section className="hero-section" style={{
             padding: '340px 0 40px', // Further increased top padding
-            background: 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%)', // Updated to match CTA title background
+            background: 'transparent', // Transparent to show global stylish background
             minHeight: '100vh',
             display: 'flex',
             alignItems: 'center',
@@ -19,30 +20,76 @@ const Hero = () => {
             <div className="hero-icons-wrapper">
                 <div className="hero-icon-left" style={{
                     position: 'absolute',
-                    top: '25%', // Lowered from 20%
-                    left: '10%', // Moved inward from 5%
+                    top: '27%', // Adjusted from 25%
+                    left: '10%', // Aligned to 10%
                     transform: 'translateY(-50%)',
                     width: 'clamp(200px, 20vw, 350px)',
+                    height: 'clamp(200px, 20vw, 350px)', // Fixed height for container
                     zIndex: 1,
                     display: 'flex',
                     flexDirection: 'column',
-                    alignItems: 'center'
+                    alignItems: 'center',
+                    justifyContent: 'center', // Center content
+                    // position: 'relative' removed, absolute acts as container
                 }}>
+                    {/* Label Positioned Above */}
+                    {/* Icon Badge Positioned Top-Right */}
                     <div style={{
-                        fontSize: 'clamp(1.2rem, 2vw, 1.5rem)',
+                        position: 'absolute',
+                        top: '0',
+                        right: '0',
+                        transform: 'translate(30%, -30%)', // Float on corner
+                        width: '74px', // Slightly larger
+                        height: '74px',
+                        borderRadius: '50%',
+                        background: 'linear-gradient(135deg, #00A0E9 0%, #0077b6 100%)', // Blue Gradient
+                        border: '4px solid #fff', // Thick white border
+                        display: 'flex',
+                        flexDirection: 'column', // Stack text
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        boxShadow: '0 4px 10px rgba(0,0,0,0.15)',
+                        zIndex: 10,
+                        color: '#fff',
+                        fontSize: '1.15rem', // Slightly larger for 2 lines
                         fontWeight: 'bold',
-                        color: '#000',
-                        marginBottom: '0.5rem',
-                        textShadow: '0 2px 4px rgba(255,255,255,0.8)'
-                    }}>テキスト</div>
+                        letterSpacing: '0.05em',
+                        lineHeight: '1.1'
+                    }}>
+                        <span>テキ</span>
+                        <span>スト</span>
+                    </div>
+
+                    {/* Ring 1: Blue Accent (Fast Spin) */}
+                    <div style={{
+                        position: 'absolute',
+                        top: '-15px', left: '-15px', right: '-15px', bottom: '-15px',
+                        border: '2px solid transparent',
+                        borderTopColor: '#00A0E9', // Blue
+                        borderRightColor: '#00A0E9',
+                        borderRadius: '50%',
+                        animation: 'spin-clockwise 3s linear infinite'
+                    }}></div>
+
+                    {/* Ring 2: Dashed/Gray (Slow Spin) */}
+                    <div style={{
+                        position: 'absolute',
+                        top: '-8px', left: '-8px', right: '-8px', bottom: '-8px',
+                        border: '2px dashed rgba(0, 160, 233, 0.3)', // Light Blue Dashed
+                        borderRadius: '50%',
+                        animation: 'spin-counter-clockwise 10s linear infinite'
+                    }}></div>
+
                     <img src={shuzoImg} alt="しゅーぞー" style={{
                         width: '100%',
-                        height: 'clamp(200px, 20vw, 350px)', // Maintain height constraint on image
+                        height: '100%',
                         objectFit: 'cover',
                         borderRadius: '50%',
-                        border: '4px solid #ffffff',
-                        opacity: 0.8,
-                        filter: 'drop-shadow(0 10px 20px rgba(0, 160, 233, 0.2))'
+                        border: 'none',
+                        boxShadow: '0 0 25px rgba(0, 160, 233, 0.6)', // Blue Glow
+                        opacity: 1,
+                        position: 'relative',
+                        zIndex: 2
                     }} />
                 </div>
 
@@ -56,38 +103,82 @@ const Hero = () => {
                     fontWeight: '900',
                     color: 'var(--color-secondary)', // Blue color for the cross
                     zIndex: 0,
-                    opacity: 0.5,
-                    fontFamily: 'sans-serif'
+                    fontFamily: 'sans-serif',
+                    animation: 'pulse-glow 1.5s infinite ease-in-out'
                 }}>
                     ×
                 </div>
 
                 <div className="hero-icon-right" style={{
                     position: 'absolute',
-                    top: '25%', // Lowered from 20%
-                    right: '10%', // Moved inward from 5%
+                    top: '27%', // Adjusted from 25%
+                    right: '10%', // Reverted to 10%
                     transform: 'translateY(-50%)',
                     width: 'clamp(200px, 20vw, 350px)',
+                    height: 'clamp(200px, 20vw, 350px)', // Fixed height
                     zIndex: 1,
                     display: 'flex',
                     flexDirection: 'column',
-                    alignItems: 'center'
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    // position: 'relative' removed
                 }}>
+                    {/* Label Positioned Above */}
+                    {/* Icon Badge Positioned Top-Right */}
                     <div style={{
-                        fontSize: 'clamp(1.2rem, 2vw, 1.5rem)',
+                        position: 'absolute',
+                        top: '0',
+                        right: '0',
+                        transform: 'translate(30%, -30%)', // Float on corner
+                        width: '74px',
+                        height: '74px',
+                        borderRadius: '50%',
+                        background: 'linear-gradient(135deg, #00A0E9 0%, #0077b6 100%)', // Blue Gradient
+                        border: '4px solid #fff', // Thick white border
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        boxShadow: '0 4px 10px rgba(0,0,0,0.15)',
+                        zIndex: 10,
+                        color: '#fff',
+                        fontSize: '1.4rem', // Larger for 2 chars
                         fontWeight: 'bold',
-                        color: '#000',
-                        marginBottom: '0.5rem',
-                        textShadow: '0 2px 4px rgba(255,255,255,0.8)'
-                    }}>漫画</div>
+                        letterSpacing: '0.1em'
+                    }}>
+                        漫画
+                    </div>
+
+                    {/* Ring 1: Blue Accent (Fast Spin) */}
+                    <div style={{
+                        position: 'absolute',
+                        top: '-15px', left: '-15px', right: '-15px', bottom: '-15px',
+                        border: '2px solid transparent',
+                        borderTopColor: '#00A0E9',
+                        borderRightColor: '#00A0E9',
+                        borderRadius: '50%',
+                        animation: 'spin-clockwise 3s linear infinite',
+                        animationDelay: '1s' // Offset
+                    }}></div>
+
+                    {/* Ring 2: Dashed/Gray (Slow Spin) */}
+                    <div style={{
+                        position: 'absolute',
+                        top: '-8px', left: '-8px', right: '-8px', bottom: '-8px',
+                        border: '2px dashed rgba(0, 160, 233, 0.3)',
+                        borderRadius: '50%',
+                        animation: 'spin-counter-clockwise 10s linear infinite'
+                    }}></div>
+
                     <img src={rikutoImg} alt="りくと" style={{
                         width: '100%',
-                        height: 'clamp(200px, 20vw, 350px)', // Maintain height constraint on image
+                        height: '100%',
                         objectFit: 'cover',
                         borderRadius: '50%',
-                        border: '4px solid #ffffff',
-                        opacity: 0.8,
-                        filter: 'drop-shadow(0 10px 20px rgba(0, 160, 233, 0.2))'
+                        border: 'none',
+                        boxShadow: '0 0 25px rgba(0, 160, 233, 0.6)', // Blue Glow
+                        opacity: 1,
+                        position: 'relative',
+                        zIndex: 2
                     }} />
                 </div>
             </div>
@@ -103,16 +194,16 @@ const Hero = () => {
                     maxWidth: '1200px',
                     color: '#333'
                 }}>
-                    <span style={{ fontSize: '0.7em', display: 'block', marginBottom: '1.5rem', letterSpacing: '0.1em' }}>あなたの<br />知識・経験を</span>
-                    <span className="hero-marker" style={{
+                    <span className="stylish-underline" style={{ fontSize: '0.6em', marginBottom: '1.5rem', letterSpacing: '0.1em' }}>あなたの<br />知識・経験を</span>
+                    <span style={{
                         fontFamily: 'var(--font-family-serif)',
-                        color: 'var(--color-secondary)',
-                        fontSize: '0.85em', // Reduced from 0.9em
+                        color: '#333', // Changed from blue to black for contrast
+                        fontSize: '0.85em',
                         display: 'block',
-                        lineHeight: '1.2',
-                        // background property moved to CSS .hero-marker for responsive control
+                        lineHeight: '1.2'
                     }}>
-                        24時間働き続ける<br />『最強の営業マン』へ。
+                        24時間働き続ける<br />
+                        <span className="text-shimmer" style={{ fontSize: '1.2em', marginTop: '0' }}>『最強の営業マン』へ。</span>
                     </span>
                 </h1>
 

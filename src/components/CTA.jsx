@@ -142,8 +142,8 @@ const CTA = ({ headerBackground = 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 1
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
-                                color: '#f5a623',
-                                fontSize: '1.2rem',
+                                color: '#e60012', // Red for urgency
+                                fontSize: '1.5rem', // Larger visibility
                                 boxShadow: '0 4px 10px rgba(0,0,0,0.15)',
                                 zIndex: 2
                             }}>

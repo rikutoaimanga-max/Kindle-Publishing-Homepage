@@ -112,6 +112,8 @@ ul {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+
+
 .grid {
   display: grid;
   gap: 2rem;
@@ -149,6 +151,10 @@ ul {
 
   .hero-marker {
     background: linear-gradient(to bottom, transparent 60%, rgba(0, 160, 233, 0.2) 60%);
+  }
+
+  .hero-marker-orange {
+    background: linear-gradient(to bottom, transparent 55%, rgba(245, 166, 35, 0.3) 55%);
   }
 }
 

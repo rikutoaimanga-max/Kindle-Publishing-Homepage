@@ -73,8 +73,8 @@ const Achievements = () => {
     return (
         <>
             <section style={{
-                background: 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%)',
-                backgroundColor: '#e6f7ff', // Fallback
+                background: 'transparent',
+                backgroundColor: 'transparent',
                 padding: '80px 0',
                 color: 'var(--color-text-dark)'
             }}>
@@ -232,8 +232,7 @@ const Achievements = () => {
                                     </div>
                                     {/* フッターエリア：感想 */}
                                     <div
-                                        data-lenis-prevent // Prevent Lenis smooth scroll from hijacking wheel event
-                                        onWheel={(e) => e.stopPropagation()} // Stop event propagation just in case
+                                        data-lenis-prevent // Restore native scroll for content
                                         style={{
                                             backgroundColor: '#f9f9f9',
                                             padding: '1.2rem',
@@ -242,8 +241,7 @@ const Achievements = () => {
                                             flex: '1 1 0', // Grow to fill remaining space
                                             minHeight: 0,  // Allow content to be taller than container (trigger overflow)
                                             fontSize: '0.9rem',
-                                            overflowY: 'auto', // Enable scrolling
-                                            overscrollBehavior: 'contain' // Prevent scroll chaining to parent
+                                            overflowY: 'auto' // Enable scrolling
                                         }}>
                                         <p style={{ lineHeight: '1.7', color: '#444', position: 'relative', zIndex: 1, margin: 0 }}>
                                             {client.voice}
@@ -372,7 +370,7 @@ const Achievements = () => {
             </section>
 
             <section style={{
-                backgroundColor: '#ffffff',
+                backgroundColor: 'transparent',
                 padding: '80px 0 120px', // Increased bottom padding
                 color: 'var(--color-text-dark)'
             }}>
