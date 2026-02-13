@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import '../styles/global.css';
 
@@ -11,43 +12,31 @@ const Footer = () => {
     };
 
     return (
-        <footer style={{ backgroundColor: '#0f1c3f', color: '#ffffff', padding: '60px 0 20px', fontSize: '0.9rem' }}>
+        <footer style={{ backgroundColor: 'var(--color-secondary)', color: '#ffffff', padding: '60px 0 20px', fontSize: '0.9rem' }}>
             <div className="container">
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '40px', marginBottom: '40px' }}>
-                    {/* Column 1: Brand */}
-                    <div style={{ textAlign: 'left' }}>
-                        <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                            <span style={{ color: 'var(--color-accent)' }}>📖</span> Kindle出版代行サービス
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px', marginBottom: '40px', textAlign: 'center' }}>
+                    {/* Brand */}
+                    <div>
+                        <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+                            集客・ブランディング特化型 Kindle出版代行サービス
                         </h2>
-                        <p style={{ lineHeight: '1.8', color: '#ccc' }}>
-                            あなたの知識を資産に変える<br />
-                            完全無料Kindle制作サービス
+                        <p style={{ lineHeight: '1.8', color: '#ffffff' }}>
+                            あなたの知識・経験を24時間働き続ける<br />
+                            『最強の営業マン』へ。
                         </p>
                     </div>
 
-                    {/* Column 2: Services */}
-                    <div style={{ textAlign: 'left' }}>
-                        <h3 style={{ fontSize: '1.1rem', fontWeight: 'bold', marginBottom: '1.5rem' }}>サービス</h3>
-                        <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                            <li><a href="#hero" style={{ color: '#ccc', textDecoration: 'none', transition: 'color 0.3s' }} className="footer-link">サービス紹介</a></li>
-                            <li><a href="#solution" style={{ color: '#ccc', textDecoration: 'none', transition: 'color 0.3s' }} className="footer-link">メリット</a></li>
-                            <li><a href="#flow" style={{ color: '#ccc', textDecoration: 'none', transition: 'color 0.3s' }} className="footer-link">制作の流れ</a></li>
-                            <li><a href="https://forms.gle/BBb3FbiVkBH4qbFr6" target="_blank" rel="noopener noreferrer" style={{ color: '#ccc', textDecoration: 'none', transition: 'color 0.3s' }} className="footer-link">よくある質問</a></li>
-                        </ul>
-                    </div>
-
-                    {/* Column 3: Company Info */}
-                    <div style={{ textAlign: 'left' }}>
-                        <h3 style={{ fontSize: '1.1rem', fontWeight: 'bold', marginBottom: '1.5rem' }}>運営情報</h3>
-                        <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                            <li><a href="#" style={{ color: '#ccc', textDecoration: 'none', transition: 'color 0.3s' }} className="footer-link">特定商取引法に基づく表記</a></li>
-                            <li><a href="#" style={{ color: '#ccc', textDecoration: 'none', transition: 'color 0.3s' }} className="footer-link">プライバシーポリシー</a></li>
+                    {/* Operating Info Links - Horizontal */}
+                    <div>
+                        <ul style={{ listStyle: 'none', padding: 0, display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
+                            <li><Link to="/legal" style={{ color: '#ffffff', textDecoration: 'none', transition: 'color 0.3s' }} className="footer-link">特定商取引法に基づく表記</Link></li>
+                            <li><a href="#" style={{ color: '#ffffff', textDecoration: 'none', transition: 'color 0.3s' }} className="footer-link">プライバシーポリシー</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '20px', textAlign: 'center', position: 'relative' }}>
-                    <p style={{ color: '#888', fontSize: '0.8rem' }}>&copy; {new Date().getFullYear()} Kindle出版代行サービス</p>
+                    <p style={{ color: '#ffffff', fontSize: '0.8rem' }}>&copy; {new Date().getFullYear()} 集客・ブランディング特化型 Kindle出版代行サービス</p>
 
                     {/* Back to Top Button */}
                     <button

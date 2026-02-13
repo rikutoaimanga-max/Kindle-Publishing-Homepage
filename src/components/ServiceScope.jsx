@@ -128,7 +128,7 @@ const ServiceScope = () => {
     ];
 
     return (
-        <section>
+        <section id="service-scope">
             {/* Yellow Section -> White Section */}
             <div style={{ backgroundColor: '#ffffff', padding: '120px 0 60px', color: '#333' }}>
                 <div className="container" style={{ maxWidth: '1000px' }}>

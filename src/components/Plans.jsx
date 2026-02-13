@@ -3,7 +3,7 @@ import '../styles/global.css';
 
 const Plans = () => {
     return (
-        <section style={{ backgroundColor: '#f0f8ff', padding: '120px 0 80px 0', color: '#333' }}>
+        <section id="plans" style={{ backgroundColor: '#f0f8ff', padding: '120px 0 80px 0', color: '#333' }}>
             <div className="container">
                 <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                     <h2 className="section-title" style={{ color: '#000', display: 'inline-block', borderBottom: '2px solid var(--color-secondary)', paddingBottom: '0.5rem', marginBottom: '1rem' }}>ご利用料金</h2>
