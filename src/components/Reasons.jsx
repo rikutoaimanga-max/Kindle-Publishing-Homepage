@@ -3,7 +3,7 @@ import '../styles/global.css';
 
 const Reasons = () => {
     return (
-        <section style={{ backgroundColor: '#f9f9f9', padding: '120px 0 80px 0', color: '#333' }}>
+        <section style={{ backgroundColor: '#fff', padding: '120px 0 80px 0', color: '#333' }}>
             <div className="container">
                 <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                     <h2 className="section-title" style={{ color: '#000', display: 'inline-block', borderBottom: '2px solid var(--color-secondary)' }}>選ばれる3つの理由</h2>
