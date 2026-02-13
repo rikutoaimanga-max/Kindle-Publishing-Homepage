@@ -138,7 +138,6 @@ const FAQ = () => {
 
                 <div style={{ textAlign: 'center', marginTop: '4rem' }}>
                     <p style={{ fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '2rem' }}>
-                        「限定月3社まで」。<br />
                         まずは「診断」で、あなたの発信の資産価値を確かめてください。
                     </p>
                     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
