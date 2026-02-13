@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 import '../styles/global.css';
 
 const Footer = () => {
@@ -40,7 +40,7 @@ const Footer = () => {
                     <div style={{ textAlign: 'left' }}>
                         <h3 style={{ fontSize: '1.1rem', fontWeight: 'bold', marginBottom: '1.5rem' }}>運営情報</h3>
                         <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                            <li><Link to="/legal" style={{ color: '#ccc', textDecoration: 'none', transition: 'color 0.3s' }} className="footer-link">特定商取引法に基づく表記</Link></li>
+                            <li><a href="#" style={{ color: '#ccc', textDecoration: 'none', transition: 'color 0.3s' }} className="footer-link">特定商取引法に基づく表記</a></li>
                             <li><a href="#" style={{ color: '#ccc', textDecoration: 'none', transition: 'color 0.3s' }} className="footer-link">プライバシーポリシー</a></li>
                         </ul>
                     </div>
