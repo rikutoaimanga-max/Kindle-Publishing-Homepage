@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './components/Home';
 import Legal from './components/Legal';
+import PrivacyPolicy from './components/PrivacyPolicy';
 import SmoothScrollWrapper from './components/SmoothScrollWrapper';
 import AnimatedCursor from 'react-animated-cursor';
 import './index.css';
@@ -47,6 +48,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/legal" element={<Legal />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </SmoothScrollWrapper>
     </Router>
