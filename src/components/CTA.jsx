@@ -33,7 +33,7 @@ const CTA = ({ headerBackground = 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 1
                     flexShrink: 0,
                     transform: 'translateY(-2px)' // Fine-tune vertical position
                 }}>
-                    0
+                    <span className="animate-rubber-band">0</span>
                 </div>
 
                 <div style={{

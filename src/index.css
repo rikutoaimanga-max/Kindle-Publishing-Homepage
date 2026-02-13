@@ -263,3 +263,42 @@ button:focus-visible {
   transform: scale(1.05);
   text-shadow: 0 0 15px rgba(255, 204, 128, 0.6);
 }
+
+@keyframes rubber-band {
+  0% {
+    transform: scale(1);
+  }
+
+  30% {
+    transform: scale(1.25, 0.75);
+    color: #ffcc00;
+    /* Yellow */
+    text-shadow: 0 0 20px rgba(255, 204, 0, 0.6);
+  }
+
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-rubber-band {
+  animation: rubber-band 2s infinite ease-in-out;
+  display: inline-block;
+  /* Ensure transform works */
+}
