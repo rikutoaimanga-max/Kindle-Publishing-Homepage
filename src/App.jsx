@@ -10,6 +10,7 @@ import ServiceScope from './components/ServiceScope';
 import Plans from './components/Plans';
 import Reasons from './components/Reasons';
 import FAQ from './components/FAQ';
+import CTA from './components/CTA';
 import Footer from './components/Footer';
 import SmoothScrollWrapper from './components/SmoothScrollWrapper';
 import AnimatedCursor from 'react-animated-cursor';
@@ -54,8 +55,19 @@ function App() {
           <Reasons />
           <div id="cta">
             <FAQ />
-            {/* FAQ contains the final CTA "Closing" section as per request structure */}
           </div>
+          <section style={{ backgroundColor: '#fff', padding: '80px 0', color: '#333' }}>
+            <div className="container">
+              <div style={{ textAlign: 'center' }}>
+                <p style={{ fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '2rem' }}>
+                  まずは「診断」で、あなたの発信の資産価値を確かめてください。
+                </p>
+                <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+                  <CTA />
+                </div>
+              </div>
+            </div>
+          </section>
           <Footer />
         </div>
       </SmoothScrollWrapper>

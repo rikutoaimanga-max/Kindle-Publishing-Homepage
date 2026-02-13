@@ -80,7 +80,7 @@ const FAQ = () => {
     ];
 
     return (
-        <section style={{ backgroundColor: '#fff', padding: '80px 0', color: '#333' }}>
+        <section style={{ backgroundColor: '#f9f9f9', padding: '80px 0', color: '#333' }}>
             <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
                 <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                     <h2 className="section-title" style={{ color: '#000', display: 'inline-block', borderBottom: '2px solid var(--color-secondary)', paddingBottom: '0.5rem' }}>Q&A</h2>
@@ -136,14 +136,6 @@ const FAQ = () => {
                     ))}
                 </div>
 
-                <div style={{ textAlign: 'center', marginTop: '4rem' }}>
-                    <p style={{ fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '2rem' }}>
-                        まずは「診断」で、あなたの発信の資産価値を確かめてください。
-                    </p>
-                    <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-                        <CTA />
-                    </div>
-                </div>
             </div>
         </section>
     );
