@@ -16,7 +16,7 @@ const Header = () => {
     }}>
       <div className="container header-container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div className="header-title" style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
-          <Link to="/" className="hover-opacity" style={{ color: '#fff', textDecoration: 'none' }}>
+          <Link to="/" className="header-title-link">
             集客・ブランディング特化型 Kindle出版代行サービス
           </Link>
         </div>

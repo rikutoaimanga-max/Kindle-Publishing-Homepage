@@ -12,21 +12,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -moz-osx-font-smoothing: grayscale;
-  cursor: none !important;
-  /* Force hide default cursor */
-}
-
-html {
-  cursor: none !important;
-}
-
-/* Ensure cursor is hidden on interactive elements too */
-a,
-button,
-input,
-select,
-textarea {
-  cursor: none !important;
 }
 
 a {
@@ -225,10 +210,56 @@ button:focus-visible {
 }
 
 /* Hover Opacity Utility */
+/* Hover Opacity Utility */
 .hover-opacity {
-  transition: opacity 0.3s;
+  transition: opacity 0.3s, transform 0.2s;
+  display: inline-block;
+  /* Needed for transform */
 }
 
 .hover-opacity:hover {
   opacity: 0.7;
+  transform: scale(1.05);
+  /* Slight zoom for feedback */
+}
+
+/* Hover Underline Animation */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  /* Slight offset */
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Header Title Link Styles */
+.header-title-link {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.header-title-link:hover {
+  color: #ffcc80;
+  /* Light Orange */
+  transform: scale(1.05);
+  text-shadow: 0 0 15px rgba(255, 204, 128, 0.6);
 }
