@@ -21,7 +21,7 @@ const Header = () => {
           <a href="https://forms.gle/BBb3FbiVkBH4qbFr6" target="_blank" rel="noopener noreferrer" className="btn btn-primary header-button" style={{
             fontSize: '0.9rem',
             padding: '0.5rem 1rem',
-            color: 'var(--color-secondary)',
+            color: '#000',
             backgroundColor: '#fff',
             fontWeight: 'bold'
           }}>
