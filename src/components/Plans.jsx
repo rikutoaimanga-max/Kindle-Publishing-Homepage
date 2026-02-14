@@ -178,17 +178,14 @@ const Plans = () => {
                         <div style={{ fontSize: 'clamp(1.2rem, 4vw, 1.4rem)', fontWeight: 'bold', color: 'var(--color-secondary)', marginBottom: '1rem' }}>
                             30,000円
                         </div>
-                        <ul style={{ listStyle: 'none', paddingLeft: '0', margin: 0, textAlign: 'left', maxWidth: '400px', marginLeft: 'auto', marginRight: 'auto' }}>
-                            <li style={{ fontSize: '0.9rem', color: '#555', marginBottom: '0.6rem', paddingLeft: '1.5rem', position: 'relative' }}>
-                                <span style={{ position: 'absolute', left: 0, color: 'var(--color-secondary)' }}>✓</span>
+                        <ul style={{ listStyle: 'none', paddingLeft: '0', margin: 0, textAlign: 'center', maxWidth: '400px', marginLeft: 'auto', marginRight: 'auto' }}>
+                            <li style={{ fontSize: '0.9rem', color: '#555', marginBottom: '0.6rem' }}>
                                 プロ仕様の表紙デザイン
                             </li>
-                            <li style={{ fontSize: '0.9rem', color: '#555', marginBottom: '0.6rem', paddingLeft: '1.5rem', position: 'relative' }}>
-                                <span style={{ position: 'absolute', left: 0, color: 'var(--color-secondary)' }}>✓</span>
-                                Amazon A+コンテンツ<br className="mobile-br" />（商品紹介コンテンツ）制作（3枚）
+                            <li style={{ fontSize: '0.9rem', color: '#555', marginBottom: '0.6rem' }}>
+                                Amazon A+コンテンツ（3枚）<br />（商品紹介コンテンツ）
                             </li>
-                            <li style={{ fontSize: '0.9rem', color: '#555', paddingLeft: '1.5rem', position: 'relative' }}>
-                                <span style={{ position: 'absolute', left: 0, color: 'var(--color-secondary)' }}>✓</span>
+                            <li style={{ fontSize: '0.9rem', color: '#555' }}>
                                 ペーパーバック（紙書籍）出版設定
                             </li>
                         </ul>

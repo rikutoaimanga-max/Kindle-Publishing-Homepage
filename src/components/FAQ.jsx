@@ -11,7 +11,7 @@ const FAQ = () => {
 
     const questions = [
         {
-            q: (<>「丸投げ」と書いてますが、<br />結局どれくらい私のリソースが必要ですか？</>),
+            q: '「丸投げ」と書いてますが、結局どれくらい私のリソースが必要ですか？',
             a: 'ヒアリング（1〜2時間程度）と、構成案・原稿の確認（方向性がずれないように、序盤でも確認の依頼をさせて頂きます）、および「読者特典（リスト獲得用）」のご用意のみです。執筆、リサーチ、デザイン、入稿作業といった「実務」は100%こちらで代行します。多忙な経営者の方でも、本業を止めることなく出版が可能です。'
         },
         {
@@ -98,7 +98,7 @@ const FAQ = () => {
                             onClick={() => toggleFAQ(index)}
                         >
                             <h3 style={{
-                                fontSize: '0.85rem',
+                                fontSize: '1.2rem',
                                 marginBottom: '0.5rem',
                                 display: 'flex',
                                 justifyContent: 'space-between',
@@ -130,7 +130,7 @@ const FAQ = () => {
                                 transition: 'all 0.4s ease-in-out',
                                 paddingLeft: '0'
                             }}>
-                                <p style={{ display: 'flex', alignItems: 'flex-start', marginTop: '1rem', color: '#555', lineHeight: '1.6', fontSize: '0.85rem', textAlign: 'left' }}>
+                                <p style={{ display: 'flex', alignItems: 'flex-start', marginTop: '1rem', color: '#555', lineHeight: '1.6', fontSize: '1.2rem', textAlign: 'left' }}>
                                     <span style={{ color: 'var(--color-accent)', marginRight: '0.5rem', fontWeight: 'bold', flexShrink: 0 }}>A.</span>
                                     <span>{item.a}</span>
                                 </p>

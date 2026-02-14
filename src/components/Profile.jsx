@@ -58,7 +58,7 @@ const Profile = () => {
                     単なる本ではなく<br />
                     <span style={{ color: '#FFD700', fontSize: '1.3rem' }}>「24時間働き続ける最強の資産」</span><br />
                     <div style={{
-                        width: '90%',
+                        width: '50%',
                         height: '2px',
                         background: 'linear-gradient(to right, transparent, #e74c3c, transparent)',
                         margin: '0.3rem auto 0.5rem'
