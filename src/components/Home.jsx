@@ -33,7 +33,7 @@ const Home = () => {
                 <div className="container">
                     <div style={{ textAlign: 'center' }}>
                         <p style={{ fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '2rem' }}>
-                            まずは「診断」で、あなたの発信の資産価値を確かめてください。
+                            まずは「診断」で、<br />あなたの発信の資産価値を<br />確かめてください。
                         </p>
                         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
                             <CTA />

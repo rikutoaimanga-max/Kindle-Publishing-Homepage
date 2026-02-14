@@ -11,7 +11,7 @@ const FAQ = () => {
 
     const questions = [
         {
-            q: '「丸投げ」と書いてますが、結局どれくらい私のリソースが必要ですか？',
+            q: (<>「丸投げ」と書いてますが、<br />結局どれくらい私のリソースが必要ですか？</>),
             a: 'ヒアリング（1〜2時間程度）と、構成案・原稿の確認（方向性がずれないように、序盤でも確認の依頼をさせて頂きます）、および「読者特典（リスト獲得用）」のご用意のみです。執筆、リサーチ、デザイン、入稿作業といった「実務」は100%こちらで代行します。多忙な経営者の方でも、本業を止めることなく出版が可能です。'
         },
         {
@@ -85,7 +85,7 @@ const FAQ = () => {
                 <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                     <h2 className="section-title" style={{ color: '#000', display: 'inline-block', borderBottom: '2px solid var(--color-secondary)', paddingBottom: '0.5rem' }}>Q&A</h2>
                 </div>
-                <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+                <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 1rem' }}>
                     {questions.map((item, index) => (
                         <div
                             key={index}
@@ -98,24 +98,27 @@ const FAQ = () => {
                             onClick={() => toggleFAQ(index)}
                         >
                             <h3 style={{
-                                fontSize: '1.2rem',
+                                fontSize: '0.85rem',
                                 marginBottom: '0.5rem',
                                 display: 'flex',
                                 justifyContent: 'space-between',
                                 alignItems: 'center',
+                                gap: '8px',
                                 transition: 'color 0.3s'
                             }}
                                 onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-secondary)'}
                                 onMouseLeave={(e) => e.currentTarget.style.color = '#333'}
                             >
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                                    <span style={{ color: 'var(--color-primary)', fontWeight: 'bold' }}>Q.</span>
-                                    {item.q}
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flex: 1 }}>
+                                    <span style={{ color: 'var(--color-secondary)', fontWeight: 'bold', flexShrink: 0 }}>Q.</span>
+                                    <span>{item.q}</span>
                                 </div>
                                 <span style={{
                                     transform: openIndex === index ? 'rotate(180deg)' : 'rotate(0)',
                                     transition: 'transform 0.3s',
-                                    color: 'var(--color-secondary)'
+                                    color: 'var(--color-secondary)',
+                                    flexShrink: 0,
+                                    fontSize: '0.75rem'
                                 }}>
                                     ▼
                                 </span>
@@ -125,10 +128,10 @@ const FAQ = () => {
                                 maxHeight: openIndex === index ? '500px' : '0',
                                 opacity: openIndex === index ? 1 : 0,
                                 transition: 'all 0.4s ease-in-out',
-                                paddingLeft: '2rem'
+                                paddingLeft: '0'
                             }}>
-                                <p style={{ display: 'flex', alignItems: 'flex-start', marginTop: '1rem', color: '#555', lineHeight: '1.6' }}>
-                                    <span style={{ color: 'var(--color-accent)', marginRight: '0.5rem', fontWeight: 'bold' }}>A.</span>
+                                <p style={{ display: 'flex', alignItems: 'flex-start', marginTop: '1rem', color: '#555', lineHeight: '1.6', fontSize: '0.85rem', textAlign: 'left' }}>
+                                    <span style={{ color: 'var(--color-accent)', marginRight: '0.5rem', fontWeight: 'bold', flexShrink: 0 }}>A.</span>
                                     <span>{item.a}</span>
                                 </p>
                             </div>

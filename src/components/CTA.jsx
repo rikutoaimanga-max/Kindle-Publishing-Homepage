@@ -3,7 +3,8 @@ import '../styles/global.css';
 
 const CTA = ({ headerBackground = 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%)' }) => {
     return (
-        <div style={{
+
+        <div className="cta-wrapper" style={{
             maxWidth: '800px',
             margin: '40px auto 0', // Slightly reduced top margin
             boxShadow: '0 10px 30px rgba(0, 160, 233, 0.15)', // Blue shadow
@@ -12,7 +13,7 @@ const CTA = ({ headerBackground = 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 1
             backgroundColor: '#fff',
             border: '4px solid var(--color-secondary)' // Prominent blue border
         }}>
-            <div style={{
+            <div className="cta-header" style={{
                 background: headerBackground, // Use the prop (default is handled in args)
                 padding: '30px 10px', // Header padding: Top/Bottom 30px
                 textAlign: 'center',
@@ -23,7 +24,7 @@ const CTA = ({ headerBackground = 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 1
                 justifyContent: 'center',
                 gap: '5px' // Reduced gap
             }}>
-                <div style={{
+                <div className="cta-big-zero" style={{
                     fontSize: 'clamp(6rem, 12vw, 8rem)',
                     fontWeight: '900',
                     color: 'var(--color-secondary)', // #00A0E9 Blue
@@ -36,14 +37,14 @@ const CTA = ({ headerBackground = 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 1
                     <span className="animate-rubber-band">0</span>
                 </div>
 
-                <div style={{
+                <div className="cta-text-wrapper" style={{
                     textAlign: 'left',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
                     paddingTop: '15px' // Increased from 10px
                 }}>
-                    <div style={{
+                    <div className="cta-sub-text" style={{
                         fontSize: 'clamp(0.9rem, 2.2vw, 1.1rem)', // Slightly increased
                         fontWeight: 'bold',
                         color: '#555',
@@ -57,9 +58,9 @@ const CTA = ({ headerBackground = 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 1
                         textAlign: 'justify',
                         textAlignLast: 'justify'
                     }}>
-                        あなたの情報資産を書籍に変える戦略をご提案
+                        あなたの情報資産を<br className="mobile-br" />書籍に変える戦略をご提案
                     </div>
-                    <div style={{
+                    <div className="cta-main-title" style={{
                         fontSize: 'clamp(1.8rem, 5vw, 3rem)', // Slightly reduced again
                         fontWeight: '900',
                         color: 'var(--color-secondary)',
@@ -89,7 +90,7 @@ const CTA = ({ headerBackground = 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 1
                     margin: '0 auto' // Removed bottom margin for tighter look
                 }}>
                     {/* Description Text */}
-                    <p style={{
+                    <p className="cta-description" style={{
                         textAlign: 'center',
                         fontSize: '1.2rem',
                         fontWeight: 'bold',
@@ -98,8 +99,8 @@ const CTA = ({ headerBackground = 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 1
                         marginBottom: '40px',
                         padding: '0 10px'
                     }}>
-                        あなたの発信・コンテンツの資産価値を診断し、<br className="desktop-only" />
-                        あなただけの 目的別 出版戦略をご提案いたします！
+                        あなたの発信・コンテンツの資産価値を診断し、<br />
+                        あなただけの目的別、出版戦略をご提案いたします！
                     </p>
 
                     <div style={{ textAlign: 'center' }}>
@@ -128,68 +129,65 @@ const CTA = ({ headerBackground = 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 1
                                 minHeight: '100px' // Ensure height for layout
                             }}
                         >
-                            {/* Bubble "Imasugu" - Left overlapping */}
-                            <div className="cta-bubble" style={{
-                                position: 'absolute',
-                                top: '50%',
-                                left: '-25px', // Stick out from left
-                                transform: 'translateY(-50%)',
-                                width: '85px', // Larger bubble
-                                height: '85px',
-                                backgroundColor: '#fff',
-                                border: '3px solid #f5a623',
-                                borderRadius: '50%',
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                color: '#e60012', // Red for urgency
-                                fontSize: '1.5rem', // Larger visibility
-                                boxShadow: '0 4px 10px rgba(0,0,0,0.15)',
-                                zIndex: 2
-                            }}>
-                                <span style={{ display: 'inline-block', transform: 'rotate(-15deg)', fontWeight: '900' }}>今すぐ</span>
-
-                                {/* Bubble Tail - Pointing to button content */}
-                                <div style={{
-                                    position: 'absolute',
-                                    right: '-16px', // Adjusted for better connection
-                                    top: '60%', // Adjusted vertical position
-                                    transform: 'translateY(-50%) rotate(10deg)',
-                                    width: 0,
-                                    height: 0,
-                                    borderTop: '12px solid transparent', // Slightly larger
-                                    borderBottom: '12px solid transparent',
-                                    borderLeft: '18px solid #f5a623' // Thicker border
-                                }} />
-                                <div style={{
-                                    position: 'absolute',
-                                    right: '-12px',
-                                    top: '60%',
-                                    transform: 'translateY(-50%) rotate(10deg)',
-                                    width: 0,
-                                    height: 0,
-                                    borderTop: '9px solid transparent',
-                                    borderBottom: '9px solid transparent',
-                                    borderLeft: '14px solid #fff' // Matches white background
-                                }} />
-                            </div>
-
                             {/* Button Text Container */}
                             <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                                {/* White Pill Badge */}
-                                <div className="cta-text-sub" style={{
-                                    fontSize: '1rem',
-                                    backgroundColor: '#fff',
-                                    color: '#000',
-                                    display: 'inline-block',
-                                    padding: '5px 20px',
-                                    borderRadius: '50px',
-                                    marginBottom: '8px',
-                                    fontWeight: 'bold',
-                                    boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-                                    whiteSpace: 'nowrap'
-                                }}>
-                                    120秒でカンタン入力!
+                                {/* Label Row */}
+                                <div className="cta-sub-row">
+                                    {/* Bubble "Imasugu" */}
+                                    <div className="cta-bubble" style={{
+                                        position: 'absolute',
+                                        top: '50%',
+                                        left: '-25px', // Stick out from left (Desktop default)
+                                        transform: 'translateY(-50%)',
+                                        width: '85px',
+                                        height: '85px',
+                                        // Background/Border moved to child
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        color: '#e60012', // Red for urgency
+                                        fontSize: '1.5rem',
+                                        zIndex: 2
+                                    }}>
+                                        {/* Tail - rotated square behind circle */}
+                                        <div className="cta-bubble-tail" style={{
+                                            position: 'absolute',
+                                            bottom: '-2px',
+                                            right: '-2px',
+                                            width: '30px',
+                                            height: '30px',
+                                            backgroundColor: '#f5a623',
+                                            transform: 'rotate(25deg)',
+                                            zIndex: -1
+                                        }} />
+                                        {/* Background circle */}
+                                        <div className="cta-bubble-bg" style={{
+                                            position: 'absolute',
+                                            top: 0, left: 0, width: '100%', height: '100%',
+                                            backgroundColor: '#fff',
+                                            border: '3px solid #f5a623',
+                                            borderRadius: '50%',
+                                            boxShadow: '0 4px 10px rgba(0,0,0,0.15)',
+                                            zIndex: 0
+                                        }} />
+                                        <span style={{ display: 'inline-block', transform: 'rotate(-15deg)', fontWeight: '900', position: 'relative', zIndex: 2 }}>今すぐ</span>
+                                    </div>
+
+                                    {/* White Pill Badge */}
+                                    <div className="cta-text-sub" style={{
+                                        fontSize: '1rem',
+                                        backgroundColor: '#fff',
+                                        color: '#000',
+                                        display: 'inline-block',
+                                        padding: '5px 20px',
+                                        borderRadius: '50px',
+                                        marginBottom: '8px',
+                                        fontWeight: 'bold',
+                                        boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+                                        whiteSpace: 'nowrap'
+                                    }}>
+                                        120秒でカンタン入力
+                                    </div>
                                 </div>
                                 {/* Main Text */}
                                 <div className="cta-text-main" style={{

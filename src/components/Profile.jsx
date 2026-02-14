@@ -49,8 +49,21 @@ const Profile = () => {
                     </div>
                 </div>
                 <div style={{ marginTop: '3rem', textAlign: 'center', fontSize: '1.1rem', fontWeight: 'bold', lineHeight: '2', color: '#fff' }}>
-                    「Xフォロワー1.7万人の影響力」×「緻密なAmazon SEO」×「売れる構成力」で、<br />
-                    あなたの知識と経験を、単なる本ではなく「24時間働き続ける最強の資産」へと昇華させます。
+                    「売れる構成力」<br />
+                    ×<br />
+                    「緻密なAmazon SEO」<br />
+                    ×<br />
+                    「Xフォロワー1.7万人の影響力」<br /><br />
+                    あなたの知識と経験を、<br />
+                    単なる本ではなく<br />
+                    <span style={{ color: '#FFD700', fontSize: '1.3rem' }}>「24時間働き続ける最強の資産」</span><br />
+                    <div style={{
+                        width: '90%',
+                        height: '2px',
+                        background: 'linear-gradient(to right, transparent, #e74c3c, transparent)',
+                        margin: '0.3rem auto 0.5rem'
+                    }} />
+                    へと昇華させます。
                 </div>
             </div>
         </section>

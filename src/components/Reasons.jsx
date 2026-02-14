@@ -47,7 +47,7 @@ const Reasons = () => {
                         padding: '2rem',
                         borderRadius: '12px',
                         boxShadow: '0 4px 15px rgba(0,0,0,0.05)',
-                        textAlign: 'center'
+                        textAlign: 'left'
                     }}>
                         <div style={{ height: '150px', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                             <svg width="120" height="120" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,8 +60,8 @@ const Reasons = () => {
                                 <circle cx="80" cy="30" r="4" fill="var(--color-accent)" />
                             </svg>
                         </div>
-                        <h3 style={{ color: 'var(--color-secondary)', fontSize: '1.3rem', marginBottom: '1rem', borderBottom: '2px solid var(--color-accent)', display: 'inline-block', paddingBottom: '0.5rem' }}>
-                            02：圧倒的な実績に基づく『Amazonから売れる』プロモーション支援
+                        <h3 style={{ color: 'var(--color-secondary)', fontSize: '0.95rem', marginBottom: '1rem', borderBottom: '2px solid var(--color-accent)', display: 'inline-block', paddingBottom: '0.5rem' }}>
+                            02：圧倒的な実績に基づく<br />『Amazonから売れる』<br />プロモーション支援
                         </h3>
                         <p style={{ textAlign: 'left', fontSize: '0.95rem' }}>
                             自分や生徒を併せて50冊以上のベストセラー実績に基づくプロモーション支援と、長年の経験に基づくSEO対策、構成作りで、Amazonから長く読まれる仕組み作りをお手伝いいたします。他社で良く見られる「無料キャンペーンによる販売数の嵩増し」「カテゴリーを移動させることによるAmazon〇冠アピール」のような本質的でない手法は一切に使いません。

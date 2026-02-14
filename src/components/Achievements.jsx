@@ -35,7 +35,7 @@ const Achievements = () => {
         {
             name: 'しんぱぱ 様',
             attribute: '40代 男性',
-            title: 'フォロワー8万人越えのXアフィリエイター',
+            title: <>フォロワー8万人越えの<br />Xアフィリエイター</>,
             image: '/image/tm_icon.png', // Updated icon
             bookImage: '/image/shinpapa_book.jpg', // Added book image
             before: '鋭意制作中',
@@ -47,7 +47,7 @@ const Achievements = () => {
         {
             name: 'おさむ 様',
             attribute: '30代 男性',
-            title: 'YouTubeショート収益化コンサル',
+            title: 'Youtubeショート収益化のプロ',
             image: '/image/yi_icon.jpg', // Updated icon
             bookImage: '/image/yi_book.png', // Added book image
             before: '鋭意制作中',
@@ -59,7 +59,7 @@ const Achievements = () => {
         {
             name: 'たつみん 様',
             attribute: '30代 男性',
-            title: 'Xフォロワー14.7万人越えの自動化のプロ',
+            title: 'Xフォロワー14万人超え自動化のプロ',
             image: '/image/tatsumin_icon.jpg', // Updated icon
             bookImage: '/image/book_placeholder.svg', // Placeholder book image
             before: '鋭意制作中',

@@ -158,6 +158,11 @@ ul {
   }
 }
 
+/* Mobile Line Break Utility */
+.mobile-br {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .desktop-only {
     display: none !important;
@@ -168,7 +173,7 @@ ul {
   }
 
   .mobile-br {
-    display: block;
+    display: block !important;
   }
 
   /* Mobile Typography & Spacing Overrides */
@@ -179,6 +184,8 @@ ul {
   /* Reduce icon size and adjust position on mobile */
   .hero-section {
     flex-direction: column !important;
+    padding-top: 190px !important;
+    /* Move content UP (increased spacing) */
   }
 
   .hero-icons-wrapper {
@@ -188,7 +195,8 @@ ul {
     pointer-events: auto;
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 4rem;
+    /* Increased from 1.5rem */
     margin-bottom: 2rem;
     width: 100%;
   }
@@ -196,8 +204,9 @@ ul {
   .hero-icon-left,
   .hero-icon-right {
     position: relative !important;
-    width: 120px !important;
-    height: 120px !important;
+    width: 110px !important;
+    /* Restored size */
+    height: 110px !important;
     top: auto !important;
     bottom: auto !important;
     left: auto !important;
@@ -207,55 +216,35 @@ ul {
     /* Full opacity */
   }
 
-  .container {
-    padding: 0 1rem;
+  /* Cross: Below Icons */
+  .hero-cross-icon {
+    top: 260px !important;
+    transform: translate(-50%, -50%) scale(0.5) !important;
   }
 
-  .section-title {
-    font-size: 1.8rem;
-  }
-
-  /* CTA Mobile Adjustments */
-  .cta-container {
-    padding: 20px 15px;
-  }
-
-  .cta-button {
-    padding: 15px 20px 15px 60px !important;
-    /* Reduce padding, keep left space for bubble */
-    font-size: 1.1rem !important;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .cta-button .cta-bubble {
-    width: 50px !important;
-    height: 50px !important;
-    left: 10px !important;
+  /* Badge Resize */
+  .hero-icon-badge {
+    width: 46px !important;
+    height: 46px !important;
     font-size: 0.8rem !important;
+    border-width: 2px !important;
   }
 
-  .cta-button .cta-text-main {
-    font-size: 1.3rem !important;
-  }
-
-  .cta-button .cta-text-sub {
-    font-size: 0.8rem !important;
+  /* Hero Badges Mobile */
+  .hero-badge {
+    padding: 0.8rem 1rem !important;
+    font-size: 0.9rem !important;
+    border-width: 2px !important;
+    width: 90% !important;
+    /* Extended width */
+    max-width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   /* Hero Mobile Adjustments */
   .hero-title {
-    font-size: clamp(2rem, 8vw, 3rem) !important;
-  }
-
-  .hero-badges-container {
-    gap: 0.5rem !important;
-  }
-
-  .hero-badge {
-    padding: 0.5rem 1rem !important;
-    font-size: 0.9rem !important;
+    font-size: clamp(2.0rem, 7vw, 3.5rem) !important;
   }
 
   .hero-description {
@@ -280,4 +269,149 @@ ul {
     font-size: 0.8rem !important;
     padding: 0.4rem 0.8rem !important;
   }
+
+  .section-title {
+    line-height: 1.3 !important;
+    font-size: 1.9rem !important;
+  }
+
+  .service-scope-title {
+    font-size: 1.5rem !important;
+  }
+
+  .problem-banner {
+    padding: 1rem 1rem !important;
+    margin: 0 1rem !important;
+    width: auto !important;
+  }
+
+  .problem-cards-container {
+    gap: 0.5rem !important;
+  }
+
+  .problem-cards-row {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.5rem !important;
+    padding: 0 0.5rem !important;
+  }
+
+  .problem-card {
+    flex: unset !important;
+    max-width: none !important;
+    min-height: 120px !important;
+    padding: 1rem 0.5rem !important;
+  }
+
+  /* CTA Mobile Adjustments */
+  .cta-wrapper {
+    margin-top: 2rem !important;
+    border-width: 3px !important;
+  }
+
+  .cta-header {
+    padding: 20px 5px !important;
+    gap: 10px !important;
+  }
+
+  .cta-big-zero {
+    font-size: 7.5rem !important;
+    line-height: 1 !important;
+    transform: translateY(-5px) !important;
+  }
+
+  .cta-sub-text {
+    font-size: 0.75rem !important;
+  }
+
+  .cta-main-title {
+    font-size: 1.15rem !important;
+  }
+
+  .cta-text-wrapper {
+    padding-top: 5px !important;
+  }
+
+  .cta-sub-text {
+    font-size: 1.05rem !important;
+  }
+
+  .cta-main-title {
+    font-size: clamp(1.65rem, 5.5vw, 2.2rem) !important;
+    margin-top: 5px !important;
+  }
+
+  .cta-description {
+    font-size: 0.8rem !important;
+    line-height: 1.5 !important;
+    margin-top: 15px !important;
+  }
+
+  .cta-container {
+    padding: 20px 10px 30px !important;
+  }
+
+  .cta-button {
+    font-size: 0.75rem !important;
+    padding: 6px 10px 6px 25px !important;
+    /* Adjust padding for smaller bubble */
+    min-height: auto !important;
+  }
+
+  .cta-sub-row {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto 5px auto !important;
+    position: relative !important;
+    width: fit-content !important;
+    transform: translateX(10px) !important;
+    left: auto !important;
+    right: auto !important;
+  }
+
+
+
+  .cta-bubble {
+    width: 60px !important;
+    height: 60px !important;
+    position: absolute !important;
+    left: -10px !important;
+    top: -35px !important;
+    transform: translateX(-100%) !important;
+    font-size: 0.85rem !important;
+    border-width: 2px !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    right: auto !important;
+  }
+
+  .cta-bubble-tail {
+    display: block !important;
+    width: 20px !important;
+    height: 20px !important;
+    bottom: 0px !important;
+    right: -3px !important;
+    transform: rotate(25deg) !important;
+    z-index: -1 !important;
+  }
+
+  .cta-text-sub {
+    margin: 0 auto 0 auto !important;
+    font-size: 0.75rem !important;
+    text-align: center !important;
+  }
+
+  /* Service Scope Mobile */
+  .service-scope-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+}
+
+/* Service Scope Card Hover Effect */
+.service-scope-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 160, 233, 0.15) !important;
+  border-color: rgba(0, 160, 233, 0.3) !important;
 }

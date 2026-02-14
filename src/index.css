@@ -302,3 +302,10 @@ button:focus-visible {
   display: inline-block;
   /* Ensure transform works */
 }
+
+/* Mobile Optimization */
+.mobile-br {
+  display: none;
+}
+
+/* Mobile optimization moved to src/styles/global.css */

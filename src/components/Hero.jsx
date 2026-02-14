@@ -34,7 +34,7 @@ const Hero = () => {
                 }}>
                     {/* Label Positioned Above */}
                     {/* Icon Badge Positioned Top-Right */}
-                    <div style={{
+                    <div className="hero-icon-badge" style={{
                         position: 'absolute',
                         top: '0',
                         right: '0',
@@ -94,7 +94,7 @@ const Hero = () => {
                 </div>
 
                 {/* Cross Icon - Centered between images */}
-                <div style={{
+                <div className="hero-cross-icon" style={{
                     position: 'absolute',
                     top: '25%', // Lowered from 20%
                     left: '50%',
@@ -125,7 +125,7 @@ const Hero = () => {
                 }}>
                     {/* Label Positioned Above */}
                     {/* Icon Badge Positioned Top-Right */}
-                    <div style={{
+                    <div className="hero-icon-badge" style={{
                         position: 'absolute',
                         top: '0',
                         right: '0',
@@ -255,7 +255,7 @@ const Hero = () => {
                     marginTop: '3rem', // Increased margin
                     fontWeight: 'bold'
                 }}>
-                    ※現在、実績作り中のため、今だけお得にご案内できます！
+                    ※現在、実績作り中のため、<br className="mobile-br" />今だけお得にご案内できます！
                 </p>
             </div>
         </section>
