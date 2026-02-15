@@ -1,0 +1,36 @@
+.floating-cta-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to right, #f5a623, #f7b731);
+    z-index: 9998;
+    /* Below ScrollToTop (9999) */
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+    display: none;
+    /* Hidden by default on desktop */
+}
+
+@media (max-width: 768px) {
+    .floating-cta-container {
+        display: block;
+        animation: slideUp 0.3s ease-out;
+    }
+
+    /* Adjust footer padding on mobile to not be covered */
+    body {
+        padding-bottom: 80px;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

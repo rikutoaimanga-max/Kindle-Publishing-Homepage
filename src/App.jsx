@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Home from './components/Home';
 import Legal from './components/Legal';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import NotFound from './components/NotFound';
+import FloatingCTA from './components/FloatingCTA';
 import SmoothScrollWrapper from './components/SmoothScrollWrapper';
 import AnimatedCursor from 'react-animated-cursor';
 import './index.css';
@@ -23,6 +25,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      <FloatingCTA />
       <AnimatedCursor
         innerSize={8}
         outerSize={35}
@@ -49,6 +52,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/legal" element={<Legal />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </SmoothScrollWrapper>
     </Router>
