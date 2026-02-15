@@ -79,6 +79,38 @@ const FAQ = () => {
         }
     ];
 
+    // FAQ Schema (JSON-LD)
+    React.useEffect(() => {
+        const schema = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": questions.map(item => {
+                // Remove HTML tags for schema text (basic stripping)
+                const answerText = typeof item.a === 'string'
+                    ? item.a
+                    : 'ターゲットや目的に応じて、テキスト本とマンガ本の最適な形式をご提案します。認知拡大にはマンガ、権威性構築にはテキストが適しています。詳しくは無料カウンセリングにてご相談ください。'; // Fallback for complex JSX
+
+                return {
+                    "@type": "Question",
+                    "name": item.q,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": answerText
+                    }
+                };
+            })
+        };
+
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(schema);
+        document.head.appendChild(script);
+
+        return () => {
+            document.head.removeChild(script);
+        };
+    }, []);
+
     return (
         <section id="faq" style={{ backgroundColor: '#f9f9f9', padding: '80px 0', color: '#333' }}>
             <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
