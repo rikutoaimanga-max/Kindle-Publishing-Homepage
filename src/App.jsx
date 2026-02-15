@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Home from './components/Home';
 import Legal from './components/Legal';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import Terms from './components/Terms';
 import NotFound from './components/NotFound';
 import FloatingCTA from './components/FloatingCTA';
 import SmoothScrollWrapper from './components/SmoothScrollWrapper';
@@ -51,6 +52,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/legal" element={<Legal />} />
+          <Route path="/terms" element={<Terms />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
