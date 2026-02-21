@@ -4,14 +4,12 @@ import '../styles/global.css';
 
 const Problem = () => {
     const problems = [
-        { text: '広告費高騰の負担', icon: <FaMoneyBillWave /> },
-        { text: 'SNS投稿の資産化', icon: <FaBook /> },
-        { text: '権威性の確立', icon: <FaCrown /> },
-        { text: '出版の時間がない', icon: <FaClock /> },
-        { text: 'リスト獲得の拡大', icon: <FaUserPlus /> },
-        { text: 'バックエンド導線の増加', icon: <FaRoute /> },
-        { text: '競合との差別化', icon: <FaGem /> },
-        { text: 'ブランド力の向上', icon: <FaChartLine /> },
+        { text: '広告費が高い', icon: <FaMoneyBillWave /> },
+        { text: 'SNS投稿を再利用したい', icon: <FaBook /> },
+        { text: <>権威性<span className="desktop-only" style={{ display: 'inline' }}>・</span><br className="mobile-br" />ブランド力が欲しい</>, icon: <FaCrown /> },
+        { text: <>出版には興味あるけど<span className="desktop-only" style={{ display: 'inline' }}>、</span><br className="mobile-br" />時間が無い</>, icon: <FaClock /> },
+        { text: '新しい集客口が欲しい', icon: <FaUserPlus /> },
+        { text: <>バックエンドに<br className="mobile-br" />繋がらない</>, icon: <FaRoute /> },
     ];
 
     return (
@@ -29,16 +27,17 @@ const Problem = () => {
                     gap: '1rem',
                     marginBottom: '3rem'
                 }}>
-                    {/* Top Row (3 items) - Desktop */}
+                    {/* Problem Cards Flow - Desktop: 3x2, Mobile: 2x3 */}
                     <div className="problem-cards-row" style={{
-                        display: 'flex',
-                        flexWrap: 'wrap',
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(3, 1fr)',
                         justifyContent: 'center',
                         gap: '1rem',
-                        maxWidth: '1000px',
-                        width: '100%'
+                        maxWidth: '850px', // Restrict width to force 3 items per row on desktop
+                        width: '100%',
+                        margin: '0 auto'
                     }}>
-                        {problems.slice(0, 4).map((item, index) => (
+                        {problems.map((item, index) => (
                             <div key={index} className="problem-card" style={{
                                 backgroundColor: '#fff',
                                 border: '2px solid var(--color-secondary)',
@@ -51,57 +50,7 @@ const Problem = () => {
                                 justifyContent: 'flex-start',
                                 height: '100%',
                                 boxShadow: '0 4px 6px rgba(0,0,0,0.05)',
-                                flex: '1 1 200px',
-                                maxWidth: '240px'
-                            }}>
-                                <div style={{
-                                    fontSize: '2.5rem',
-                                    color: '#555',
-                                    marginBottom: '1rem',
-                                    height: '50px',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center'
-                                }}>
-                                    {item.icon}
-                                </div>
-                                <p style={{
-                                    fontSize: '0.9rem',
-                                    fontWeight: 'bold',
-                                    color: '#333',
-                                    lineHeight: '1.4',
-                                    margin: 0
-                                }}>
-                                    {item.text}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
-
-                    {/* Bottom Row (4 items) - Desktop */}
-                    <div className="problem-cards-row" style={{
-                        display: 'flex',
-                        flexWrap: 'wrap',
-                        justifyContent: 'center',
-                        gap: '1rem',
-                        maxWidth: '1000px',
-                        width: '100%'
-                    }}>
-                        {problems.slice(4).map((item, index) => (
-                            <div key={index + 3} className="problem-card" style={{
-                                backgroundColor: '#fff',
-                                border: '2px solid var(--color-secondary)',
-                                borderRadius: '10px',
-                                padding: '1.5rem 0.5rem',
-                                textAlign: 'center',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                alignItems: 'center',
-                                justifyContent: 'flex-start',
-                                height: '100%',
-                                boxShadow: '0 4px 6px rgba(0,0,0,0.05)',
-                                flex: '1 1 200px',
-                                maxWidth: '240px'
+                                width: '100%'
                             }}>
                                 <div style={{
                                     fontSize: '2.5rem',

@@ -47,7 +47,7 @@ const Achievements = () => {
         {
             name: 'おさむ 様',
             attribute: '30代 男性',
-            title: 'Youtubeショート収益化のプロ',
+            title: 'YouTubeショートで年1000万超え',
             image: '/image/yi_icon.jpg', // Updated icon
             bookImage: '/image/yi_book.png', // Added book image
             before: '鋭意制作中',
@@ -85,10 +85,10 @@ const Achievements = () => {
 
 
                     <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))',
+                        display: 'flex',
+                        flexDirection: 'column',
                         gap: '2.5rem',
-                        maxWidth: '900px', // 2 columns max (360*2 + gap < 900, 360*3 > 900)
+                        maxWidth: '900px', // Standard central width
                         margin: '0 auto',
                         marginBottom: '4rem'
                     }}>
@@ -100,8 +100,8 @@ const Achievements = () => {
                                 position: 'relative',
                                 overflow: 'hidden',
                                 width: '100%',
-                                minHeight: '800px', // Increased height as requested
-                                height: 'auto',     // Allow growth
+                                minHeight: 'auto', // Removed fixed height
+                                height: 'auto',
                                 display: 'flex',
                                 flexDirection: 'column'
                             }}>
@@ -116,138 +116,125 @@ const Achievements = () => {
                                     zIndex: 1
                                 }}></div>
 
-                                {/* コンテンツラッパー（パディング用） */}
-                                <div style={{
+                                {/* コンテンツラッパー */}
+                                <div className="achievement-card-content" style={{
                                     width: '100%',
-                                    height: '100%',
                                     padding: '1.8rem',
                                     display: 'flex',
-                                    flexDirection: 'column',
-                                    gap: '1.2rem',
-                                    zIndex: 2
+                                    gap: '2rem',
+                                    zIndex: 2,
+                                    alignItems: 'center',
+                                    justifyContent: 'space-between'
                                 }}>
-
-                                    {/* ヘッダーエリア：人物紹介 */}
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap', flexShrink: 0 }}>
-                                        {/* アイコン */}
-                                        {client.image ? (
-                                            <img
-                                                src={client.image}
-                                                alt={client.name}
-                                                style={{
+                                    {/* 1. 左側エリア：人物紹介＆実績 */}
+                                    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', flex: '1' }}>
+                                        {/* ヘッダー：アイコン ＋ プロフィール */}
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+                                            {/* アイコン */}
+                                            {client.image ? (
+                                                <img
+                                                    src={client.image}
+                                                    alt={client.name}
+                                                    style={{
+                                                        width: '64px',
+                                                        height: '64px',
+                                                        borderRadius: '50%',
+                                                        objectFit: 'cover',
+                                                        border: '2px solid #eee'
+                                                    }}
+                                                />
+                                            ) : (
+                                                <div style={{
                                                     width: '64px',
                                                     height: '64px',
                                                     borderRadius: '50%',
-                                                    objectFit: 'cover',
-                                                    border: '2px solid #eee'
-                                                }}
-                                            />
-                                        ) : (
-                                            <div style={{
-                                                width: '64px',
-                                                height: '64px',
-                                                borderRadius: '50%',
-                                                backgroundColor: '#eee',
-                                                flexShrink: 0,
+                                                    backgroundColor: '#eee',
+                                                    flexShrink: 0,
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                    fontSize: '1.8rem',
+                                                    color: '#aaa'
+                                                }}>
+                                                    User
+                                                </div>
+                                            )}
+
+                                            {/* プロフィール（名前の上、肩書が下） */}
+                                            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem', justifyContent: 'center' }}>
+                                                <div style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>
+                                                    {client.name}
+                                                </div>
+                                                <div style={{ fontSize: '0.9rem', color: 'var(--color-secondary)', fontWeight: 'bold' }}>
+                                                    {client.title}
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {/* 実績（横長レイアウト） */}
+                                        <div className="achievement-data-box" style={{
+                                            backgroundColor: '#fff',
+                                            borderLeft: '4px solid #f5a623',
+                                            padding: '1.2rem 1.5rem',
+                                            borderRadius: '4px',
+                                            boxShadow: '0 3px 10px rgba(0,0,0,0.08)',
+                                            display: 'flex',
+                                            flexDirection: 'row',
+                                            alignItems: 'center',
+                                            gap: '1.5rem',
+                                            width: '100%' // Changed from fit-content to 100% to make it wider
+                                        }}>
+                                            <div className="achievement-stats-header" style={{
+                                                fontSize: '0.95rem',
+                                                fontWeight: 'bold',
+                                                color: '#333',
                                                 display: 'flex',
                                                 alignItems: 'center',
-                                                justifyContent: 'center',
-                                                fontSize: '1.8rem',
-                                                color: '#aaa'
+                                                gap: '0.5rem',
+                                                borderRight: '1px solid #eee',
+                                                paddingRight: '1.5rem'
                                             }}>
-                                                User
+                                                {/* Desktop: Vertical text */}
+                                                <div className="achievement-header-desktop" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
+                                                    <FaTrophy style={{ fontSize: '1.1rem', color: '#f57c00' }} />
+                                                    <span style={{ writingMode: 'vertical-rl', textOrientation: 'upright', letterSpacing: '0.2em' }}>実績</span>
+                                                </div>
+                                                {/* Mobile: Horizontal text */}
+                                                <div className="achievement-header-mobile" style={{ display: 'none', alignItems: 'center', gap: '0.5rem' }}>
+                                                    <FaTrophy style={{ fontSize: '1rem', color: '#f57c00' }} /> <span style={{ letterSpacing: '0.05em' }}>実績</span>
+                                                </div>
                                             </div>
-                                        )}
 
-                                        {/* プロフィール */}
-                                        <div>
-                                            <div style={{ fontSize: '1.1rem', fontWeight: 'bold', marginBottom: '0.3rem', display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
-                                                {client.name}
-                                            </div>
-                                            <div style={{ fontSize: '0.95rem', color: 'var(--color-secondary)', fontWeight: 'bold' }}>
-                                                {client.title}
+                                            {/* Before / After Layout (Horizontal/Vertical) */}
+                                            <div className="achievement-stats-container" style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap', flex: 1, justifyContent: 'center' }}>
+                                                <div style={{ fontSize: '0.9rem', color: '#666', textAlign: 'center' }}>
+                                                    {client.before}
+                                                </div>
+                                                <div className="achievement-arrow-desktop" style={{ fontSize: '1rem', color: '#f57c00', lineHeight: 1 }}>
+                                                    ▶
+                                                </div>
+                                                <div className="achievement-arrow-mobile" style={{ fontSize: '1.2rem', color: '#f57c00', lineHeight: 1, padding: '0.2rem 0', display: 'none' }}>
+                                                    ▼
+                                                </div>
+                                                <div style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#d32f2f', textAlign: 'center' }}>
+                                                    {client.after}
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    {/* 書籍画像 (Optional) */}
+                                    {/* 2. 右側エリア：書籍画像 */}
                                     {client.bookImage && (
-                                        <div style={{ margin: '0.5rem 0', textAlign: 'center' }}>
+                                        <div style={{ flexShrink: 0, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             {client.bookUrl ? (
                                                 <a href={client.bookUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', transition: 'opacity 0.3s' }} className="hover:opacity-80">
-                                                    <img src={client.bookImage} alt={`${client.name}の書籍`} style={{ maxWidth: '100%', height: 'auto', maxHeight: '200px', borderRadius: '4px', boxShadow: '0 2px 5px rgba(0,0,0,0.1)' }} />
+                                                    <img src={client.bookImage} alt={`${client.name}の書籍`} className="achievement-book-image" style={{ maxWidth: '100%', height: 'auto', maxHeight: '160px', borderRadius: '4px', boxShadow: '0 2px 5px rgba(0,0,0,0.1)' }} />
                                                 </a>
                                             ) : (
-                                                <img src={client.bookImage} alt={`${client.name}の書籍`} style={{ maxWidth: '100%', height: 'auto', maxHeight: '200px', borderRadius: '4px', boxShadow: '0 2px 5px rgba(0,0,0,0.1)' }} />
+                                                <img src={client.bookImage} alt={`${client.name}の書籍`} className="achievement-book-image" style={{ maxWidth: '100%', height: 'auto', maxHeight: '160px', borderRadius: '4px', boxShadow: '0 2px 5px rgba(0,0,0,0.1)' }} />
                                             )}
                                         </div>
                                     )}
-
-                                    {/* ボディエリア：実績（B案：左側アクセントライン強調） */}
-                                    <div style={{
-                                        backgroundColor: '#fff',
-                                        borderLeft: '4px solid #f5a623', // Match CTA button color, thinner line
-                                        boxShadow: '0 3px 10px rgba(0,0,0,0.08)', // Shadow for depth
-                                        padding: '1.2rem',
-                                        borderRadius: '4px', // Slightly sharper corners
-                                        flexShrink: 0,
-                                        display: 'flex',
-                                        flexDirection: 'column',
-                                        justifyContent: 'center',
-                                        textAlign: 'center'
-                                    }}>
-                                        <div style={{
-                                            fontSize: '1rem',
-                                            fontWeight: 'bold',
-                                            color: '#333',
-                                            marginBottom: '0.8rem',
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            justifyContent: 'center',
-                                            gap: '0.5rem',
-                                            borderBottom: '1px solid #eee', // Lighter separator
-                                            paddingBottom: '0.5rem'
-                                        }}>
-                                            <FaTrophy style={{ fontSize: '1.2rem', color: '#f57c00' }} /> <span style={{ letterSpacing: '0.05em' }}>実績</span>
-                                        </div>
-
-                                        {/* Before / After Layout */}
-                                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.2rem' }}>
-                                            {/* Before */}
-                                            <div style={{ fontSize: '0.9rem', color: '#666' }}>
-                                                {client.before}
-                                            </div>
-
-                                            {/* Arrow */}
-                                            <div style={{ fontSize: '1.2rem', color: '#f57c00', lineHeight: 1, padding: '0.2rem 0' }}>
-                                                ▼
-                                            </div>
-
-                                            {/* After */}
-                                            <div style={{ fontSize: '1.4rem', fontWeight: 'bold', color: '#d32f2f' }}>
-                                                {client.after}
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    {/* フッターエリア：感想 */}
-                                    <div
-                                        data-lenis-prevent // Restore native scroll for content
-                                        style={{
-                                            backgroundColor: '#f9f9f9',
-                                            padding: '1.2rem',
-                                            borderRadius: '10px',
-                                            position: 'relative',
-                                            flex: '1 1 0', // Grow to fill remaining space
-                                            minHeight: 0,  // Allow content to be taller than container (trigger overflow)
-                                            fontSize: '0.9rem',
-                                            overflowY: 'auto' // Enable scrolling
-                                        }}>
-                                        <p style={{ lineHeight: '1.7', color: '#444', position: 'relative', zIndex: 1, margin: 0 }}>
-                                            {client.voice}
-                                        </p>
-                                    </div>
-
                                 </div>
                             </div>
                         ))}
@@ -314,58 +301,7 @@ const Achievements = () => {
                         </div>
                     </div>
 
-                    {/* Duplicate Slider (Text only) requested by user */}
-                    <div style={{ marginTop: '4rem', textAlign: 'center' }}>
-                        <Swiper
-                            modules={[Autoplay]}
-                            spaceBetween={30}
-                            slidesPerView={1.5} // Show partial slides
-                            breakpoints={{
-                                640: { slidesPerView: 2.2 },
-                                768: { slidesPerView: 3.2 },
-                                1024: { slidesPerView: 3.8 },
-                            }}
-                            loop={true}
-                            speed={5000} // Slow constant speed
-                            autoplay={{
-                                delay: 0,
-                                disableOnInteraction: false,
-                                pauseOnMouseEnter: false, // Don't stop on hover
-                                reverseDirection: true // Reverse direction for variety? No, keep same as requested "same slider"
-                            }}
-                            allowTouchMove={false} // Disable touch dragging for smoother continuous flow
-                            className="mySwiperText"
-                            style={{ width: '100%', height: 'auto' }}
-                        >
-                            {slideNumbers.map((num) => (
-                                <SwiperSlide key={`text-${num}`}>
-                                    <div style={{
-                                        overflow: 'hidden',
-                                        borderRadius: '8px',
-                                        boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
-                                        border: '1px solid #eee',
-                                        height: 'auto',
-                                        aspectRatio: '3/4', // Maintain manga aspect ratio
-                                        backgroundColor: '#fff',
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        justifyContent: 'center',
-                                        padding: '2rem'
-                                    }}>
-                                        <div style={{
-                                            fontSize: '1.2rem',
-                                            fontWeight: 'bold',
-                                            color: '#aaa',
-                                            textAlign: 'center'
-                                        }}>
-                                            No Image Slide {num}<br />
-                                            <span style={{ fontSize: '0.8rem', fontWeight: 'normal' }}>Text Content Here</span>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-                    </div>
+
                 </div>
             </section>
 

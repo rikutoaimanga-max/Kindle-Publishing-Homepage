@@ -7,7 +7,7 @@ import shuzoImg from '../assets/shuzo_icon.png';
 const Hero = () => {
     return (
         <section className="hero-section" style={{
-            padding: '340px 0 40px', // Further increased top padding
+            padding: '260px 0 40px', // 上部の余白を少し戻しました（240px -> 260px）
             background: 'transparent', // Transparent to show global stylish background
             minHeight: '100vh',
             display: 'flex',
@@ -20,7 +20,7 @@ const Hero = () => {
             <div className="hero-icons-wrapper">
                 <div className="hero-icon-left" style={{
                     position: 'absolute',
-                    top: '27%', // Adjusted from 25%
+                    top: '28%', // 余白増加に合わせてアイコンも少し下に（25% -> 28%）
                     left: '10%', // Aligned to 10%
                     transform: 'translateY(-50%)',
                     width: 'clamp(200px, 20vw, 350px)',
@@ -33,33 +33,28 @@ const Hero = () => {
                     // position: 'relative' removed, absolute acts as container
                 }}>
                     {/* Label Positioned Above */}
-                    {/* Icon Badge Positioned Top-Right */}
-                    <div className="hero-icon-badge" style={{
+                    <div className="hero-top-badge" style={{
                         position: 'absolute',
-                        top: '0',
-                        right: '0',
-                        transform: 'translate(30%, -30%)', // Float on corner
-                        width: '74px', // Slightly larger
-                        height: '74px',
-                        borderRadius: '50%',
-                        background: 'linear-gradient(135deg, #00A0E9 0%, #0077b6 100%)', // Blue Gradient
-                        border: '4px solid #fff', // Thick white border
-                        display: 'flex',
-                        flexDirection: 'column', // Stack text
-                        alignItems: 'center',
-                        justifyContent: 'center',
+                        top: '-40px', // 上に少しずらして2行分のスペースを確保
+                        left: '50%',
+                        transform: 'translateX(-50%)',
+                        background: 'linear-gradient(135deg, #00A0E9 0%, #0077b6 100%)',
+                        color: '#fff',
+                        padding: '8px 20px', // 上下左右の余白を調整
+                        borderRadius: '10px', // 多行の場合は角丸を少し抑えた方がまとまりが出ます
+                        fontSize: 'clamp(0.8rem, 1.5vw, 1rem)',
+                        fontWeight: 'bold',
+                        textAlign: 'center', // 中央揃え
+                        lineHeight: '1.4', // 行間を調整
                         boxShadow: '0 4px 10px rgba(0,0,0,0.15)',
                         zIndex: 10,
-                        color: '#fff',
-                        fontSize: '1.15rem', // Slightly larger for 2 lines
-                        fontWeight: 'bold',
+                        border: '2px solid #fff',
                         letterSpacing: '0.05em',
-                        lineHeight: '1.1'
+                        width: 'max-content' // 改行を維持するために幅を最大コンテンツに設定
                     }}>
-                        <span>テキ</span>
-                        <span>スト</span>
+                        日本最大級！500名超え<br />
+                        Kindleオンラインサロン運営
                     </div>
-
                     {/* Ring 1: Blue Accent (Fast Spin) */}
                     <div style={{
                         position: 'absolute',
@@ -96,7 +91,7 @@ const Hero = () => {
                 {/* Cross Icon - Centered between images */}
                 <div className="hero-cross-icon" style={{
                     position: 'absolute',
-                    top: '25%', // Lowered from 20%
+                    top: '28%', // コンテンツの上限に合わせて引き上げ（25% -> 28%）
                     left: '50%',
                     transform: 'translate(-50%, -50%)',
                     fontSize: 'clamp(3rem, 6vw, 5rem)',
@@ -111,7 +106,7 @@ const Hero = () => {
 
                 <div className="hero-icon-right" style={{
                     position: 'absolute',
-                    top: '27%', // Adjusted from 25%
+                    top: '28%', // 余白増加に合わせてアイコンも少し下に（25% -> 28%）
                     right: '10%', // Reverted to 10%
                     transform: 'translateY(-50%)',
                     width: 'clamp(200px, 20vw, 350px)',
@@ -124,30 +119,28 @@ const Hero = () => {
                     // position: 'relative' removed
                 }}>
                     {/* Label Positioned Above */}
-                    {/* Icon Badge Positioned Top-Right */}
-                    <div className="hero-icon-badge" style={{
+                    <div className="hero-top-badge" style={{
                         position: 'absolute',
-                        top: '0',
-                        right: '0',
-                        transform: 'translate(30%, -30%)', // Float on corner
-                        width: '74px',
-                        height: '74px',
-                        borderRadius: '50%',
-                        background: 'linear-gradient(135deg, #00A0E9 0%, #0077b6 100%)', // Blue Gradient
-                        border: '4px solid #fff', // Thick white border
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
+                        top: '-40px', // 上に少しずらして2行分のスペースを確保
+                        left: '50%',
+                        transform: 'translateX(-50%)',
+                        background: 'linear-gradient(135deg, #00A0E9 0%, #0077b6 100%)',
+                        color: '#fff',
+                        padding: '8px 20px', // 上下左右の余白を調整
+                        borderRadius: '10px', // 多行の場合は角丸を少し抑えた方がまとまりが出ます
+                        fontSize: 'clamp(0.8rem, 1.5vw, 1rem)',
+                        fontWeight: 'bold',
+                        textAlign: 'center', // 中央揃え
+                        lineHeight: '1.4', // 行間を調整
                         boxShadow: '0 4px 10px rgba(0,0,0,0.15)',
                         zIndex: 10,
-                        color: '#fff',
-                        fontSize: '1.4rem', // Larger for 2 chars
-                        fontWeight: 'bold',
-                        letterSpacing: '0.1em'
+                        border: '2px solid #fff',
+                        letterSpacing: '0.05em',
+                        width: 'max-content' // 改行を維持するために幅を最大コンテンツに設定
                     }}>
-                        漫画
+                        難しい内容も読ませる<br />
+                        漫画に昇華するAI漫画家
                     </div>
-
                     {/* Ring 1: Blue Accent (Fast Spin) */}
                     <div style={{
                         position: 'absolute',
@@ -184,7 +177,7 @@ const Hero = () => {
             </div>
 
             {/* Main Content Container */}
-            <div className="container" style={{ position: 'relative', zIndex: 10 }}>
+            <div className="container hero-main-content" style={{ position: 'relative', zIndex: 10 }}>
 
                 <h1 className="hero-title" style={{
                     fontSize: 'clamp(3.0rem, 7.5vw, 6.0rem)', // Reduced further to 6.0rem max
@@ -202,7 +195,7 @@ const Hero = () => {
                         display: 'block',
                         lineHeight: '1.2'
                     }}>
-                        24時間働き続ける<br />
+                        見込み客を集め続ける<br />
                         <span className="text-shimmer" style={{ fontSize: '1.2em', marginTop: '0' }}>『最強の営業マン』へ。</span>
                     </span>
                 </h1>
@@ -229,8 +222,8 @@ const Hero = () => {
                     marginBottom: '0'
                 }}>
                     {[
-                        <>Amazonレビュー500件を超える<br className="mobile-br" />大ヒット作の漫画化実績あり</>,
-                        <>Xフォロワー8万人、15万人の<br className="mobile-br" />インフルエンサーの作品を制作中</>
+                        <>Amazonレビュー500件を超える<br className="mobile-br" />ロングセラー書籍の漫画化実績あり</>,
+                        <>Xフォロワー15万人<span className="desktop-only" style={{ display: 'inline' }}>・</span><br className="mobile-br" />YouTube登録者20万人超えの<br className="mobile-br" />インフルエンサー書籍も制作中</>
                     ].map((badge, index) => (
                         <div key={index} className="hero-badge" style={{
                             background: '#ffffff',

@@ -54,7 +54,12 @@ const Plans = () => {
                                     二刀流丸投げプラン
                                 </td>
                                 <td style={{ padding: '1.5rem', color: '#999', textDecoration: 'line-through', textAlign: 'center' }}>800,000円</td>
-                                <td style={{ padding: '1.5rem', fontWeight: 'bold', fontSize: '1.4rem', color: '#e60000', textAlign: 'center' }}>548,000円</td>
+                                <td style={{ padding: '1.5rem', fontWeight: 'bold', fontSize: '1.4rem', color: '#e60000', textAlign: 'center' }}>
+                                    <span style={{ position: 'relative', display: 'inline-block' }}>
+                                        548,000円
+                                        <span className="discount-pop" style={{ transform: 'scale(0.85)', top: '-24px', right: '-44px' }}>18％オフ</span>
+                                    </span>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -81,7 +86,12 @@ const Plans = () => {
                             <div style={{ fontSize: '1.5rem', color: '#ccc' }}>→</div>
                             <div style={{ textAlign: 'center' }}>
                                 <div style={{ fontSize: '0.75rem', color: 'var(--color-secondary)', marginBottom: '0.3rem', fontWeight: 'bold' }}>特別価格</div>
-                                <div style={{ fontWeight: 'bold', fontSize: '1.3rem', color: '#333' }}>328,000円</div>
+                                <div style={{ fontWeight: 'bold', fontSize: '1.3rem', color: '#333' }}>
+                                    <span style={{ position: 'relative', display: 'inline-block' }}>
+                                        328,000円
+                                        <span className="discount-pop" style={{ transform: 'scale(0.85)', top: '-24px', right: '-56px' }}>18％オフ</span>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -105,7 +115,12 @@ const Plans = () => {
                             <div style={{ fontSize: '1.5rem', color: '#ccc' }}>→</div>
                             <div style={{ textAlign: 'center' }}>
                                 <div style={{ fontSize: '0.75rem', color: 'var(--color-secondary)', marginBottom: '0.3rem', fontWeight: 'bold' }}>特別価格</div>
-                                <div style={{ fontWeight: 'bold', fontSize: '1.3rem', color: '#333' }}>328,000円</div>
+                                <div style={{ fontWeight: 'bold', fontSize: '1.3rem', color: '#333' }}>
+                                    <span style={{ position: 'relative', display: 'inline-block' }}>
+                                        328,000円
+                                        <span className="discount-pop" style={{ transform: 'scale(0.85)', top: '-24px', right: '-56px' }}>18％オフ</span>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -134,7 +149,12 @@ const Plans = () => {
                             <div style={{ fontSize: '1.5rem', color: '#ccc' }}>→</div>
                             <div style={{ textAlign: 'center' }}>
                                 <div style={{ fontSize: '0.75rem', color: '#e60000', marginBottom: '0.3rem', fontWeight: 'bold' }}>特別価格</div>
-                                <div style={{ fontWeight: 'bold', fontSize: '1.5rem', color: '#e60000' }}>548,000円</div>
+                                <div style={{ fontWeight: 'bold', fontSize: '1.5rem', color: '#e60000' }}>
+                                    <span style={{ position: 'relative', display: 'inline-block' }}>
+                                        548,000円
+                                        <span className="discount-pop" style={{ transform: 'scale(0.85)', top: '-24px', right: '-44px' }}>18％オフ</span>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -38,7 +38,6 @@ const Profile = () => {
                         </h3>
                         <p style={{ fontSize: '0.9rem', lineHeight: '1.8', textAlign: 'left' }}>
                             AI Create Studio（AI漫画クリエイター）<br />
-                            ・AI漫画制作代行実績業界1<br />
                             ・AI漫画制作代行4件同時制作中<br />
                             ・AI漫画制作チーム10名体制で対応<br />
                             ・AI漫画スクールブランドアンバサダー<br />
@@ -49,15 +48,18 @@ const Profile = () => {
                     </div>
                 </div>
                 <div style={{ marginTop: '3rem', textAlign: 'center', fontSize: '1.1rem', fontWeight: 'bold', lineHeight: '2', color: '#fff' }}>
-                    「売れる構成力」<br />
-                    ×<br />
-                    「緻密なAmazon SEO」<br />
-                    ×<br />
-                    「Xフォロワー1.7万人の影響力」<br /><br />
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', marginBottom: '2rem' }}>
+                        <span style={{ backgroundColor: '#fff', color: 'var(--color-secondary)', padding: '0.5rem 1.5rem', borderRadius: '30px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)', fontSize: '1.1rem', display: 'inline-block' }}>「売れる構成力」</span>
+                        <div style={{ fontSize: '1.5rem', margin: '0.2rem 0', lineHeight: 1 }}>×</div>
+                        <span style={{ backgroundColor: '#fff', color: 'var(--color-secondary)', padding: '0.5rem 1.5rem', borderRadius: '30px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)', fontSize: '1.1rem', display: 'inline-block' }}>「緻密なAmazon SEO戦略」</span>
+                        <div style={{ fontSize: '1.5rem', margin: '0.2rem 0', lineHeight: 1 }}>×</div>
+                        <span style={{ backgroundColor: '#fff', color: 'var(--color-secondary)', padding: '0.5rem 1.5rem', borderRadius: '30px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)', fontSize: '1.1rem', display: 'inline-block' }}>「日本最大級サロンオーナーの影響力」</span>
+                    </div>
+                    をフル活用して<br />
                     あなたの知識と経験を、<br />
                     単なる本ではなく<br />
                     <span style={{ color: '#FFD700', fontSize: '1.3rem' }}>「24時間働き続ける最強の資産」</span><br />
-                    <div style={{
+                    <div className="profile-red-line" style={{
                         width: '50%',
                         height: '2px',
                         background: 'linear-gradient(to right, transparent, #e74c3c, transparent)',
