@@ -38,11 +38,11 @@ const Footer = () => {
                         </div>
 
                         {/* Operating Info Links - Horizontal */}
-                        <div>
-                            <ul style={{ listStyle: 'none', padding: 0, display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
-                                <li><Link to="/legal" style={{ color: '#ffffff', textDecoration: 'none', transition: 'color 0.3s' }} className="footer-link hover-underline-animation">特定商取引法に基づく表記</Link></li>
+                        <div style={{ marginTop: '1.5rem' }}>
+                            <ul className="footer-nav-links" style={{ listStyle: 'none', padding: 0, display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
                                 <li><Link to="/terms" style={{ color: '#ffffff', textDecoration: 'none', transition: 'color 0.3s' }} className="footer-link hover-underline-animation">利用規約</Link></li>
                                 <li><Link to="/privacy-policy" style={{ color: '#ffffff', textDecoration: 'none', transition: 'color 0.3s' }} className="footer-link hover-underline-animation">プライバシーポリシー</Link></li>
+                                <li><Link to="/legal" style={{ color: '#ffffff', textDecoration: 'none', transition: 'color 0.3s' }} className="footer-link hover-underline-animation">特定商取引法に基づく表記</Link></li>
                             </ul>
                         </div>
                     </div>

@@ -351,6 +351,91 @@ ul {
     font-size: 1.9rem !important;
   }
 
+  .legal-page .section-title {
+    font-size: 1.3rem !important;
+  }
+
+  .legal-page section {
+    padding-top: 160px !important;
+  }
+
+  .legal-page .container {
+    padding: 0 1rem !important;
+  }
+
+  .legal-page .section-title {
+    font-size: 1.3rem !important;
+    display: block !important;
+    width: fit-content !important;
+    margin: 0 auto 3rem auto !important;
+    text-align: center !important;
+  }
+
+  .legal-page table {
+    font-size: 0.8rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .legal-page th,
+  .legal-page td {
+    padding: 10px 8px !important;
+  }
+
+  .legal-page th {
+    width: 25% !important;
+    font-size: 0.75rem !important;
+  }
+
+  /* 利用規約ページ：スマホ向け */
+  .terms-page section {
+    padding-top: 160px !important;
+  }
+
+  .terms-page .container {
+    padding: 0 1rem !important;
+  }
+
+  .terms-page .section-title {
+    font-size: 1.3rem !important;
+    display: block !important;
+    width: fit-content !important;
+    margin: 0 auto 3rem auto !important;
+    text-align: center !important;
+  }
+
+  .terms-page div[style] {
+    font-size: 0.85rem !important;
+  }
+
+  .terms-page h3 {
+    font-size: 1rem !important;
+  }
+
+  /* プライバシーポリシーページ：スマホ向け */
+  .privacy-policy-page section {
+    padding-top: 160px !important;
+  }
+
+  .privacy-policy-page .container {
+    padding: 0 1rem !important;
+  }
+
+  .privacy-policy-page .section-title {
+    font-size: 1.3rem !important;
+    display: block !important;
+    width: fit-content !important;
+    margin: 0 auto 3rem auto !important;
+    text-align: center !important;
+  }
+
+  .privacy-policy-page .policy-content {
+    font-size: 0.85rem !important;
+  }
+
+  .privacy-policy-page h3 {
+    font-size: 1rem !important;
+  }
+
   .service-scope-title {
     font-size: 1.5rem !important;
   }
@@ -560,4 +645,13 @@ ul {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   transform: rotate(35deg);
+}
+
+/* フッターリンク：スマホ縦並び */
+@media (max-width: 768px) {
+  .footer-nav-links {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1rem !important;
+  }
 }

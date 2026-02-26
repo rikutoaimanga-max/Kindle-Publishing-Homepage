@@ -130,7 +130,7 @@ const FAQ = () => {
                             onClick={() => toggleFAQ(index)}
                         >
                             <h3 style={{
-                                fontSize: '1.2rem',
+                                fontSize: 'clamp(0.9rem, 3vw, 1.2rem)',
                                 marginBottom: '0.5rem',
                                 display: 'flex',
                                 justifyContent: 'space-between',
@@ -162,7 +162,7 @@ const FAQ = () => {
                                 transition: 'all 0.4s ease-in-out',
                                 paddingLeft: '0'
                             }}>
-                                <p style={{ display: 'flex', alignItems: 'flex-start', marginTop: '1rem', color: '#555', lineHeight: '1.6', fontSize: '1.2rem', textAlign: 'left' }}>
+                                <p style={{ display: 'flex', alignItems: 'flex-start', marginTop: '1rem', color: '#555', lineHeight: '1.6', fontSize: 'clamp(0.85rem, 2.8vw, 1.2rem)', textAlign: 'left' }}>
                                     <span style={{ color: 'var(--color-accent)', marginRight: '0.5rem', fontWeight: 'bold', flexShrink: 0 }}>A.</span>
                                     <span>{item.a}</span>
                                 </p>

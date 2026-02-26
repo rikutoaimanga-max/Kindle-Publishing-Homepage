@@ -9,7 +9,7 @@ const Legal = () => {
             <Header />
             <section style={{ backgroundColor: '#fff', padding: '120px 0', color: '#333' }}>
                 <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
-                    <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '3rem' }}>特定商取引法に基づく表記</h2>
+                    <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '3rem', fontSize: 'clamp(1.2rem, 4vw, 1.8rem)' }}>特定商取引法に基づく表記</h2>
 
                     <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '1rem', lineHeight: '1.6' }}>
                         <tbody>
