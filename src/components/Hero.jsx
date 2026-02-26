@@ -223,7 +223,7 @@ const Hero = () => {
                 }}>
                     {[
                         <>Amazonレビュー500件を超える<br className="mobile-br" />ロングセラー書籍の漫画化実績あり</>,
-                        <>Xフォロワー15万人<span className="desktop-only" style={{ display: 'inline' }}>・</span><br className="mobile-br" />YouTube登録者20万人超えの<br className="mobile-br" />インフルエンサー書籍も制作中</>
+                        <>Xフォロワー約15万経営者 ＆<br className="mobile-br" />YouTube約21万インフルエンサー書籍も制作中</>
                     ].map((badge, index) => (
                         <div key={index} className="hero-badge" style={{
                             background: '#ffffff',
@@ -240,16 +240,6 @@ const Hero = () => {
                         </div>
                     ))}
                 </div>
-
-                <p style={{
-                    textAlign: 'center',
-                    fontSize: '0.9rem',
-                    color: '#333',
-                    marginTop: '3rem', // Increased margin
-                    fontWeight: 'bold'
-                }}>
-                    ※現在、実績作り中のため、<br className="mobile-br" />今だけお得にご案内できます！
-                </p>
             </div>
         </section>
     );

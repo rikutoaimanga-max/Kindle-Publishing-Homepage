@@ -53,7 +53,7 @@ const Profile = () => {
                         <div style={{ fontSize: '1.5rem', margin: '0.2rem 0', lineHeight: 1 }}>×</div>
                         <span style={{ backgroundColor: '#fff', color: 'var(--color-secondary)', padding: '0.5rem 1.5rem', borderRadius: '30px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)', fontSize: '1.1rem', display: 'inline-block' }}>「緻密なAmazon SEO戦略」</span>
                         <div style={{ fontSize: '1.5rem', margin: '0.2rem 0', lineHeight: 1 }}>×</div>
-                        <span style={{ backgroundColor: '#fff', color: 'var(--color-secondary)', padding: '0.5rem 1.5rem', borderRadius: '30px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)', fontSize: '1.1rem', display: 'inline-block' }}>「日本最大級サロンオーナーの影響力」</span>
+                        <span style={{ backgroundColor: '#fff', color: 'var(--color-secondary)', padding: '0.5rem 1.5rem', borderRadius: '30px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)', fontSize: '1.1rem', display: 'inline-block' }}>「在籍500名超えサロンオーナーの影響力」</span>
                     </div>
                     をフル活用して<br />
                     あなたの知識と経験を、<br />

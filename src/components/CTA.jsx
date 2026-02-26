@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/global.css';
 
-const CTA = ({ headerBackground = 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%)' }) => {
+const CTA = ({ headerBackground = '#ffffff' }) => {
     return (
 
         <div className="cta-wrapper" style={{
@@ -10,7 +10,7 @@ const CTA = ({ headerBackground = 'linear-gradient(135deg, #e6f7ff 0%, #ffffff 1
             boxShadow: '0 10px 30px rgba(0, 160, 233, 0.15)', // Blue shadow
             borderRadius: '20px',
             overflow: 'hidden',
-            backgroundColor: '#fff',
+            backgroundColor: '#ffffff',
             border: '4px solid var(--color-secondary)' // Prominent blue border
         }}>
             <div className="cta-header" style={{

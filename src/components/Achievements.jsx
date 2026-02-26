@@ -306,14 +306,14 @@ const Achievements = () => {
             </section>
 
             <section style={{
-                backgroundColor: 'transparent',
+                backgroundColor: '#ffffff', // Changed from transparent to white
                 padding: '80px 0 120px', // Increased bottom padding
                 color: 'var(--color-text-dark)'
             }}>
                 <div className="container">
                     <div style={{ textAlign: 'center' }}>
                         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-                            <CTA headerBackground="#fff" />
+                            <CTA headerBackground="#ffffff" />
                         </div>
                     </div>
                 </div>
