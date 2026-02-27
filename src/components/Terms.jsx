@@ -88,7 +88,7 @@ const Terms = () => {
 
                         <p style={{ marginTop: '3rem', textAlign: 'right' }}>
                             以上<br />
-                            制定日：2024年4月1日
+                            制定日：2026年2月1日
                         </p>
                     </div>
                 </div>
