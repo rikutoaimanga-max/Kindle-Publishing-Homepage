@@ -79,26 +79,26 @@ const Plans = () => {
                         <tbody>
                             <tr style={{ borderBottom: '1px solid #eee' }}>
                                 <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', fontWeight: 'bold', textAlign: 'center' }}>テキスト出版丸投げプラン</td>
-                                <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', color: '#999', textDecoration: 'line-through', textAlign: 'center' }}>400,000円</td>
+                                <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', color: '#999', textDecoration: 'line-through', textAlign: 'center' }}>600,000円</td>
                                 <td style={{ padding: '1.5rem 0', borderBottom: '1px solid #eee', textAlign: 'center', color: '#ccc', fontSize: '1.5rem' }}>→</td>
                                 <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', fontWeight: 'bold', fontSize: '1.2rem', textAlign: 'center' }}>
                                     <span style={{ position: 'relative', display: 'inline-block' }}>
-                                        328,000円
-                                        <span className="discount-pop-circle-gray" style={{ transform: 'scale(0.85)', top: '-40px', right: '-52px' }}>18％<br />オフ</span>
+                                        498,000円
+                                        <span className="discount-pop-circle-gray" style={{ transform: 'scale(0.85)', top: '-40px', right: '-52px' }}>17％<br />オフ</span>
                                     </span>
-                                    <span style={{ display: 'block', fontSize: '0.8rem', color: '#666', marginTop: '4px' }}>(税込 360,800円)</span>
+                                    <span style={{ display: 'block', fontSize: '0.8rem', color: '#666', marginTop: '4px' }}>(税込 547,800円)</span>
                                 </td>
                             </tr>
                             <tr style={{ backgroundColor: '#f9f9f9' }}>
                                 <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', fontWeight: 'bold', textAlign: 'center' }}>マンガ出版丸投げプラン</td>
-                                <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', color: '#999', textDecoration: 'line-through', textAlign: 'center' }}>400,000円</td>
+                                <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', color: '#999', textDecoration: 'line-through', textAlign: 'center' }}>600,000円</td>
                                 <td style={{ padding: '1.5rem 0', borderBottom: '1px solid #eee', textAlign: 'center', color: '#ccc', fontSize: '1.5rem' }}>→</td>
                                 <td style={{ padding: '1.5rem', borderBottom: '1px solid #eee', fontWeight: 'bold', fontSize: '1.2rem', textAlign: 'center' }}>
                                     <span style={{ position: 'relative', display: 'inline-block' }}>
-                                        328,000円
-                                        <span className="discount-pop-circle-gray" style={{ transform: 'scale(0.85)', top: '-40px', right: '-52px' }}>18％<br />オフ</span>
+                                        498,000円
+                                        <span className="discount-pop-circle-gray" style={{ transform: 'scale(0.85)', top: '-40px', right: '-52px' }}>17％<br />オフ</span>
                                     </span>
-                                    <span style={{ display: 'block', fontSize: '0.8rem', color: '#666', marginTop: '4px' }}>(税込 360,800円)</span>
+                                    <span style={{ display: 'block', fontSize: '0.8rem', color: '#666', marginTop: '4px' }}>(税込 547,800円)</span>
                                 </td>
                             </tr>
                             <tr style={{ backgroundColor: '#fffbeb', borderLeft: '4px solid #f5a623' }}>
@@ -108,14 +108,14 @@ const Plans = () => {
                                     }}>推奨</span>
                                     二刀流丸投げプラン
                                 </td>
-                                <td style={{ padding: '1.5rem', color: '#999', textDecoration: 'line-through', textAlign: 'center' }}>800,000円</td>
+                                <td style={{ padding: '1.5rem', color: '#999', textDecoration: 'line-through', textAlign: 'center' }}>1,200,000円</td>
                                 <td style={{ padding: '1.5rem 0', textAlign: 'center', color: '#ccc', fontSize: '1.5rem' }}>→</td>
                                 <td style={{ padding: '1.5rem', fontWeight: 'bold', fontSize: '1.4rem', color: '#e60000', textAlign: 'center' }}>
                                     <span style={{ position: 'relative', display: 'inline-block' }}>
-                                        548,000円
-                                        <span className="discount-pop-circle" style={{ transform: 'scale(0.85)', top: '-40px', right: '-48px' }}>約30％<br />オフ</span>
+                                        900,000円
+                                        <span className="discount-pop-circle" style={{ transform: 'scale(0.85)', top: '-40px', right: '-48px' }}>25％<br />オフ</span>
                                     </span>
-                                    <span style={{ display: 'block', fontSize: '0.8rem', color: '#666', marginTop: '4px' }}>(税込 602,800円)</span>
+                                    <span style={{ display: 'block', fontSize: '0.8rem', color: '#666', marginTop: '4px' }}>(税込 990,000円)</span>
                                 </td>
                             </tr>
                         </tbody>
@@ -138,17 +138,17 @@ const Plans = () => {
                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1.5rem' }}>
                             <div style={{ textAlign: 'center' }}>
                                 <div style={{ fontSize: '0.75rem', color: '#999', marginBottom: '0.3rem' }}>通常価格</div>
-                                <div style={{ color: '#999', textDecoration: 'line-through', fontSize: '0.95rem' }}>400,000円</div>
+                                <div style={{ color: '#999', textDecoration: 'line-through', fontSize: '0.95rem' }}>600,000円</div>
                             </div>
                             <div style={{ fontSize: '1.5rem', color: '#ccc' }}>→</div>
                             <div style={{ textAlign: 'center' }}>
                                 <div style={{ fontSize: '0.75rem', color: 'var(--color-secondary)', marginBottom: '0.3rem', fontWeight: 'bold' }}>特別価格</div>
                                 <div style={{ fontWeight: 'bold', fontSize: '1.3rem', color: '#333' }}>
                                     <span style={{ position: 'relative', display: 'inline-block' }}>
-                                        328,000円
-                                        <span className="discount-pop-circle-gray" style={{ transform: 'scale(0.85)', top: '-40px', right: '-52px' }}>18％<br />オフ</span>
+                                        498,000円
+                                        <span className="discount-pop-circle-gray" style={{ transform: 'scale(0.85)', top: '-40px', right: '-52px' }}>17％<br />オフ</span>
                                     </span>
-                                    <span style={{ display: 'block', fontSize: '0.75rem', color: '#666', marginTop: '2px', fontWeight: 'normal' }}>(税込 360,800円)</span>
+                                    <span style={{ display: 'block', fontSize: '0.75rem', color: '#666', marginTop: '2px', fontWeight: 'normal' }}>(税込 547,800円)</span>
                                 </div>
                             </div>
                         </div>
@@ -168,17 +168,17 @@ const Plans = () => {
                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1.5rem' }}>
                             <div style={{ textAlign: 'center' }}>
                                 <div style={{ fontSize: '0.75rem', color: '#999', marginBottom: '0.3rem' }}>通常価格</div>
-                                <div style={{ color: '#999', textDecoration: 'line-through', fontSize: '0.95rem' }}>400,000円</div>
+                                <div style={{ color: '#999', textDecoration: 'line-through', fontSize: '0.95rem' }}>600,000円</div>
                             </div>
                             <div style={{ fontSize: '1.5rem', color: '#ccc' }}>→</div>
                             <div style={{ textAlign: 'center' }}>
                                 <div style={{ fontSize: '0.75rem', color: 'var(--color-secondary)', marginBottom: '0.3rem', fontWeight: 'bold' }}>特別価格</div>
                                 <div style={{ fontWeight: 'bold', fontSize: '1.3rem', color: '#333' }}>
                                     <span style={{ position: 'relative', display: 'inline-block' }}>
-                                        328,000円
-                                        <span className="discount-pop-circle-gray" style={{ transform: 'scale(0.85)', top: '-40px', right: '-52px' }}>18％<br />オフ</span>
+                                        498,000円
+                                        <span className="discount-pop-circle-gray" style={{ transform: 'scale(0.85)', top: '-40px', right: '-52px' }}>17％<br />オフ</span>
                                     </span>
-                                    <span style={{ display: 'block', fontSize: '0.75rem', color: '#666', marginTop: '2px', fontWeight: 'normal' }}>(税込 360,800円)</span>
+                                    <span style={{ display: 'block', fontSize: '0.75rem', color: '#666', marginTop: '2px', fontWeight: 'normal' }}>(税込 547,800円)</span>
                                 </div>
                             </div>
                         </div>
@@ -203,17 +203,17 @@ const Plans = () => {
                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1.5rem' }}>
                             <div style={{ textAlign: 'center' }}>
                                 <div style={{ fontSize: '0.75rem', color: '#999', marginBottom: '0.3rem' }}>通常価格</div>
-                                <div style={{ color: '#999', textDecoration: 'line-through', fontSize: '0.95rem' }}>800,000円</div>
+                                <div style={{ color: '#999', textDecoration: 'line-through', fontSize: '0.95rem' }}>1,200,000円</div>
                             </div>
                             <div style={{ fontSize: '1.5rem', color: '#ccc' }}>→</div>
                             <div style={{ textAlign: 'center' }}>
                                 <div style={{ fontSize: '0.75rem', color: '#e60000', marginBottom: '0.3rem', fontWeight: 'bold' }}>特別価格</div>
                                 <div style={{ fontWeight: 'bold', fontSize: '1.5rem', color: '#e60000' }}>
                                     <span style={{ position: 'relative', display: 'inline-block' }}>
-                                        548,000円
-                                        <span className="discount-pop-circle" style={{ transform: 'scale(0.85)', top: '-40px', right: '-48px' }}>約30％<br />オフ</span>
+                                        900,000円
+                                        <span className="discount-pop-circle" style={{ transform: 'scale(0.85)', top: '-40px', right: '-48px' }}>25％<br />オフ</span>
                                     </span>
-                                    <span style={{ display: 'block', fontSize: '0.75rem', color: '#666', marginTop: '2px', fontWeight: 'normal' }}>(税込 602,800円)</span>
+                                    <span style={{ display: 'block', fontSize: '0.75rem', color: '#666', marginTop: '2px', fontWeight: 'normal' }}>(税込 990,000円)</span>
                                 </div>
                             </div>
                         </div>
