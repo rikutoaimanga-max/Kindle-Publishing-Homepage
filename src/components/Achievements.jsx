@@ -52,7 +52,7 @@ const Achievements = () => {
             image: '/image/yi_icon.jpg', // Updated icon
             bookImage: '/image/yi_book.png', // Added book image
             before: '鋭意制作中',
-            after: '3月出版予定',
+            after: '3月28日に出版決定！',
             voice: '',
             period: '出版後2ヶ月',
             twitterId: ''
