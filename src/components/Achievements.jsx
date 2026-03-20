@@ -38,7 +38,7 @@ const Achievements = () => {
             attribute: '40代 男性',
             title: 'フォロワー8万人越えのXアフィリエイター',
             image: '/image/tm_icon.png', // Updated icon
-            bookImage: '/image/shinpapa_book.jpg', // Added book image
+            bookImage: '/image/shinpapa_book.png', // Added book image
             before: '鋭意制作中',
             after: '3月出版予定',
             voice: '', // Cleared voice text
