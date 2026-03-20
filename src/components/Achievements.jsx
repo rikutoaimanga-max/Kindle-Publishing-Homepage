@@ -3,6 +3,7 @@ import '../styles/global.css';
 import CTA from './CTA';
 import { FaTrophy } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Image from './Image';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
@@ -132,7 +133,7 @@ const Achievements = () => {
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
                                             {/* アイコン */}
                                             {client.image ? (
-                                                <img
+                                                <Image
                                                     src={client.image}
                                                     alt={client.name}
                                                     style={{
@@ -228,10 +229,10 @@ const Achievements = () => {
                                         <div style={{ flexShrink: 0, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                             {client.bookUrl ? (
                                                 <a href={client.bookUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', transition: 'opacity 0.3s' }} className="hover:opacity-80">
-                                                    <img src={client.bookImage} alt={`${client.name}の書籍`} className="achievement-book-image" style={{ maxWidth: '100%', height: 'auto', maxHeight: '160px', borderRadius: '4px', boxShadow: '0 2px 5px rgba(0,0,0,0.1)' }} />
+                                                    <Image src={client.bookImage} alt={`${client.name}の書籍`} className="achievement-book-image" style={{ maxWidth: '100%', height: 'auto', maxHeight: '160px', borderRadius: '4px', boxShadow: '0 2px 5px rgba(0,0,0,0.1)' }} />
                                                 </a>
                                             ) : (
-                                                <img src={client.bookImage} alt={`${client.name}の書籍`} className="achievement-book-image" style={{ maxWidth: '100%', height: 'auto', maxHeight: '160px', borderRadius: '4px', boxShadow: '0 2px 5px rgba(0,0,0,0.1)' }} />
+                                                <Image src={client.bookImage} alt={`${client.name}の書籍`} className="achievement-book-image" style={{ maxWidth: '100%', height: 'auto', maxHeight: '160px', borderRadius: '4px', boxShadow: '0 2px 5px rgba(0,0,0,0.1)' }} />
                                             )}
                                         </div>
                                     )}
@@ -284,7 +285,7 @@ const Achievements = () => {
                                             aspectRatio: '3/4', // Maintain manga aspect ratio
                                             backgroundColor: '#fff'
                                         }}>
-                                            <img
+                                            <Image
                                                 src={`/image/manga_slide_${num}.png`}
                                                 alt={`マンガ作品例 ${num}`}
                                                 style={{

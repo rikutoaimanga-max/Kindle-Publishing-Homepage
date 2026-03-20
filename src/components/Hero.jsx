@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/global.css';
 import rikutoImg from '../assets/rikuto_icon.png';
 import shuzoImg from '../assets/shuzo_icon.png';
+import Image from './Image';
 
 
 const Hero = () => {
@@ -75,7 +76,7 @@ const Hero = () => {
                         animation: 'spin-counter-clockwise 10s linear infinite'
                     }}></div>
 
-                    <img src={shuzoImg} alt="しゅーぞー" style={{
+                    <Image src={shuzoImg} alt="しゅーぞー" style={{
                         width: '100%',
                         height: '100%',
                         objectFit: 'cover',
@@ -162,7 +163,7 @@ const Hero = () => {
                         animation: 'spin-counter-clockwise 10s linear infinite'
                     }}></div>
 
-                    <img src={rikutoImg} alt="りくと" style={{
+                    <Image src={rikutoImg} alt="りくと" style={{
                         width: '100%',
                         height: '100%',
                         objectFit: 'cover',

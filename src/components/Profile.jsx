@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/global.css';
 import rikutoImg from '../assets/rikuto_icon.png';
 import shuzoImg from '../assets/shuzo_icon.png';
+import Image from './Image';
 
 const Profile = () => {
     return (
@@ -12,7 +13,7 @@ const Profile = () => {
                 <div className="grid grid-2">
                     <div style={{ padding: '2rem', border: '1px solid #eee', borderRadius: '8px', backgroundColor: '#fff' }}>
                         <div style={{ width: '150px', height: '150px', margin: '0 auto 1rem', borderRadius: '50%', overflow: 'hidden', border: '2px solid var(--color-secondary)' }}>
-                            <img src={shuzoImg} alt="しゅーぞー" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            <Image src={shuzoImg} alt="しゅーぞー" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                         </div>
                         <h3 style={{ textAlign: 'center', color: 'var(--color-secondary)', marginBottom: '1rem' }}>
                             【テキスト本制作・PR支援】<br />小川 修平（しゅーぞー）
@@ -31,7 +32,7 @@ const Profile = () => {
 
                     <div style={{ padding: '2rem', border: '1px solid #eee', borderRadius: '8px', backgroundColor: '#fff' }}>
                         <div style={{ width: '150px', height: '150px', margin: '0 auto 1rem', borderRadius: '50%', overflow: 'hidden', border: '2px solid var(--color-secondary)' }}>
-                            <img src={rikutoImg} alt="りくと" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            <Image src={rikutoImg} alt="りくと" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                         </div>
                         <h3 style={{ textAlign: 'center', color: 'var(--color-secondary)', marginBottom: '1rem' }}>
                             【漫画制作チーム監修】<br />町田 亮（りくと）
